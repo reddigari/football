@@ -51,7 +51,7 @@ for pos in ['QB', 'RB', 'TE', 'WR']:
 
 data = pd.concat(data_dict.values(), join='outer')
 data = data.reindex_axis(columns, axis=1)
-data = data.reset_index(drop=True)
+data.reset_index(drop=True, inplace=True)
 
 missing_teams = [('Jalen Parmele', 'BAL'), ('Devin Moore', 'IND'),
                  ('Darius Reynaud', 'NYG'), ('Stefan Logan', 'DET'),
@@ -61,6 +61,9 @@ missing_teams = [('Jalen Parmele', 'BAL'), ('Devin Moore', 'IND'),
 
 for p, t in missing_teams:
     data.loc[(pd.isnull(data.Team)) & (data.Player==p), 'Team'] = t
+
+# Rams moved from St. Louis to Los Angeles in 2016, and Yahoo retroactively changed the abbreviation
+off.Team = off.Team.str.replace('STL', 'LAR')
 
 def calc_ffpts(x):
     return np.nansum([(0.2 * np.floor(x['PsYds'] / 5)), (-2.0 * x['Int']),

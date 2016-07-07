@@ -16,6 +16,8 @@ for y in range(2001, 2016):
 
 sch.rename(columns={'Unnamed: 4': 'At'}, inplace=True)
 del sch['Unnamed: 6']
+sch.reset_index(drop=True, inplace=True)
+sch = sch.apply(pd.to_numeric, errors='ignore')
 
 sch.columns = sch.columns.str.replace('/tie', '')
 sch = sch[(sch.Winner != 'Winner/tie') & (sch.Date != 'Playoffs')]
@@ -42,3 +44,13 @@ for i, row in sch.iterrows():
 
 sch['Home'] = homes
 sch['Away'] = aways
+
+week_dict = {str(i): i for i in range(1, 18)}
+playoffs = ['WildCard', 'Division', 'ConfChamp', 'SuperBowl']
+for i, j in zip(playoffs, range(18, 22)):
+    week_dict[i] = j
+
+sch['WeekLabel'] = sch['Week']
+sch['Week'] = sch.Week.apply(lambda x: week_dict[x])
+
+sch['GameID'] = sch.apply(lambda r: '%s-%s-%d-%02d' %(r['Home'], r['Away'], r['Year'], r['Week']), axis=1)

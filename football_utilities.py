@@ -1,3 +1,5 @@
+import re
+
 short_dict = {'DEN': ['Denver', 'Broncos'],
              'MIA': ['Miami', 'Dolphins'],
              'GNB': ['Green Bay', 'Packers', 'GB'],
@@ -14,7 +16,7 @@ short_dict = {'DEN': ['Denver', 'Broncos'],
              'SFO': ['San Francisco', '49ers', 'SF'],
              'IND': ['Indianapolis', 'Colts'],
              'ATL': ['Atlanta', 'Falcons'],
-             'STL': ['St. Louis', 'Saint Louis', 'Rams'],
+             'LAR': ['Los Angeles', 'Rams', 'St. Louis', 'Saint Louis', 'STL'],
              'TAM': ['Tampa Bay', 'Tampa', 'Buccaneers', 'Bucs', 'TB'],
              'KAN': ['Kansas City', 'Kansas', 'Chiefs', 'KC'],
              'WAS': ['Washington', 'Redskins'],
@@ -43,3 +45,9 @@ def get_team_abbr(x):
         return x
     else:
         return team_dict[x]
+
+## this function takes a few minutes to be applied to the entire offense dataset
+def get_opp_from_row(r, sch):
+    gameid = sch.loc[sch.GameID.str.match('.*%s.*-%d-%02d' %(r['Team'], r['Year'], r['Week'])), 'GameID'].values[0]
+    teams = re.findall('[A-Z]{3}', gameid)
+    return [i for i in teams if i != r['Team']][0]
