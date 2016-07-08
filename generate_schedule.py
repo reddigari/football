@@ -54,3 +54,5 @@ sch['WeekLabel'] = sch['Week']
 sch['Week'] = sch.Week.apply(lambda x: week_dict[x])
 
 sch['GameID'] = sch.apply(lambda r: '%s-%s-%d-%02d' %(r['Home'], r['Away'], r['Year'], r['Week']), axis=1)
+
+sch.to_pickle('Data/NFL_Schedule_2001-2015.pickled')
