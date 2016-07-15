@@ -16,7 +16,7 @@ short_dict = {'DEN': ['Denver', 'Broncos'],
              'SFO': ['San Francisco', '49ers', 'SF'],
              'IND': ['Indianapolis', 'Colts'],
              'ATL': ['Atlanta', 'Falcons'],
-             'LAR': ['Los Angeles', 'Rams', 'St. Louis', 'Saint Louis', 'STL'],
+             'LAR': ['Los Angeles', 'Rams', 'St. Louis', 'Saint Louis', 'STL', 'LA'],
              'TAM': ['Tampa Bay', 'Tampa', 'Buccaneers', 'Bucs', 'TB'],
              'KAN': ['Kansas City', 'Kansas', 'Chiefs', 'KC'],
              'WAS': ['Washington', 'Redskins'],
@@ -46,8 +46,11 @@ def get_team_abbr(x):
     else:
         return team_dict[x]
 
-## this function takes a few minutes to be applied to the entire offense dataset
-def get_opp_from_row(r, sch):
-    gameid = sch.loc[sch.GameID.str.match('.*%s.*-%d-%02d' %(r['Team'], r['Year'], r['Week'])), 'GameID'].values[0]
-    teams = re.findall('[A-Z]{3}', gameid)
-    return [i for i in teams if i != r['Team']][0]
+def get_opp_from_row(r, schgb):
+    """schgb is the full schedule grouped by year and week"""
+    s = schgb.get_group((r['Year'], r['Week']))
+    gameid = s.loc[s.GameID.str.match('.*%s.*' %r['Team']), 'GameID'].values[0]
+    if gameid.startswith(r['Team']):
+        return gameid[4:7]
+    else:
+        return gameid[0:3]
