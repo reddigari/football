@@ -12,17 +12,14 @@ def agg_func(x):
 func_dict = OrderedDict((c, agg_func(c)) for c in data.columns if c not in ['Player', 'Week', 'Pos', 'Team'])
 
 
-pred = None
+pred = pandas.DataFrame()
 
-for y in range(2001, 2015):
+for y in range(2001, 2016):
     for w in range(2, 18):
         tmp = data[(data.Year==y) & (data.Week<w)]
         plwk = tmp.groupby(['Player', 'Team', 'Pos']).agg(func_dict)
         plwk['Week'] = w
-        if pred is None:
-            pred = plwk
-        else:
-            pred = pandas.concat([pred, plwk])
+        pred = pandas.concat([pred, plwk])
 
 pred = pred.reindex_axis(pred.columns.insert(2, 'Week')[:-1], axis=1)
 pred = pred.reset_index()
