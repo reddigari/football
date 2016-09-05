@@ -19,7 +19,7 @@ short_dict = {'DEN': ['Denver', 'Broncos'],
              'LAR': ['Los Angeles', 'Rams', 'St. Louis', 'Saint Louis', 'STL', 'LA'],
              'TAM': ['Tampa Bay', 'Tampa', 'Buccaneers', 'Bucs', 'TB'],
              'KAN': ['Kansas City', 'Kansas', 'Chiefs', 'KC'],
-             'WAS': ['Washington', 'Redskins'],
+             'WAS': ['Washington', 'Redskins', 'WSH'],
              'CLE': ['Cleveland', 'Browns'],
              'TEN': ['Tennessee', 'Titans'],
              'DET': ['Detroit', 'Lions'],
@@ -31,7 +31,8 @@ short_dict = {'DEN': ['Denver', 'Broncos'],
              'BUF': ['Buffalo', 'Bills'],
              'DAL': ['Dallas', 'Cowboys'],
              'ARI': ['Arizona', 'Cardinals'],
-             'HOU': ['Houston', 'Texans']}
+             'HOU': ['Houston', 'Texans'],
+             'FA': ['Free Agent', 'Free', 'Agent']}
 
 team_dict = {}
 
@@ -54,3 +55,17 @@ def get_opp_from_row(r, schgb):
         return gameid[4:7]
     else:
         return gameid[0:3]
+
+def split_espn_plr(x, out='name'):
+    output = {}
+    split = x.split(', ')
+    if len(split) > 1:
+        output['name'] = split[0]
+        output['team'] = get_team_abbr(split[1].split(u'\xa0')[0])
+        output['pos'] = split[1].split(u'\xa0')[1]
+    else:
+        output['name'] = split[0].split(' ')[0]
+        output['team'] = get_team_abbr(output['name'])
+        output['pos'] = 'DST'
+    output['name'] = output['name'].replace('*', '')
+    return output[out]
