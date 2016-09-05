@@ -10,6 +10,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://reddigari.github.io/styles/style_functions.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
+    <style>
+    #sourceSelect{
+        font-family: sans-serif;
+    }
+    </style>
 </head>
 
 <body>
@@ -55,6 +60,16 @@
             <h1>Fantasy Football</h1>
         </div>
         <div id="text">
+        <div id="season_proj">
+        <h2>The Ocho Post-Draft Season Projections</h2>
+        <p>Full season projections from ESPN and <a href="http://fantasyfootballanalytics.net/">Fantasy Football Analytics</a>, who aggregate projections from over a dozen free and subscription fantasy sites. Read about their projection accuracy <a href="http://fantasyfootballanalytics.net/2016/03/best-fantasy-football-projections-2016-update.html">here</a>.</p>
+
+        <fieldset id="sourceSelect" style="display:inline-block">
+            <legend>Source</legend>
+            <input type="radio" name="source" value="espn" checked>ESPN</input><br>
+            <input type="radio" name="source" value="ffa">FFA</input>
+        </fieldset>
+
         <script>
         var margin = {
                 top: 20,
@@ -79,7 +94,7 @@
             .tickSize(0)
             .tickPadding(5);
 
-        var g = d3.select("#text").append("svg")
+        var g = d3.select("#season_proj").append("svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
             .append("g")
@@ -94,45 +109,63 @@
             .attr("class", "y axis")
             .call(yAxis);
 
-        d3.json("ocho_espn_projections.json", function(json) {
+        function plotBars() {
+            var source = d3.select("input[name='source']:checked").property("value") + "_pts";
+            d3.json("ocho_espn_projections.json", function(json) {
 
-            json.sort(function(a, b) { return b.points - a.points; });
+                json.sort(function(a, b) { return b[source] - a[source]; });
 
-            x.domain([0, d3.max(json, function(d) { return d.points; })]);
-            y.domain(json.map(function(d) { return d.team; }));
+                x.domain([0, d3.max(json, function(d) { return d3.max([d['espn_pts'], d['ffa_pts']]); })]);
+                y.domain(json.map(function(d) { return d.team; }));
 
-            d3.select(".x.axis").call(xAxis);
-            d3.select(".y.axis").call(yAxis);
+                d3.select(".x.axis").call(xAxis);
+                d3.select(".y.axis")
+                    .transition()
+                    .call(yAxis);
 
-            g.selectAll("rect")
-                .data(json)
-                .enter().append("rect")
-                .style("fill", "#909090")
-                .style("stroke", "none")
-                .attr("x", x(0))
-                .attr("y", function(d) { return y(d.team); })
-                .attr("height", y.bandwidth())
-                .attr("width", function(d) { return x(d.points); });
+                var bars = g.selectAll(".rect")
+                    .data(json, function(d) {return d.team; });
 
-            g.selectAll(".valLabel")
-                .data(json)
-                .enter().append("text")
-                .attr("x",  function(d) { return x(d.points)-4; })
-                .attr("y", function(d) {return y(d.team)+(0.75*y.bandwidth()); })
-                .text(function(d) { return d.points.toFixed(1); })
-                .attr("font-size", "10")
-                .attr("font-family", "sans-serif")
-                .attr("text-anchor", "end");
+                bars.enter().append("rect")
+                    .attr("class", "rect")
+                    .merge(bars)
+                    .style("stroke", "none")
+                    .attr("x", x(0))
+                    .transition()
+                    .attr("y", function(d) { return y(d.team); })
+                    .attr("height", y.bandwidth())
+                    .style("fill", "#909090")
+                    .attr("width", function(d) { return x(d[source]); });
 
-            g.append("text")
-                .attr("x", 0.5*width)
-                .attr("y", height+margin.bottom-10)
-                .text("Projected Fantasy Points (Starters)")
-                .attr("text-anchor", "middle");
-        })
+                var labels = g.selectAll(".valLabel")
+                    .data(json, function(d) {return d.team; });
+
+                labels.enter().append("text")
+                    .attr("class", "valLabel")
+                    .merge(labels)
+                    .transition()
+                    .attr("x",  function(d) { return x(d[source])-4; })
+                    .attr("y", function(d) {return y(d.team)+(0.75*y.bandwidth()); })
+                    .text(function(d) { return d[source].toFixed(1); })
+                    .attr("font-size", "10")
+                    .attr("font-family", "sans-serif")
+                    .attr("text-anchor", "end");
+
+                g.append("text")
+                    .attr("x", 0.5*width)
+                    .attr("y", height+margin.bottom-10)
+                    .text("Projected Fantasy Points (Starters)")
+                    .attr("text-anchor", "middle");
+            });
+        }
+
+        d3.selectAll("input")
+            .on("change", plotBars);
+        plotBars(source="ffa_pts");
 
 
         </script>
+        </div>
         </div>
     </div>
 

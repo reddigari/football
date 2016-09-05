@@ -57,7 +57,7 @@ Rk,Player,Pos,Team,Cmp_Att,PsYds,PsTD,Int,RsAtt,RsYds,RsTD,Rec,RcYds,RcTD,FFPts
 56,Matt Flynn,QB,NOR,0/0,0,0,0,0,0,0,0,0,0,0
 57,Josh Freeman,QB,IND,0/0,0,0,0,0,0,0,0,0,0,0
 58,Brian Hoyer,QB,CHI,21.9/38.1,282.6,1.5,1.2,0.6,2.4,0,0,0,0,14.2
-59,Mark Sanchez,QB,DEN,0.6/1,6.7,0,0,0,0.2,0,0,0,0,0.1
+59,Mark Sanchez,QB,DAL,0.6/1,6.7,0,0,0,0.2,0,0,0,0,0.1
 60,Jimmy Clausen,QB,BAL,0/0,0,0,0,0,0,0,0,0,0,0
 61,Colt McCoy,QB,WAS,1.7/2.9,19.5,0.1,0.1,0.1,0.4,0,0,0,0,0.3
 62,Tim Tebow,QB,FA,0/0,0,0,0,0,0,0,0,0,0,0
@@ -113,7 +113,7 @@ Rk,Player,Pos,Team,Cmp_Att,PsYds,PsTD,Int,RsAtt,RsYds,RsTD,Rec,RcYds,RcTD,FFPts
 112,Nate Sudfeld,QB,WAS,0/0,0,0,0,0,0,0,0,0,0,0
 113,Jake Rudock,QB,DET,0/0,0,0,0,0,0,0,0,0,0,0
 114,Brandon Allen,QB,JAC,0/0,0,0,0,0,0,0,0,0,0,0
-115,Jeff Driskel,QB,SFO,0/0,0,0,0,0,0,0,0,0,0,0
+115,Jeff Driskel,QB,CIN,0/0,0,0,0,0,0,0,0,0,0,0
 116,Brandon Doughty,QB,MIA,0/0,0,0,0,0,0,0,0,0,0,0
 117,Trevone Boykin,QB,SEA,1.5/2.6,16.5,0.1,0.1,0.1,0.4,0,0,0,0,0.4
 118,Taylor Heinicke,QB,MIN,0/0,0,0,0,0,0,0,0,0,0,0
@@ -292,7 +292,7 @@ Rk,Player,Pos,Team,Cmp_Att,PsYds,PsTD,Int,RsAtt,RsYds,RsTD,Rec,RcYds,RcTD,FFPts
 172,Tyler Gaffney,RB,NWE,0/0,0,0,0,0,0,0,0,0,0,0
 173,Storm Johnson,RB,TAM,0/0,0,0,0,0,0,0,0,0,0,0
 174,Lache Seastrunk,RB,NYJ,0/0,0,0,0,0,0,0,0,0,0,0
-175,Andre Williams,RB,NYG,0/0,0,0,0,7.7,29.9,0.1,0,0,0,2.8
+175,Andre Williams,RB,SDG,0/0,0,0,0,7.7,29.9,0.1,0,0,0,2.8
 176,Lorenzo Taliaferro,RB,BAL,0/0,0,0,0,0,0,0,0,0,0,0
 177,Marion Grice,RB,ARI,0/0,0,0,0,0,0,0,0,0,0,0
 178,Damien Williams,RB,MIA,0/0,0,0,0,3.6,13.7,0.1,4.4,32.1,0.1,5.2
@@ -343,7 +343,7 @@ Rk,Player,Pos,Team,Cmp_Att,PsYds,PsTD,Int,RsAtt,RsYds,RsTD,Rec,RcYds,RcTD,FFPts
 223,Brandon Wilds,RB,ATL,0/0,0,0,0,0,0,0,0,0,0,0
 224,Jhurell Pressley,RB,MIN,0/0,0,0,0,0,0,0,0,0,0,0
 225,Byron Marshall,RB,PHI,0/0,0,0,0,0,0,0,0,0,0,0
-226,George Atkinson III,RB,OAK,0/0,0,0,0,14.9,58.6,0.4,1.9,14.1,0.1,8.3
+226,George Atkinson III,RB,CLE,0/0,0,0,0,14.9,58.6,0.4,1.9,14.1,0.1,8.3
 227,James Wilder Jr.,RB,BUF,0/0,0,0,0,0,0,0,0,0,0,0
 228,Dreamius Smith,RB,SDG,0/0,0,0,0,0,0,0,0,0,0,0
 229,Devon Johnson,RB,CAR,0/0,0,0,0,0,0,0,0,0,0,0
@@ -458,7 +458,7 @@ Rk,Player,Pos,Team,Cmp_Att,PsYds,PsTD,Int,RsAtt,RsYds,RsTD,Rec,RcYds,RcTD,FFPts
 108,Nate Washington,WR,NWE,0/0,0,0,0,0,0,0,0,0,0,0
 109,Lance Moore,WR,ATL,0/0,0,0,0,0,0,0,0,0,0,0
 110,Greg Jennings,WR,MIA,0/0,0,0,0,0,0,0,0,0,0,0
-111,Devin Hester,WR,ATL,0/0,0,0,0,0,0,0,0,0,0,1.5
+111,Devin Hester,WR,BAL,0/0,0,0,0,0,0,0,0,0,0,1.5
 112,Derek Hagan,WR,TEN,0/0,0,0,0,0,0,0,0,0,0,0
 113,Jason Avant,WR,KAN,0/0,0,0,0,0,0,0,0,0,0,0
 114,Marques Colston,WR,NOR,0/0,0,0,0,0,0,0,0,0,0,0
@@ -535,7 +535,7 @@ Rk,Player,Pos,Team,Cmp_Att,PsYds,PsTD,Int,RsAtt,RsYds,RsTD,Rec,RcYds,RcTD,FFPts
 185,Stedman Bailey,WR,LAR,0/0,0,0,0,0,0,0,0,0,0,0
 186,Aaron Dobson,WR,NWE,0/0,0,0,0,0,0,0,0,0,0,0
 187,Marquise Goodwin,WR,BUF,0/0,0,0,0,0,0,0,13.4,223.2,1.3,31.1
-188,Justin Hunter,WR,TEN,0/0,0,0,0,0,0,0,3.5,43.4,0.3,5.5
+188,Justin Hunter,WR,MIA,0/0,0,0,0,0,0,0,3.5,43.4,0.3,5.5
 189,Brice Butler,WR,DAL,0/0,0,0,0,0,0,0,12.2,159.9,1.2,22.3
 190,B.J. Daniels,WR,CHI,0/0,0,0,0,0,0,0,0,0,0,0
 191,Tavarres King,WR,NYG,0/0,0,0,0,0,0,0,17.9,237.2,1.5,32
@@ -573,7 +573,7 @@ Rk,Player,Pos,Team,Cmp_Att,PsYds,PsTD,Int,RsAtt,RsYds,RsTD,Rec,RcYds,RcTD,FFPts
 223,Michael Campanaro,WR,BAL,0/0,0,0,0,0,0,0,0,0,0,0
 224,Brenton Bersin,WR,CAR,0/0,0,0,0,0,0,0,2.9,37.1,0.3,4.6
 225,Corey Brown,WR,CAR,0/0,0,0,0,4.7,29.7,0.1,11.3,164.3,1,24.8
-226,Taylor Gabriel,WR,CLE,0/0,0,0,0,0,0,0,0,0,0,0.9
+226,Taylor Gabriel,WR,ATL,0/0,0,0,0,0,0,0,0,0,0,0.9
 227,Adam Thielen,WR,MIN,0/0,0,0,0,2.2,14,0.1,3.3,42.6,0.2,6.7
 228,Ryan Grant,WR,WAS,0/0,0,0,0,0,0,0,3.4,44.2,0.3,5.8
 229,Frankie Hammond,WR,KAN,0/0,0,0,0,0,0,0,0,0,0,0
@@ -736,7 +736,7 @@ Rk,Player,Pos,Team,Cmp_Att,PsYds,PsTD,Int,RsAtt,RsYds,RsTD,Rec,RcYds,RcTD,FFPts
 71,Andrew Quarless,TE,DET,0/0,0,0,0,0,0,0,1,11.5,0.1,1.5
 72,Richie Brockel,TE,CAR,0/0,0,0,0,0,0,0,0,0,0,0
 73,Jeff Cumberland,TE,SDG,0/0,0,0,0,0,0,0,0,0,0,0
-74,Logan Paulsen,TE,WAS,0/0,0,0,0,0,0,0,0,0,0,0
+74,Logan Paulsen,TE,CHI,0/0,0,0,0,0,0,0,0,0,0,0
 75,Rob Housler,TE,CHI,0/0,0,0,0,0,0,0,0,0,0,0
 76,Bruce Miller,TE,SFO,0/0,0,0,0,0,0,0,11,118.7,0.8,15.3
 77,Luke Stocker,TE,TAM,0/0,0,0,0,0,0,0,3.5,36.6,0.3,4.9
@@ -775,7 +775,7 @@ Rk,Player,Pos,Team,Cmp_Att,PsYds,PsTD,Int,RsAtt,RsYds,RsTD,Rec,RcYds,RcTD,FFPts
 110,Jack Doyle,TE,IND,0/0,0,0,0,0,0,0,17.4,117.7,1.7,21.4
 111,C.J. Fiedorowicz,TE,HOU,0/0,0,0,0,0,0,0,22.9,206.6,1.9,31.4
 112,Richard Rodgers,TE,GNB,0/0,0,0,0,0,0,0,18.8,188,2,30.2
-113,Jace Amaro,TE,NYJ,0/0,0,0,0,0,0,0,0,0,0,0
+113,Jace Amaro,TE,TEN,0/0,0,0,0,0,0,0,0,0,0,0
 114,Troy Niklas,TE,ARI,0/0,0,0,0,0,0,0,3.7,39.7,0.4,5.5
 115,Brian Leonhardt,TE,MIN,0/0,0,0,0,0,0,0,0,0,0,0
 116,Demetrius Harris,TE,KAN,0/0,0,0,0,0,0,0,9.8,106.7,0.7,14.5
@@ -813,7 +813,7 @@ Rk,Player,Pos,Team,Cmp_Att,PsYds,PsTD,Int,RsAtt,RsYds,RsTD,Rec,RcYds,RcTD,FFPts
 148,Temarrick Hemingway,TE,LAR,0/0,0,0,0,0,0,0,3,33.5,0.2,4.1
 149,Jerell Adams,TE,NYG,0/0,0,0,0,0,0,0,7.6,85.8,0.8,13
 150,David Morgan II,TE,MIN,0/0,0,0,0,0,0,0,0,0,0,0
-151,Danny Vitale,TE,TAM,0/0,0,0,0,0,0,0,0,0,0,0
+151,Dan Vitale,TE,BUF,0/0,0,0,0,0,0,0,0,0,0,0
 152,Rico Darnell Gathers,TE,DAL,0/0,0,0,0,0,0,0,0,0,0,0
 153,Thomas Duarte,TE,MIA,0/0,0,0,0,0,0,0,0,0,0,0
 154,Beau Sandland,TE,CAR,0/0,0,0,0,0,0,0,0,0,0,0
