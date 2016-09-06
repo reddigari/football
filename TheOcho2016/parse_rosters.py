@@ -8,9 +8,9 @@ sys.path.append(util_path)
 
 from football_utilities import split_espn_plr
 
-filename = 'League Rosters - Free Fantasy Football - ESPN.html'
+url = 'http://games.espn.com/ffl/leaguerosters?leagueId=914065'
 
-d = pd.read_html('League Rosters - Free Fantasy Football - ESPN.html', attrs={'class': 'playerTableTable tableBody'})
+d = pd.read_html(url, attrs={'class': 'playerTableTable tableBody'})
 
 teams = {}
 
