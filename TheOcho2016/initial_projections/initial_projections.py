@@ -8,6 +8,7 @@ sys.path.append(root_path)
 
 from football_utilities import get_team_abbr
 
+## THIS IS OUT OF DATE, parse_roster DOES OTHER SHIT NOW AND THIS WILL NOT WORK
 ## teams should be dict output by parse_rosters
 
 proj = pd.read_csv(root_path + 'Data/ESPN_Projections_2016.csv')

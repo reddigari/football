@@ -28,8 +28,8 @@ for y in range(2001, 2016):
         tmwk['RsRnk'] = np.argsort(tmwk.RsYds)+1
         for cat in ['Ps', 'Rs', 'Rc']:
             tmwk['%sFFPtsRk' %cat] = np.argsort(tmwk['%sFFPts' %cat])
-        pred = pandas.concat([pred, tmwk])
+        pred = pd.concat([pred, tmwk])
 
 pred.reset_index(inplace=True)
 
-def_pred = pandas.merge(pred, defense, on=['Year', 'Week', 'Team'], how='inner', suffixes=['', '_real'])
+def_pred = pd.merge(pred, defense, on=['Year', 'Week', 'Team'], how='inner', suffixes=['', '_real'])

@@ -56,16 +56,11 @@ def get_opp_from_row(r, schgb):
     else:
         return gameid[0:3]
 
-def split_espn_plr(x, out='name'):
-    output = {}
-    split = x.split(', ')
-    if len(split) > 1:
-        output['name'] = split[0]
-        output['team'] = get_team_abbr(split[1].split(u'\xa0')[0])
-        output['pos'] = split[1].split(u'\xa0')[1]
+def split_espn_plr(x):
+    if ',' in x:
+        name, team, pos = re.match('(.*?), (.*?)\xa0(\w*)', x).groups()
     else:
-        output['name'] = split[0].split(' ')[0]
-        output['team'] = get_team_abbr(output['name'])
-        output['pos'] = 'DST'
-    output['name'] = output['name'].replace('*', '')
-    return output[out]
+        name, pos = x.split(' ')[0], 'DST'
+        team = name
+    team = get_team_abbr(team)
+    return name, team, pos
