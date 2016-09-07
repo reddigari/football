@@ -34,7 +34,11 @@ def get_espn_proj_wk(wk):
     info = proj.Player.apply(split_espn_plr)
     proj['Player'] = [i[0] for i in info]
     proj.insert(2, 'Team', [i[1] for i in info])
+    proj = proj.replace('--', np.nan)
+    proj = proj.apply(pd.to_numeric, errors='ignore')
 
     proj.reset_index(drop=True, inplace=True)
+
+    proj.to_csv('Data/Projections/ESPN/Wk%d/ESPN_Projections_2016Wk%d_%s.csv' %(wk, wk, time.strftime('%Y%m%d')), index=False)
+
     return proj
-    # proj.to_csv(root_path + 'Data/ESPN_Projections_2016Wk%d_%s.csv' %(wk, time.strftime('%Y%m%d')), index=False)
