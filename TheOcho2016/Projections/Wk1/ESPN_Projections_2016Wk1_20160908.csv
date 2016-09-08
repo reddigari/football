@@ -142,7 +142,7 @@ Rashad Jennings,BKN,NYG,RB,,@Dal,Sun 4:25,0/0,0.0,0.0,0.0,13.0,56.8,0.3,2.1,17.0
 C.J. Anderson,SCOT,DEN,RB,,Car,Thu 8:30,0/0,0.0,0.0,0.0,13.9,60.2,0.4,1.6,11.6,0.0,9.7
 Christine Michael,FA,SEA,RB,,Mia,Sun 4:05,0/0,0.0,0.0,0.0,13.8,60.4,0.4,1.0,8.7,0.1,9.5
 Jeremy Hill,BKN,CIN,RB,,@NYJ,Sun 1:00,0/0,0.0,0.0,0.0,14.0,51.7,0.4,1.2,8.5,0.0,8.5
-Justin Forsett,FA,BAL,RB,,Buf,Sun 1:00,0/0,0.0,0.0,0.0,11.6,54.2,0.3,1.6,10.2,0.0,8.5
+Justin Forsett,LOS,BAL,RB,,Buf,Sun 1:00,0/0,0.0,0.0,0.0,11.6,54.2,0.3,1.6,10.2,0.0,8.5
 Jonathan Stewart,NOG,CAR,RB,,@Den,Thu 8:30,0/0,0.0,0.0,0.0,14.4,55.5,0.3,1.2,7.9,0.0,8.3
 Danny Woodhead,LOS,SDG,RB,,@KC,Sun 1:00,0/0,0.0,0.0,0.0,6.1,25.3,0.1,4.5,38.4,0.2,8.3
 Melvin Gordon,BKN,SDG,RB,,@KC,Sun 1:00,0/0,0.0,0.0,0.0,13.9,55.2,0.2,2.2,13.6,0.1,7.9
@@ -294,7 +294,7 @@ Derrick Coleman,FA,SEA,RB,,Mia,Sun 4:05,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
 Jonas Gray,FA,JAC,RB,,GB,Sun 1:00,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
 Travaris Cadet,FA,NOR,RB,,Oak,Sun 1:00,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
 Montee Ball,FA,FA,RB,,** BYE **,0/0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,
-Le'Veon Bell,LOS,PIT,RB,,@Wsh,Mon 7:10,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Le'Veon Bell,WA (Sat),PIT,RB,,@Wsh,Mon 7:10,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
 Mike James,FA,TAM,RB,,@Atl,Sun 1:00,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
 Tommy Bohanon,FA,NYJ,RB,,Cin,Sun 1:00,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
 Zac Stacy,FA,NYJ,RB,,Cin,Sun 1:00,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
@@ -663,6 +663,8 @@ Darius Jennings,FA,CLE,WR,,@Phi,Sun 1:00,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
 Devon Cajuste,FA,SFO,WR,,LA,Mon 10:20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
 Mitch Mathews,FA,KAN,WR,,SD,Sun 1:00,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
 Keyarris Garrett,FA,CAR,WR,,@Den,Thu 8:30,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Tanner McEvoy,WA (Sat),SEA,WR,,Mia,Sun 4:05,--/--,,,,,,,,,,
+Bryce Treggs,WA (Sat),PHI,WR,,Cle,Sun 1:00,--/--,,,,,,,,,,
 Rob Gronkowski,FA,NWE,TE,,@Ari,Sun 8:30,0/0,0.0,0.0,0.0,0.0,0.0,0.0,4.6,66.6,0.5,9.7
 Jordan Reed,SLIV,WAS,TE,,Pit,Mon 7:10,0/0,0.0,0.0,0.0,0.0,0.0,0.0,5.8,61.3,0.6,9.6
 Travis Kelce,NOG,KAN,TE,,SD,Sun 1:00,0/0,0.0,0.0,0.0,0.0,0.0,0.0,5.1,58.1,0.4,7.9
@@ -824,6 +826,9 @@ Ben Braunecker,FA,CHI,TE,,@Hou,Sun 1:00,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
 Matt LaCosse*,FA,NYG,TE,,@Dal,Sun 4:25,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
 Anthony Denham,FA,HOU,TE,,Chi,Sun 1:00,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
 Bryce Williams,FA,NWE,TE,,@Ari,Sun 8:30,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Alan Cross,WA (Fri),TAM,TE,,@Atl,Sun 1:00,--/--,,,,,,,,,,
+Braedon Bowman,WA (Fri),NYJ,TE,,Cin,Sun 1:00,--/--,,,,,,,,,,
+Brian Parker,WA (Sat),NYJ,TE,,Cin,Sun 1:00,--/--,,,,,,,,,,
 Seahawks,NOG,SEA,DST,,Mia,Sun 4:05,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,10.9
 Panthers,FUNK,CAR,DST,,@Den,Thu 8:30,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,10.6
 Packers,LOS,GNB,DST,,@Jax,Sun 1:00,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,9.0

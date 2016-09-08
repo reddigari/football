@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>The Ocho</title>
+    <title>The Ocho: Week 1</title>
     <link rel="stylesheet" href="https://reddigari.github.io/styles/ff_style.css">
     <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
@@ -11,13 +11,6 @@
     <script src="https://reddigari.github.io/styles/style_functions.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.9.0/d3-legend.min.js"></script>
-
-    <style>
-        #sourceSelect {
-            font-family: sans-serif;
-        }
-
-    </style>
 </head>
 
 <body>
@@ -74,7 +67,7 @@
         <div id="text">
             <div id="wk1Proj">
                 <h2>The Ocho: Week 1</h2>
-                <p>Here are the league average and individual projections for Week 1 (ESPN). As scores come in I'll add bars to show how each team performed vs. what was projected, instead of hastily removing any trace of the projections like ESPN does. I'm not sure how well this will adapt to lineup changes after tonight, but I'll try my best to keep it accurate (despite the best efforts of Matt's running backs).</p>
+                <p>Here are the league average and individual projections for Week 1 (ESPN). As scores come in I'll add bars to show how each team performed vs. what was projected, instead of hastily removing any trace of the projections like ESPN does. I'm not sure how well this will adapt to lineup changes after tonight, but I'll try my best to keep it accurate.</p>
                 <script>
                     var margin = {
                             top: 30,
@@ -102,7 +95,7 @@
                     var yAxis = d3.axisLeft(y)
                         .ticks(5);
 
-                    var colors = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#bcbd22", "#17becf"]
+                    var colors = ["#ff7f0e", "#2ca02c", "#d62728", "#1f77b4", "#9467bd", "#8c564b", "#e377c2", "#bcbd22", "#17becf"]
                     var colorScale = d3.scaleOrdinal(colors);
 
                     d3.json("wk1_proj.json", function(json) {
