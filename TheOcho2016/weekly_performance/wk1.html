@@ -10,14 +10,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://reddigari.github.io/styles/style_functions.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.9.0/d3-legend.min.js"></script>
+
     <style>
-    #sourceSelect{
-        font-family: sans-serif;
-    }
-    #text svg {
-      display: block;
-      margin: auto;
-    }
+        #sourceSelect {
+            font-family: sans-serif;
+        }
+
     </style>
 </head>
 
@@ -26,36 +25,45 @@
 
         <div id="sidebar">
             <div id="field" style="padding:10px">
-            <svg width="180" height="80">
-              <line x1="2" x2="2" y1="0" y2="80" style="stroke: white; stroke-width:4px;"/>
-              <line x1="178" x2="178" y1="0" y2="80" style="stroke: white; stroke-width:4px;"/>
-              <line x1="0" x2="180" y1="78" y2="78" style="stroke: white; stroke-width:4px;"/>
-              <line x1="0" x2="180" y1="2" y2="2" style="stroke: white; stroke-width:4px;"/>
-              <rect x="4" y="4" width="16" height="72" style="stroke-width: 0; fill: blue;"/>
-              <rect x="160" y="4" width="16" height="72" style="stroke-width: 0; fill: blue;"/>
-              <line x1="20" x2="160" y1="35" y2="35" style="stroke: white; stroke-dasharray: 1, 1"/>
-              <line x1="20" x2="160" y1="45" y2="45" style="stroke: white; stroke-dasharray: 1, 1"/>
-              <!-- <text x="14" y="40" font-size="8" transform="rotate(-90, 14, 40)" text-anchor="middle" style="fill: #bebebe ">INDIANAPOLIS</text>
+                <svg width="180" height="80">
+                    <line x1="2" x2="2" y1="0" y2="80" style="stroke: white; stroke-width:4px;" />
+                    <line x1="178" x2="178" y1="0" y2="80" style="stroke: white; stroke-width:4px;" />
+                    <line x1="0" x2="180" y1="78" y2="78" style="stroke: white; stroke-width:4px;" />
+                    <line x1="0" x2="180" y1="2" y2="2" style="stroke: white; stroke-width:4px;" />
+                    <rect x="4" y="4" width="16" height="72" style="stroke-width: 0; fill: blue;" />
+                    <rect x="160" y="4" width="16" height="72" style="stroke-width: 0; fill: blue;" />
+                    <line x1="20" x2="160" y1="35" y2="35" style="stroke: white; stroke-dasharray: 1, 1" />
+                    <line x1="20" x2="160" y1="45" y2="45" style="stroke: white; stroke-dasharray: 1, 1" />
+                    <!-- <text x="14" y="40" font-size="8" transform="rotate(-90, 14, 40)" text-anchor="middle" style="fill: #bebebe ">INDIANAPOLIS</text>
               <text x="166" y="40" font-size="8" transform="rotate(90, 166, 40)" text-anchor="middle" style="fill: #bebebe ">COLTS</text> -->
-            </svg>
-        </div>
+                </svg>
+            </div>
             <script>
-            var lines = [];
-            for(count = 0; count < 21; count++) {lines.push(20+(7*count));};
-            d3.select("svg")
-                .selectAll(".ydline")
-                .data(lines)
-                .enter().append("line")
-                .style("stroke", "white")
-                .style("stroke-width", function(d, i) {if (i%2==0) return "2"; else return "1";})
-                .attr("x1", function(d) {return d;})
-                .attr("x2", function(d) {return d;})
-                .attr("y1", 0)
-                .attr("y2", 80);
+                var lines = [];
+                for (count = 0; count < 21; count++) {
+                    lines.push(20 + (7 * count));
+                };
+                d3.select("svg")
+                    .selectAll(".ydline")
+                    .data(lines)
+                    .enter().append("line")
+                    .style("stroke", "white")
+                    .style("stroke-width", function(d, i) {
+                        if (i % 2 == 0) return "2";
+                        else return "1";
+                    })
+                    .attr("x1", function(d) {
+                        return d;
+                    })
+                    .attr("x2", function(d) {
+                        return d;
+                    })
+                    .attr("y1", 0)
+                    .attr("y2", 80);
             </script>
             <ul>
-                <li><a href=# style="color: black">Posts</a></li>
-                <li><a href=#>The Ocho</a></li>
+                <li><a href=#>Posts</a></li>
+                <li><a href=# style="color: black">The Ocho</a></li>
                 <li><a href="https://github.com/reddigari/football">Code</a></li>
             </ul>
         </div>
@@ -64,124 +72,214 @@
             <h1>Fantasy Football</h1>
         </div>
         <div id="text">
-        <div id="wk1Proj">
-        <h2>The Ocho: Week 1</h2>
+            <div id="wk1Proj">
+                <h2>The Ocho: Week 1</h2>
+
+                <script>
+                    var margin = {
+                            top: 30,
+                            right: 20,
+                            bottom: 40,
+                            left: 60
+                        },
+                        width = 350 - margin.left - margin.right,
+                        height = 200 - margin.top - margin.bottom,
+                        widthBig = 700 - margin.left - margin.right,
+                        heightBig = 400 - margin.top - margin.bottom;
+
+                    var y = d3.scaleLinear()
+                        .range([height, 0]);
+
+                    var x = d3.scaleBand()
+                        .rangeRound([0, width])
+                        .paddingInner(0.25)
+                        .paddingOuter(0.1);
+
+                    var xAxis = d3.axisBottom(x)
+                        .tickSize(0)
+                        .tickPadding(5);
+
+                    var yAxis = d3.axisLeft(y)
+                        .ticks(5);
+
+                    var colors = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#bcbd22", "#17becf"]
+                    var colorScale = d3.scaleOrdinal(colors);
+
+                    d3.json("wk1_proj.json", function(json) {
+
+                        json.forEach(function(d) {
+                            d.data.forEach(function(dd) {
+                                dd.FFPts = parseFloat(dd.FFPts);
+                            });
+                        });
+
+                        y.domain([0, d3.max(json, function(d) {
+                            return d3.max(d.data, function(dd) {
+                                return dd.FFPts;
+                            });
+                        }) + 2]);
+                        x.domain(json[0].data.map(function(d) {
+                            return d.Slot;
+                        }));
+                        colorScale.domain(json.map(function(d) {
+                            return d.owner;
+                        }));
+
+                        var aves = {};
+                        var slots = json[0].data.map(function(d) {
+                            aves[d.Slot] = [];
+                            return d.Slot;
+                        });
+
+                        json.forEach(function(t) {
+                            t.data.forEach(function(s) {
+                                aves[s.Slot].push(s.FFPts);
+                            });
+
+                            var g = d3.select("#wk1Proj").append("svg")
+                                .attr("class", "teamProj")
+                                .attr("id", function() {
+                                    return "team" + t.owner
+                                })
+                                .attr("width", width + margin.left + margin.right)
+                                .attr("height", height + margin.top + margin.bottom)
+                                .append("g")
+                                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                            g.append("g")
+                                .attr("class", "x axis")
+                                .attr("transform", "translate(0," + height + ")")
+                                .call(xAxis);
+
+                            g.append("g")
+                                .attr("class", "y axis")
+                                .attr("transform", "translate(-10,0)")
+                                .call(yAxis)
+
+                            g.selectAll(".line")
+                                .data(t.data, function(d) { return d.Slot; })
+                                .enter().append("line")
+                                .attr("class", "line")
+                                .style("stroke", function() { return colorScale(t.owner); })
+                                .attr("x1", function(d) { return x(d.Slot); })
+                                .attr("x2", function(d) { return x(d.Slot) + x.bandwidth(); })
+                                .attr("y1", function(d) { return y(d.FFPts); })
+                                .attr("y2", function(d) { return y(d.FFPts); });
+
+                            g.selectAll(".valLabel")
+                                .data(t.data, function(d) { return d.Slot; })
+                                .enter().append("text")
+                                .attr("class", "valLabel")
+                                .transition()
+                                .attr("x", function(d) {
+                                    return x(d.Slot) + 0.5 * x.bandwidth();
+                                })
+                                .attr("y", function(d) { return y(d.FFPts) - 5; })
+                                .text(function(d) { return d.FFPts.toFixed(1); })
+                                .attr("font-size", "10")
+                                .attr("font-family", "sans-serif")
+                                .attr("text-anchor", "middle");
+
+                            g.append("text")
+                                .attr("x", 0.5 * width)
+                                .attr("y", 0 - (0.5 * margin.top))
+                                .text(t.owner)
+                                .attr("text-anchor", "middle")
+                                .attr("font-size", "14")
+                            g.append("text")
+                                .attr("x", width)
+                                .text("Projected: " + d3.sum(t.data, function(d) { return d.FFPts; }).toFixed(1))
+                                .attr("text-anchor", "end")
+                                .attr("font-size", "10")
+                                .attr("font-family", "sans-serif")
+                        });
+
+                    // transform average data into list and make chart of means
+                    aveData = slots.map(function(s) {
+                        var obj = {};
+                        obj['Slot'] = s;
+                        obj['FFPts'] = aves[s];
+                        return obj;
+                    });
+
+                    g = d3.select("#wk1Proj").insert("svg", ":nth-child(2)")
+                            .attr("class", "teamProj")
+                            .attr("id", "meanChart")
+                            .attr("width", widthBig + margin.left + margin.right)
+                            .attr("height", heightBig + margin.top + margin.bottom)
+                            .append("g")
+                            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                    x.rangeRound([0, widthBig]);
+                    y.range([heightBig, 0]);
+
+                    g.append("g")
+                        .attr("class", "x axis")
+                        .attr("transform", "translate(0," + heightBig + ")")
+                        .call(xAxis.tickPadding(8));
+
+                    g.append("g")
+                        .attr("class", "y axis")
+                        .attr("transform", "translate(-10,0)")
+                        .call(yAxis)
+                        .append("text")
+                        .attr("y", heightBig / 2)
+                        .attr("x", -30)
+                        .attr("fill", "black")
+                        .style("text-anchor", "middle")
+                        .text("Projected Fantasy Points")
+                        .attr("transform", "rotate(-90," + "-30," + heightBig / 2 + ")");
+
+                    g.selectAll(".rect")
+                        .data(aveData)
+                        .enter().append("rect")
+                        .attr("class", "rect")
+                        .attr("x", function(d) { return x(d.Slot); })
+                        .attr("y", function(d) { return y(d3.mean(d.FFPts)); })
+                        .attr("height", function(d) { return heightBig-y(d3.mean(d.FFPts)); })
+                        .attr("width", x.bandwidth())
+                        .style("fill", "#bdbdbd");
+
+                    g.selectAll(".valLabel")
+                        .data(aveData)
+                        .enter().append("text")
+                        .attr("x", function(d) { return x(d.Slot) + x.bandwidth(); })
+                        .attr("y", function(d) { return y(d3.mean(d.FFPts)) - 2; })
+                        .text(function(d) { return d3.mean(d.FFPts).toFixed(1); })
+                        .attr("text-anchor", "end")
+                        .attr("fill", "black")
+                        .attr("font-family", "sans-serif")
+                        .attr("font-size", 10);
+
+                    json.forEach(function(t) {
+                        g.selectAll(".dot" + t.owner)
+                        .data(t.data)
+                        .enter().append("circle")
+                        .attr("class", "dot"+t.owner)
+                        .style("fill", function() { return colorScale(t.owner); })
+                        .style("stroke-width", 0)
+                        .attr("cx", function(d) { return x(d.Slot) + 0.5*x.bandwidth(); })
+                        .attr("cy", function(d) { return y(d.FFPts); })
+                        .attr("r", 5);
+                    });
+
+                    g.append("g")
+                      .attr("class", "legendOrdinal")
+                      .attr("transform", "translate(" + (widthBig-60) +",20)");
+
+                    var legendOrdinal = d3.legendColor()
+                      .shape("path", d3.symbol().type(d3.symbolCircle).size(60)())
+                      .shapePadding(5)
+                      .scale(colorScale);
+
+                    g.select(".legendOrdinal")
+                      .call(legendOrdinal);
 
 
-        <!-- <fieldset id="sourceSelect" style="display:inline-block">
-            <legend>Source</legend>
-            <input type="radio" name="source" value="espn" checked>ESPN</input><br>
-            <input type="radio" name="source" value="ffa">FFA</input>
-        </fieldset> -->
+                    });
 
-        <script>
-        var margin = {
-                top: 30,
-                right: 20,
-                bottom: 40,
-                left: 60
-            },
-            width = 350 - margin.left - margin.right,
-            height = 200 - margin.top - margin.bottom;
-
-        var y = d3.scaleLinear()
-            .range([height, 0]);
-
-        var x = d3.scaleBand()
-            .rangeRound([0, width])
-            .paddingInner(0.25)
-            .paddingOuter(0.1);
-
-        var xAxis = d3.axisBottom(x)
-            .tickSize(0)
-            .tickPadding(5);
-
-        var yAxis = d3.axisLeft(y)
-            .ticks(5);
-
-        var g = d3.select("#wk1Proj").append("svg")
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", height + margin.top + margin.bottom)
-            .append("g")
-            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-        g.append("g")
-            .attr("class", "x axis")
-            .attr("transform", "translate(0," + height + ")")
-            .call(xAxis);
-
-        g.append("g")
-            .attr("class", "y axis")
-            .attr("transform", "translate(-10,0)")
-            .call(yAxis);
-
-        function plotBars() {
-            // var source = d3.select("input[name='source']:checked").property("value") + "_pts";
-            d3.json("wk1_proj.json", function(json) {
-
-                // json.sort(function(a, b) { return b[source] - a[source]; });
-                json.forEach(function(d) {d.FFPts = parseFloat(d.FFPts);});
-
-                y.domain([0, d3.max(json, function(d) { return d.FFPts; })+2]);
-                x.domain(json.map(function(d) { return d.Slot; }));
-
-                d3.select(".x.axis").call(xAxis);
-                d3.select(".y.axis").call(yAxis)
-                    .style("stroke", "none")
-                    .append("text")
-                    .attr("y", height/2)
-                    .attr("x", -30)
-                    .attr("fill", "black")
-                    // .attr("dy", ".71em")
-                    .style("text-anchor", "middle")
-                    .text("Projected Fantasy Points")
-                    .attr("transform", "rotate(-90," + "-30," + height/2 +")");
-
-
-                var bars = g.selectAll(".rect")
-                    .data(json, function(d) {return d.Slot; });
-
-                bars.enter().append("rect")
-                    .attr("class", "rect")
-                    .merge(bars)
-                    .style("stroke", "none")
-                    .attr("x", function(d) { return x(d.Slot); })
-                    .transition()
-                    .attr("y", function(d) { return y(d.FFPts); })
-                    .attr("width", x.bandwidth())
-                    .style("fill", "#909090")
-                    .attr("height", function(d) { return height-y(d.FFPts); });
-
-                var labels = g.selectAll(".valLabel")
-                    .data(json, function(d) {return d.Slot; });
-
-                labels.enter().append("text")
-                    .attr("class", "valLabel")
-                    .merge(labels)
-                    .transition()
-                    .attr("x",  function(d) { return x(d.Slot) + 0.5*x.bandwidth(); })
-                    .attr("y", function(d) {return y(d.FFPts) - 5; })
-                    .text(function(d) { return d.FFPts.toFixed(1); })
-                    .attr("font-size", "10")
-                    .attr("font-family", "sans-serif")
-                    .attr("text-anchor", "middle");
-
-                g.append("text")
-                    .attr("x", 0.5*width)
-                    .attr("y", 0-(0.5*margin.top))
-                    .text("League Average Projections by Position")
-                    .attr("text-anchor", "middle")
-                    .attr("font-size", "14")
-            });
-        }
-
-        // d3.selectAll("input")
-        //     .on("change", plotBars);
-        plotBars();
-
-
-        </script>
-        </div>
+                </script>
+            </div>
         </div>
     </div>
 

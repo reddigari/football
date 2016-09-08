@@ -19,9 +19,9 @@ def output_proj_json(wk):
     order = ['QB', 'RB', 'WR', 'TE', 'K', 'D/ST', 'FLEX']
     av = proj.groupby(['Slot'])['FFPts'].sum()/8.0
     av = av.reindex_axis(order, 0)
-    out = {'owner': 'AVERAGE'}
-    out['data'] = [{'Slot': pos, 'FFPts': av.ix[pos]} for pos in order]
-    json_out.append(out)
+    # out = {'owner': 'AVERAGE'}
+    # out['data'] = [{'Slot': pos, 'FFPts': av.ix[pos]} for pos in order]
+    # json_out.append(out)
 
     pl = proj.groupby(['Owner', 'Slot'])['FFPts'].sum().reset_index()
 
