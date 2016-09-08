@@ -7,7 +7,7 @@ def output_proj_json(wk):
 
     json_out = []
 
-    espn_fname = glob.glob('Data/Projections/ESPN/Wk%d/*.csv' %wk)[-1]
+    espn_fname = glob.glob('TheOcho2016/Projections/Wk%d/ESPN*.csv' %wk)[-1]
     roster_fname = glob.glob('TheOcho2016/Teams/Rosters*.pickled')[-1]
     espn = pd.read_csv(espn_fname)
     rosters = pd.read_pickle(roster_fname)
@@ -36,3 +36,5 @@ def output_proj_json(wk):
         json_out.append(out)
 
     json.dump(json_out, open('TheOcho2016/weekly_performance/wk%d_proj.json' %wk, 'w'))
+
+    return proj

@@ -74,7 +74,7 @@
         <div id="text">
             <div id="wk1Proj">
                 <h2>The Ocho: Week 1</h2>
-
+                <p>Here are the league average and individual projections for Week 1 (ESPN). As scores come in I'll add bars to show how each team performed vs. what was projected, instead of hastily removing any trace of the projections like ESPN does. I'm not sure how well this will adapt to lineup changes after tonight, but I'll try my best to keep it accurate (despite the best efforts of Matt's running backs).</p>
                 <script>
                     var margin = {
                             top: 30,
@@ -117,7 +117,7 @@
                             return d3.max(d.data, function(dd) {
                                 return dd.FFPts;
                             });
-                        }) + 2]);
+                        })]);
                         x.domain(json[0].data.map(function(d) {
                             return d.Slot;
                         }));
@@ -202,7 +202,7 @@
                         return obj;
                     });
 
-                    g = d3.select("#wk1Proj").insert("svg", ":nth-child(2)")
+                    g = d3.select("#wk1Proj").insert("svg", ":nth-child(3)")
                             .attr("class", "teamProj")
                             .attr("id", "meanChart")
                             .attr("width", widthBig + margin.left + margin.right)
@@ -251,16 +251,29 @@
                         .attr("font-family", "sans-serif")
                         .attr("font-size", 10);
 
+                    // json.forEach(function(t) {
+                    //     g.selectAll(".dot" + t.owner)
+                    //     .data(t.data)
+                    //     .enter().append("circle")
+                    //     .attr("class", "dot"+t.owner)
+                    //     .style("fill", function() { return colorScale(t.owner); })
+                    //     .style("stroke-width", 0)
+                    //     .attr("cx", function(d) { return x(d.Slot) + 0.5*x.bandwidth(); })
+                    //     .attr("cy", function(d) { return y(d.FFPts); })
+                    //     .attr("r", 5);
+                    // });
+                    var markerWidth = 10;
                     json.forEach(function(t) {
                         g.selectAll(".dot" + t.owner)
                         .data(t.data)
-                        .enter().append("circle")
+                        .enter().append("rect")
                         .attr("class", "dot"+t.owner)
                         .style("fill", function() { return colorScale(t.owner); })
                         .style("stroke-width", 0)
-                        .attr("cx", function(d) { return x(d.Slot) + 0.5*x.bandwidth(); })
-                        .attr("cy", function(d) { return y(d.FFPts); })
-                        .attr("r", 5);
+                        .attr("x", function(d) { return x(d.Slot) + 0.5*x.bandwidth()-0.5*markerWidth; })
+                        .attr("y", function(d) { return y(d.FFPts); })
+                        .attr("width", markerWidth)
+                        .attr("height", 2);
                     });
 
                     g.append("g")
