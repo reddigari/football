@@ -11,6 +11,25 @@
     <script src="https://reddigari.github.io/styles/style_functions.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.9.0/d3-legend.min.js"></script>
+    <style>
+    .projRect, .ptsRect {
+      stroke-width: 0;
+      stroke: none;
+    }
+    /*div.tooltip {
+      position: absolute;
+      text-align: center;
+      vertical-align: middle;
+      width: 60px;
+      height: 28px;
+      padding: 2px;
+      font: 12px sans-serif;
+      background: lightsteelblue;
+      border: 0px;
+      border-radius: 8px;
+      pointer-events: none;
+    }*/
+    </style>
 </head>
 
 <body>
@@ -67,7 +86,7 @@
         <div id="text">
             <div id="wk1Proj">
                 <h2>The Ocho: Week 1</h2>
-                <p>Here are the league average and individual projections for Week 1 (ESPN). As scores come in I'll add bars to show how each team performed vs. what was projected, instead of hastily removing any trace of the projections like ESPN does. I'm not sure how well this will adapt to lineup changes after tonight, but I'll try my best to keep it accurate.</p>
+                <!-- <p>Here are the league average and individual projections for Week 1 (ESPN). As scores come in I'll add bars to show how each team performed vs. what was projected, instead of hastily removing any trace of the projections like ESPN does. I'm not sure how well this will adapt to lineup changes after tonight, but I'll try my best to keep it accurate.</p> -->
                 <script>
                     var margin = {
                             top: 30,
@@ -85,7 +104,7 @@
 
                     var x = d3.scaleBand()
                         .rangeRound([0, width])
-                        .paddingInner(0.25)
+                        .paddingInner(0.55)
                         .paddingOuter(0.1);
 
                     var xAxis = d3.axisBottom(x)
@@ -95,20 +114,20 @@
                     var yAxis = d3.axisLeft(y)
                         .ticks(5);
 
-                    var colors = ["#ff7f0e", "#2ca02c", "#d62728", "#1f77b4", "#9467bd", "#8c564b", "#e377c2", "#bcbd22", "#17becf"]
+                    var colors = ["#ff7f0e", "#2ca02c", "#d62728", "#1f77b4", "#9467bd", "#8c564b", "#e377c2", "#e8e91f", "#17becf"]
                     var colorScale = d3.scaleOrdinal(colors);
 
-                    d3.json("wk1_proj.json", function(json) {
+                    d3.json("wk1.json", function(json) {
 
                         json.forEach(function(d) {
                             d.data.forEach(function(dd) {
-                                dd.FFPts = parseFloat(dd.FFPts);
+                                dd.proj = parseFloat(dd.proj);
                             });
                         });
 
                         y.domain([0, d3.max(json, function(d) {
                             return d3.max(d.data, function(dd) {
-                                return dd.FFPts;
+                                return dd.proj;
                             });
                         })]);
                         x.domain(json[0].data.map(function(d) {
@@ -126,7 +145,7 @@
 
                         json.forEach(function(t) {
                             t.data.forEach(function(s) {
-                                aves[s.Slot].push(s.FFPts);
+                                aves[s.Slot].push(s.proj);
                             });
 
                             var g = d3.select("#wk1Proj").append("svg")
@@ -149,27 +168,63 @@
                                 .attr("transform", "translate(-10,0)")
                                 .call(yAxis)
 
-                            g.selectAll(".line")
+                            g.selectAll(".ptsRect")
+                                  .data(t.data, function(d) { return d.Slot; })
+                                  .enter().append("rect")
+                                  .attr("class", "ptsRect")
+                                  .style("fill", colorScale(t.owner))
+                                  .attr("x", function(d) { return x(d.Slot); })
+                                  .attr("width", x.bandwidth())
+                                  .attr("y", function(d) { return y(d.pts); })
+                                  .attr("height", function(d) { return height-y(d.pts);});
+                                  // .on("mouseover", function(d) {
+                                  //     tooltip.html(d.player)
+                                  //     .style("opacity", 0.8)
+                                  //     .style("left", (d3.event.pageX) + "px")
+                                  //     .style("top", (d3.event.pageY) + "px");
+                                  // })
+                                  // .on("mouseout", function() {tooltip.style("opacity", 0);});
+
+                            g.selectAll(".projLine")
                                 .data(t.data, function(d) { return d.Slot; })
                                 .enter().append("line")
-                                .attr("class", "line")
-                                .style("stroke", function() { return colorScale(t.owner); })
+                                .attr("class", "projLine")
+                                // .style("stroke", colorScale(t.owner))
+                                .style("stroke", "black")
                                 .attr("x1", function(d) { return x(d.Slot); })
                                 .attr("x2", function(d) { return x(d.Slot) + x.bandwidth(); })
-                                .attr("y1", function(d) { return y(d.FFPts); })
-                                .attr("y2", function(d) { return y(d.FFPts); });
+                                .attr("y1", function(d) { return y(d.proj); })
+                                .attr("y2", function(d) { return y(d.proj); });
+                                // .on("mouseover", function(d) {
+                                //     tooltip.html(d.player)
+                                //     .style("opacity", 0.8)
+                                //     .style("left", (d3.event.pageX) + "px")
+                                //     .style("top", (d3.event.pageY) + "px");
+                                // })
+                                // .on("mouseout", function() {tooltip.style("opacity", 0);});
 
-                            g.selectAll(".valLabel")
+
+                            g.selectAll(".projLabel")
                                 .data(t.data, function(d) { return d.Slot; })
                                 .enter().append("text")
-                                .attr("class", "valLabel")
-                                .transition()
-                                .attr("x", function(d) {
-                                    return x(d.Slot) + 0.5 * x.bandwidth();
-                                })
-                                .attr("y", function(d) { return y(d.FFPts) - 5; })
-                                .text(function(d) { return d.FFPts.toFixed(1); })
-                                .attr("font-size", "10")
+                                .attr("class", "projLabel")
+                                // .transition()
+                                .attr("x", function(d) { return x(d.Slot) + x.bandwidth() + 2; })
+                                .attr("y", function(d) { return y(d.proj) + 3; })
+                                .text(function(d) { return d.proj.toFixed(1); })
+                                .attr("font-size", "8")
+                                .attr("font-family", "sans-serif")
+                                .attr("text-anchor", "start");
+
+                            g.selectAll(".ptsLabel")
+                                .data(t.data, function(d) { return d.Slot; })
+                                .enter().append("text")
+                                .attr("class", "projLabel")
+                                // .transition()
+                                .attr("x", function(d) { return x(d.Slot) + 0.5*x.bandwidth(); })
+                                .attr("y", function(d) { if (d.pts >= d.proj) return y(d.pts) - 2; else return y(d.pts) + 8;})
+                                .text(function(d) { if (!(d.pts > 0)) return null; else return d.pts.toFixed(1); })
+                                .attr("font-size", "8")
                                 .attr("font-family", "sans-serif")
                                 .attr("text-anchor", "middle");
 
@@ -180,22 +235,30 @@
                                 .attr("text-anchor", "middle")
                                 .attr("font-size", "14")
                             g.append("text")
+                                .attr("id", function() { return "projVal" + t.owner})
                                 .attr("x", width)
-                                .text("Projected: " + d3.sum(t.data, function(d) { return d.FFPts; }).toFixed(1))
+                                .text("Projected: " + d3.sum(t.data, function(d) { return d.proj; }).toFixed(1))
                                 .attr("text-anchor", "end")
                                 .attr("font-size", "10")
-                                .attr("font-family", "sans-serif")
+                                .attr("font-family", "sans-serif");
+                            g.append("text")
+                                .attr("x", width)
+                                .attr("dy", 10)
+                                .text("Actual: " + d3.sum(t.data, function(d) { return d.pts; }).toFixed(1))
+                                .attr("text-anchor", "end")
+                                .attr("font-size", "10")
+                                .attr("font-family", "sans-serif");
                         });
 
                     // transform average data into list and make chart of means
                     aveData = slots.map(function(s) {
                         var obj = {};
                         obj['Slot'] = s;
-                        obj['FFPts'] = aves[s];
+                        obj['proj'] = aves[s];
                         return obj;
                     });
 
-                    g = d3.select("#wk1Proj").insert("svg", ":nth-child(3)")
+                    g = d3.select("#wk1Proj").insert("svg", "svg:first-of-type")
                             .attr("class", "teamProj")
                             .attr("id", "meanChart")
                             .attr("width", widthBig + margin.left + margin.right)
@@ -203,7 +266,7 @@
                             .append("g")
                             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-                    x.rangeRound([0, widthBig]);
+                    x.rangeRound([0, widthBig]).paddingInner(0.4);
                     y.range([heightBig, 0]);
 
                     g.append("g")
@@ -228,8 +291,8 @@
                         .enter().append("rect")
                         .attr("class", "rect")
                         .attr("x", function(d) { return x(d.Slot); })
-                        .attr("y", function(d) { return y(d3.mean(d.FFPts)); })
-                        .attr("height", function(d) { return heightBig-y(d3.mean(d.FFPts)); })
+                        .attr("y", function(d) { return y(d3.mean(d.proj)); })
+                        .attr("height", function(d) { return heightBig-y(d3.mean(d.proj)); })
                         .attr("width", x.bandwidth())
                         .style("fill", "#bdbdbd");
 
@@ -237,8 +300,8 @@
                         .data(aveData)
                         .enter().append("text")
                         .attr("x", function(d) { return x(d.Slot) + x.bandwidth(); })
-                        .attr("y", function(d) { return y(d3.mean(d.FFPts)) - 2; })
-                        .text(function(d) { return d3.mean(d.FFPts).toFixed(1); })
+                        .attr("y", function(d) { return y(d3.mean(d.proj)) - 2; })
+                        .text(function(d) { return d3.mean(d.proj).toFixed(1); })
                         .attr("text-anchor", "end")
                         .attr("fill", "black")
                         .attr("font-family", "sans-serif")
@@ -249,10 +312,10 @@
                     //     .data(t.data)
                     //     .enter().append("circle")
                     //     .attr("class", "dot"+t.owner)
-                    //     .style("fill", function() { return colorScale(t.owner); })
+                    //     .style("fill", colorScale(t.owner))
                     //     .style("stroke-width", 0)
                     //     .attr("cx", function(d) { return x(d.Slot) + 0.5*x.bandwidth(); })
-                    //     .attr("cy", function(d) { return y(d.FFPts); })
+                    //     .attr("cy", function(d) { return y(d.proj); })
                     //     .attr("r", 5);
                     // });
                     var markerWidth = 10;
@@ -261,10 +324,10 @@
                         .data(t.data)
                         .enter().append("rect")
                         .attr("class", "dot"+t.owner)
-                        .style("fill", function() { return colorScale(t.owner); })
+                        .style("fill", colorScale(t.owner))
                         .style("stroke-width", 0)
                         .attr("x", function(d) { return x(d.Slot) + 0.5*x.bandwidth()-0.5*markerWidth; })
-                        .attr("y", function(d) { return y(d.FFPts); })
+                        .attr("y", function(d) { return y(d.proj); })
                         .attr("width", markerWidth)
                         .attr("height", 2);
                     });
@@ -284,6 +347,9 @@
 
                     });
 
+                    var tooltip = d3.select("body").append("div")
+                        .attr("class", "tooltip")
+                        .style("opacity", 0);
                 </script>
             </div>
         </div>

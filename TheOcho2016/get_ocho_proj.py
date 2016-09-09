@@ -7,7 +7,7 @@ sys.path.append(root_path)
 
 from football_utilities import split_espn_plr
 
-def get_espn_proj_wk_ocho(wk):
+def get_ocho_proj(wk):
     url_str = 'http://games.espn.com/ffl/tools/projections?&scoringPeriodId=%d&seasonId=2016&slotCategoryId=%d&startIndex=%d&leagueId=914065'
     columns = ['Player', 'OwnCode', 'Action', 'Opp', 'GameTime', 'Cmp_Att', 'PsYds', 'PsTD', 'Int', 'RsAtt', 'RsYds', 'RsTD', 'Rec', 'RcYds', 'RcTD', 'FFPts']
 
