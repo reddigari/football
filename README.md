@@ -1,7 +1,11 @@
 # football
 
-This collection of python scripts scrapes and parses various NFL datasets from Yahoo and ESPN, including historical and fantasy football data.
+`espnffl` is a python module designed to scrape rosters, projections, and scores for an [ESPN Fantasy Football](http://www.espn.com/fantasy/football/) league (or the whole NFL). Documentation is forthcoming. See examples of what it does in `TheOcho2016`, which is a real league I'm in this year.
 
-Unfortunately, it is not currently organized in any useful way. I intend to turn it into a somewhat contained class at some point, but no promises. In the meantime, the scripts should work (with minor tweaks) for anyone inclined to figure out what they do.
+`ScrapeClean` is a collection of python scripts scrapes and parses various [NFL datasets from Yahoo Sports](https://sports.yahoo.com/nfl/stats/).
 
-See the `Data` directory for some already scraped and clean datasets.
+`Data` includes some cleaned datasets (offensive performance, schedules) and raw scraped data.
+
+`Fantasy` has a few miscellaneous scripts and plots exploring patterns and (lack of) predictability in performance. These scripts use the data in `Data`.
+
+`Draft2016` plots pre-season projections from [Fantasy Football Analytics](http://fantasyfootballanalytics.net/)

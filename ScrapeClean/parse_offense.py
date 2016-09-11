@@ -70,6 +70,16 @@ def calc_ffpts(x):
 
 data['FFPts'] = data.apply(calc_ffpts, 1)
 
+# function to find oppenent from schedule (grouped by year/week)
+def get_opp_from_row(r, schgb):
+    """schgb is the full schedule grouped by year and week"""
+    s = schgb.get_group((r['Year'], r['Week']))
+    gameid = s.loc[s.GameID.str.match('.*%s.*' %r['Team']), 'GameID'].values[0]
+    if gameid.startswith(r['Team']):
+        return gameid[4:7]
+    else:
+        return gameid[0:3]
+        
 # read in schedule and find opponents
 sch = pd.read_pickle('Data/NFL_Schedule_2001-2015.pickled')
 schgb = sch.groupby(['Year', 'Week'])
