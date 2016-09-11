@@ -266,6 +266,7 @@
                         obj['Slot'] = s;
                         obj['proj'] = aveProj[s];
                         obj['pts'] = avePts[s];
+                        // obj['pts'] = avePts[s].filter(function(a) {return !(a==0);});
                         return obj;
                     });
 
@@ -277,13 +278,17 @@
                             .append("g")
                             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-                    x.rangeRound([0, widthBig]).paddingInner(0.4);
+                    x.rangeRound([0, widthBig]).paddingInner(0.3);
                     y.range([heightBig, 0]);
+                    var x1 = d3.scaleBand()
+                        .domain([0,1])
+                        .rangeRound([0, x.bandwidth()])
+                        .paddingInner(0.1);
 
                     g.append("g")
                         .attr("class", "x axis")
                         .attr("transform", "translate(0," + heightBig + ")")
-                        .call(xAxis.tickPadding(8));
+                        .call(xAxis.tickPadding(18));
 
                     g.append("g")
                         .attr("class", "y axis")
@@ -294,43 +299,71 @@
                         .attr("x", -30)
                         .attr("fill", "black")
                         .style("text-anchor", "middle")
-                        .text("Projected Fantasy Points")
+                        .text("Fantasy Points")
                         .attr("transform", "rotate(-90," + "-30," + heightBig / 2 + ")");
 
-                    g.selectAll(".rect")
+                    var slotGroups = g.selectAll(".slot")
                         .data(aveData)
+                        .enter().append("g")
+                        .attr("class", "slot")
+                        .attr("id", function(d) { return "bars"+d.Slot; })
+                        .attr("transform", function(d) { return "translate(" + x(d.Slot) + ",0)"; });
+
+                    slotGroups.selectAll(".rect")
+                        .data(function(d) {return [d.proj, d.pts.filter(function(a) {return a>0;})];})
                         .enter().append("rect")
                         .attr("class", "rect")
-                        .attr("x", function(d) { return x(d.Slot); })
-                        .attr("y", function(d) { return y(d3.mean(d.proj)); })
-                        .attr("height", function(d) { return heightBig-y(d3.mean(d.proj)); })
-                        .attr("width", x.bandwidth())
+                        .attr("x", function(d, i) { return x1(i); })
+                        .attr("y", function(d) { return y(d3.mean(d)); })
+                        .attr("height", function(d) { return heightBig-y(d3.mean(d)); })
+                        .attr("width", x1.bandwidth())
                         .style("fill", "#bdbdbd");
 
-                    g.selectAll(".valLabel")
-                        .data(aveData)
+                    slotGroups.selectAll(".valLabel")
+                        .data(function(d) {return [d.proj, d.pts.filter(function(a) {return a>0;})]; })
                         .enter().append("text")
-                        .attr("x", function(d) { return x(d.Slot) + x.bandwidth(); })
-                        .attr("y", function(d) { return y(d3.mean(d.proj)) - 2; })
-                        .text(function(d) { return d3.mean(d.proj).toFixed(1); })
+                        .attr("x", function(d, i) { return x1(i) + x1.bandwidth(); })
+                        .attr("y", function(d) { if (d.length > 0) return y(d3.mean(d)) - 2; else return null; })
+                        .text(function(d) { if (d.length > 0) return d3.mean(d).toFixed(1); else return null; })
                         .attr("text-anchor", "end")
                         .attr("fill", "black")
                         .attr("font-family", "sans-serif")
                         .attr("font-size", 10);
 
+                    slotGroups.selectAll(".colLabel")
+                        .data(['Proj.', 'Real'])
+                        .enter().append("text")
+                        .attr("x", function(d, i) { return x1(i) + 0.5*x1.bandwidth(); })
+                        .attr("y", heightBig + 13)
+                        .text(function(d) { return d; })
+                        .attr("text-anchor", "middle")
+                        .attr("fill", "black")
+                        .attr("font-family", "sans-serif")
+                        .attr("font-size", 10);
+
                     var markerWidth = 10;
-                    json.forEach(function(t) {
-                        g.selectAll(".dot" + t.owner)
-                        .data(t.data)
+                    slotGroups.selectAll(".projDot")
+                        .data(function(d) { return d.proj; })
                         .enter().append("rect")
-                        .attr("class", "dot"+t.owner)
-                        .style("fill", colorScale(t.owner))
+                        .attr("class", "projDot")
+                        .style("fill", function(d, i) {return colorScale(owners[i]);})
                         .style("stroke-width", 0)
-                        .attr("x", function(d) { return x(d.Slot) + 0.5*x.bandwidth()-0.5*markerWidth; })
-                        .attr("y", function(d) { return y(d.proj); })
+                        .attr("x", x1(0) + 0.5*x1.bandwidth() - 0.5*markerWidth)
+                        .attr("y", function(d) { return y(d); })
                         .attr("width", markerWidth)
                         .attr("height", 2);
-                    });
+
+                    slotGroups.selectAll(".ptsDot")
+                        .data(function(d) { return d.pts; })
+                        .enter().append("rect")
+                        .attr("class", "ptsDot")
+                        .style("fill", function(d, i) {return colorScale(owners[i]);})
+                        .style("stroke-width", 0)
+                        .attr("x", x1(1) + 0.5*x1.bandwidth() - 0.5*markerWidth)
+                        .attr("y", function(d) { return y(d); })
+                        .attr("width", function(d) {if (d > 0) return markerWidth; else return 0;})
+                        .attr("height", function(d) {if (d > 0) return 2; else return 0;});
+
 
                     g.append("g")
                       .attr("class", "legendOrdinal")
