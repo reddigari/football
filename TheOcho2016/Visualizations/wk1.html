@@ -134,6 +134,7 @@
                                 return d3.min([dd.proj, dd.pts]);
                             });
                         });
+                        if (min > 0) min = 0;
                         y.domain([min, max]);
 
                         var owners = json.map(function(d) { return d.owner; });
@@ -182,8 +183,8 @@
                                   .style("fill", colorScale(t.owner))
                                   .attr("x", function(d) { return x(d.Slot); })
                                   .attr("width", x.bandwidth())
-                                  .attr("y", function(d) { return y(d.pts); })
-                                  .attr("height", function(d) { return height-y(d.pts);});
+                                  .attr("y", function(d) { if (isNaN(d.pts)) return null; else return y(d.pts); })
+                                  .attr("height", function(d) { if (isNaN(d.pts)) return null; else return height-y(d.pts);});
                                   // .on("mouseover", function(d) {
                                   //     tooltip.html(d.player)
                                   //     .style("opacity", 0.8)
@@ -230,7 +231,7 @@
                                 // .transition()
                                 .attr("x", function(d) { return x(d.Slot) + 0.5*x.bandwidth(); })
                                 .attr("y", function(d) { if (d.pts >= d.proj) return y(d.pts) - 2; else return y(d.pts) + 8;})
-                                .text(function(d) { if (!(d.pts > 0)) return null; else return d.pts.toFixed(1); })
+                                .text(function(d) { if (isNaN(d.pts)) return null; else return d.pts.toFixed(1); })
                                 .attr("font-size", "8")
                                 .attr("font-family", "sans-serif")
                                 .attr("text-anchor", "middle");
@@ -283,7 +284,7 @@
                     var x1 = d3.scaleBand()
                         .domain([0,1])
                         .rangeRound([0, x.bandwidth()])
-                        .paddingInner(0.1);
+                        .paddingInner(0.05);
 
                     g.append("g")
                         .attr("class", "x axis")
@@ -310,22 +311,23 @@
                         .attr("transform", function(d) { return "translate(" + x(d.Slot) + ",0)"; });
 
                     slotGroups.selectAll(".rect")
-                        .data(function(d) {return [d.proj, d.pts.filter(function(a) {return a>0;})];})
+                        .data(function(d) {return [d.proj, d.pts.filter(function(a) {return (!(isNaN(a)));})];})
                         .enter().append("rect")
                         .attr("class", "rect")
                         .attr("x", function(d, i) { return x1(i); })
-                        .attr("y", function(d) { return y(d3.mean(d)); })
-                        .attr("height", function(d) { return heightBig-y(d3.mean(d)); })
+                        .attr("y", function(d) { if (d.length > 0) return y(d3.mean(d)); else return null; })
+                        .attr("height", function(d) { if (d.length > 0) return heightBig-y(d3.mean(d)); else return null; })
                         .attr("width", x1.bandwidth())
-                        .style("fill", "#bdbdbd");
+                        .style("fill", function(d, i) {if (i==0) return "#bdbdbd"; else return "#9f9f9f"});
 
                     slotGroups.selectAll(".valLabel")
-                        .data(function(d) {return [d.proj, d.pts.filter(function(a) {return a>0;})]; })
+                        .data(function(d) {return [d.proj, d.pts.filter(function(a) {return (!(isNaN(a)));})]; })
                         .enter().append("text")
-                        .attr("x", function(d, i) { return x1(i) + x1.bandwidth(); })
-                        .attr("y", function(d) { if (d.length > 0) return y(d3.mean(d)) - 2; else return null; })
+                        .attr("x", function(d, i) { return x1(i) + 0.5*x1.bandwidth(); })
+                        // .attr("y", function(d) { if (d.length > 0) return y(d3.mean(d)) - 2; else return null; })
+                        .attr("y", y(1))
                         .text(function(d) { if (d.length > 0) return d3.mean(d).toFixed(1); else return null; })
-                        .attr("text-anchor", "end")
+                        .attr("text-anchor", "middle")
                         .attr("fill", "black")
                         .attr("font-family", "sans-serif")
                         .attr("font-size", 10);
@@ -360,10 +362,11 @@
                         .style("fill", function(d, i) {return colorScale(owners[i]);})
                         .style("stroke-width", 0)
                         .attr("x", x1(1) + 0.5*x1.bandwidth() - 0.5*markerWidth)
-                        .attr("y", function(d) { return y(d); })
-                        .attr("width", function(d) {if (d > 0) return markerWidth; else return 0;})
-                        .attr("height", function(d) {if (d > 0) return 2; else return 0;});
+                        .attr("y", function(d) { if (isNaN(d)) return null; else return y(d); })
+                        .attr("width", function(d) {if (isNaN(d)) return 0; else return markerWidth;})
+                        .attr("height", function(d) {if (isNaN(d)) return 0; else return 3;});
 
+                    d3.selectAll("#meanChart .x.axis text").attr("font-weight", "bold");
 
                     g.append("g")
                       .attr("class", "legendOrdinal")
