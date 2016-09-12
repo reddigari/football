@@ -84,7 +84,6 @@
         <div id="text">
             <div id="wk1Proj">
                 <h2>The Ocho: Week 1</h2>
-                <p>Data as of the end of Sunday afternoon games.</p>
                 <script>
                     var margin = {
                             top: 30,
@@ -115,7 +114,13 @@
                     var colors = ["#ff7f0e", "#2ca02c", "#d62728", "#1f77b4", "#9467bd", "#8c564b", "#e377c2", "#e8e91f", "#17becf"]
                     var colorScale = d3.scaleOrdinal(colors);
 
-                    d3.json("wk1.json", function(json) {
+                    d3.json("https://raw.githubusercontent.com/reddigari/football/master/TheOcho2016/Visualizations/wk1.json", function(json) {
+                    // d3.json("wk1.json", function(json) {
+
+                        scoreTime = json[0].scoreTime;
+                        d3.select("#wk1Proj").append("p")
+                            .html("Scores as of " + scoreTime + ".");
+                        json = json.slice(1);
 
                         json.forEach(function(d) {
                             d.data.forEach(function(dd) {
