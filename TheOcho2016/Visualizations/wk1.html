@@ -84,7 +84,7 @@
         <div id="text">
             <div id="wk1Proj">
                 <h2>The Ocho: Week 1</h2>
-                <!-- <p>Here are the league average and individual projections for Week 1 (ESPN). As scores come in I'll add bars to show how each team performed vs. what was projected, instead of hastily removing any trace of the projections like ESPN does. I'm not sure how well this will adapt to lineup changes after tonight, but I'll try my best to keep it accurate.</p> -->
+                <p>Data as of the end of Sunday afternoon games.</p>
                 <script>
                     var margin = {
                             top: 30,
@@ -107,7 +107,7 @@
 
                     var xAxis = d3.axisBottom(x)
                         .tickSize(0)
-                        .tickPadding(5);
+                        .tickPadding(10);
 
                     var yAxis = d3.axisLeft(y)
                         .ticks(5);
@@ -230,7 +230,10 @@
                                 .attr("class", "projLabel")
                                 // .transition()
                                 .attr("x", function(d) { return x(d.Slot) + 0.5*x.bandwidth(); })
-                                .attr("y", function(d) { if (d.pts >= d.proj) return y(d.pts) - 2; else return y(d.pts) + 8;})
+                                .attr("y", function(d) {
+                                    if ((d.pts >= d.proj) || (d.pts <= 2.0)) return y(d.pts) - 2;
+                                    else return y(d.pts) + 8;
+                                })
                                 .text(function(d) { if (isNaN(d.pts)) return null; else return d.pts.toFixed(1); })
                                 .attr("font-size", "8")
                                 .attr("font-family", "sans-serif")
@@ -370,7 +373,7 @@
 
                     g.append("g")
                       .attr("class", "legendOrdinal")
-                      .attr("transform", "translate(" + (widthBig-60) +",20)");
+                      .attr("transform", "translate(" + x('K') +",0)");
 
                     var legendOrdinal = d3.legendColor()
                       .shape("path", d3.symbol().type(d3.symbolCircle).size(60)())

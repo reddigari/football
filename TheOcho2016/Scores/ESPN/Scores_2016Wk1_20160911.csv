@@ -1,0 +1,927 @@
+Player,OwnCode,Team,Pos,Opp,WLScore,Cmp_Att,PsYds,PsTD,Int,RsAtt,RsYds,RsTD,Rec,RcYds,RcTD,Tgt,2PC,FumL,MiscTD,FFPts
+Andrew Luck,LOS,IND,QB,Det,L 35-39,31/47,385.0,4.0,0.0,3.0,21.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,35.5
+Drew Brees,APE,NOR,QB,Oak,L 34-35,28/42,423.0,4.0,0.0,2.0,5.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,31.3
+Alex Smith,WA (Wed),KAN,QB,SD,W 33-27,34/48,363.0,2.0,1.0,4.0,15.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,27.9
+Matthew Stafford,APE,DET,QB,@Ind,W 39-35,31/39,340.0,3.0,0.0,2.0,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,26.1
+Jameis Winston,WA (Wed),TAM,QB,@Atl,W 31-24,23/33,281.0,4.0,1.0,4.0,3.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,25.5
+Matt Ryan,WA (Wed),ATL,QB,TB,L 24-31,27/39,334.0,2.0,0.0,3.0,10.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,24.2
+Aaron Rodgers,NOG,GNB,QB,@Jax,W 27-23,20/34,199.0,2.0,0.0,4.0,16.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,23.4
+Derek Carr,WA (Wed),OAK,QB,@NO,W 35-34,24/38,319.0,1.0,0.0,2.0,16.0,0.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,22.2
+Cam Newton,BKN,CAR,QB,@Den,L 20-21,18/33,194.0,1.0,1.0,11.0,54.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,21.0
+Carson Wentz,WA (Wed),PHI,QB,Cle,W 29-10,22/37,278.0,2.0,0.0,2.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,19.1
+Eli Manning,SLIV,NYG,QB,@Dal,W 20-19,19/28,207.0,3.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,18.2
+Andy Dalton,GARI,CIN,QB,@NYJ,W 23-22,23/30,366.0,1.0,1.0,3.0,7.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,17.3
+Brock Osweiler,WA (Wed),HOU,QB,Chi,W 23-14,22/35,231.0,2.0,1.0,4.0,16.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,16.8
+Marcus Mariota,WA (Wed),TEN,QB,Min,L 16-25,25/41,271.0,2.0,1.0,4.0,19.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,16.7
+Ryan Tannehill,WA (Wed),MIA,QB,@Sea,L 10-12,16/29,186.0,0.0,0.0,5.0,17.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,15.1
+Blake Bortles,SLIV,JAC,QB,GB,L 23-27,24/39,320.0,1.0,1.0,2.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,15.0
+Ryan Fitzpatrick,WA (Wed),NYJ,QB,Cin,L 22-23,19/35,189.0,2.0,1.0,4.0,15.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,14.9
+Philip Rivers,FUNK,SDG,QB,@KC,L 27-33,25/36,243.0,1.0,0.0,2.0,9.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,14.5
+Joe Flacco,WA (Wed),BAL,QB,Buf,W 13-7,23/34,258.0,1.0,0.0,4.0,-3.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,11.9
+Jay Cutler,WA (Wed),CHI,QB,@Hou,L 14-23,16/29,216.0,1.0,1.0,2.0,12.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,11.8
+Russell Wilson,FUNK,SEA,QB,Mia,W 12-10,27/43,258.0,1.0,1.0,4.0,16.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,11.8
+Shaun Hill,WA (Wed),MIN,QB,@Ten,W 25-16,18/33,236.0,0.0,0.0,2.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,10.2
+Dak Prescott,WA (Wed),DAL,QB,NYG,L 19-20,25/45,227.0,0.0,0.0,2.0,12.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,10.2
+Robert Griffin,WA (Wed),CLE,QB,@Phi,L 10-29,12/26,190.0,0.0,1.0,5.0,37.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,9.3
+Trevor Siemian,WA (Wed),DEN,QB,Car,W 21-20,18/26,178.0,1.0,2.0,5.0,20.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,9.0
+Tyrod Taylor,BKN,BUF,QB,@Bal,L 7-13,15/22,111.0,0.0,0.0,5.0,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5.5
+Derek Anderson,WA (Wed),CAR,QB,@Den,L 20-21,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Joe Webb,WA (Wed),CAR,QB,@Den,L 20-21,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Austin Davis,WA (Wed),DEN,QB,Car,W 21-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Alex Tanney,WA (Wed),TEN,QB,Min,L 16-25,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Paxton Lynch,WA (Wed),DEN,QB,Car,W 21-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Tom Brady,FA,NWE,QB,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Mike Vick,FA,PIT,QB,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Josh McCown,WA (Wed),CLE,QB,@Phi,L 10-29,--/--,,,,,,,,,,,,,,
+Carson Palmer,GARI,ARI,QB,NE,Sun 8:30,--/--,,,,,,,,,,,,,,
+Tony Romo,WA (Wed),DAL,QB,NYG,L 19-20,--/--,,,,,,,,,,,,,,
+Ben Roethlisberger,LOS,PIT,QB,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Matt Schaub,WA (Wed),ATL,QB,TB,L 24-31,--/--,,,,,,,,,,,,,,
+Luke McCown,WA (Wed),NOR,QB,Oak,L 34-35,--/--,,,,,,,,,,,,,,
+Dan Orlovsky,WA (Wed),DET,QB,@Ind,W 39-35,--/--,,,,,,,,,,,,,,
+Matt Cassel,WA (Wed),TEN,QB,Min,L 16-25,--/--,,,,,,,,,,,,,,
+Kellen Clemens,WA (Wed),SDG,QB,@KC,L 27-33,--/--,,,,,,,,,,,,,,
+Tarvaris Jackson,WA (Wed),SEA,QB,Mia,W 12-10,--/--,,,,,,,,,,,,,,
+Charlie Whitehurst,WA (Wed),IND,QB,Det,L 35-39,--/--,,,,,,,,,,,,,,
+Bruce Gradkowski,FA,PIT,QB,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Drew Stanton,FA,ARI,QB,NE,Sun 8:30,--/--,,,,,,,,,,,,,,
+Matt Moore,WA (Wed),MIA,QB,@Sea,L 10-12,--/--,,,,,,,,,,,,,,
+Chad Henne,WA (Wed),JAC,QB,GB,L 23-27,--/--,,,,,,,,,,,,,,
+Josh Javon Johnson,WA (Wed),NYG,QB,@Dal,W 20-19,--/--,,,,,,,,,,,,,,
+Matt Flynn,WA (Wed),NOR,QB,Oak,L 34-35,--/--,,,,,,,,,,,,,,
+Chase Daniel,WA (Wed),PHI,QB,Cle,W 29-10,--/--,,,,,,,,,,,,,,
+Josh Freeman,WA (Wed),IND,QB,Det,L 35-39,--/--,,,,,,,,,,,,,,
+Brian Hoyer,WA (Wed),CHI,QB,@Hou,L 14-23,--/--,,,,,,,,,,,,,,
+Mark Sanchez,WA (Wed),DAL,QB,NYG,L 19-20,--/--,,,,,,,,,,,,,,
+Sam Bradford,WA (Wed),MIN,QB,@Ten,W 25-16,--/--,,,,,,,,,,,,,,
+Jimmy Clausen,WA (Wed),BAL,QB,Buf,W 13-7,--/--,,,,,,,,,,,,,,
+Colt McCoy,FA,WAS,QB,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Tim Tebow,FA,FA,QB,** BYE **,,,,,,,,,,,,,,,,
+Dan LeFevour,WA (Wed),TAM,QB,@Atl,W 31-24,--/--,,,,,,,,,,,,,,
+Thaddeus Lewis,FA,SFO,QB,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Christian Ponder,FA,SFO,QB,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Blaine Gabbert,FA,SFO,QB,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Colin Kaepernick,FA,SFO,QB,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Ryan Mallett,WA (Wed),BAL,QB,Buf,W 13-7,--/--,,,,,,,,,,,,,,
+T.J. Yates,WA (Wed),HOU,QB,Chi,W 23-14,--/--,,,,,,,,,,,,,,
+Jerrod Johnson,WA (Wed),DAL,QB,NYG,L 19-20,--/--,,,,,,,,,,,,,,
+Scott Tolzien,WA (Wed),IND,QB,Det,L 35-39,--/--,,,,,,,,,,,,,,
+Nick Foles,WA (Wed),KAN,QB,SD,W 33-27,--/--,,,,,,,,,,,,,,
+Brandon Weeden,WA (Wed),HOU,QB,Chi,W 23-14,--/--,,,,,,,,,,,,,,
+Kirk Cousins,SCOT,WAS,QB,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Kellen Moore,WA (Wed),DAL,QB,NYG,L 19-20,--/--,,,,,,,,,,,,,,
+Ryan Lindley,WA (Wed),IND,QB,Det,L 35-39,--/--,,,,,,,,,,,,,,
+Case Keenum,FA,LAR,QB,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Matt Simms,WA (Wed),ATL,QB,TB,L 24-31,--/--,,,,,,,,,,,,,,
+EJ Manuel,WA (Wed),BUF,QB,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+Mike Glennon,WA (Wed),TAM,QB,@Atl,W 31-24,--/--,,,,,,,,,,,,,,
+Geno Smith,WA (Wed),NYJ,QB,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+Ryan Nassib,WA (Wed),NYG,QB,@Dal,W 20-19,--/--,,,,,,,,,,,,,,
+Sean Renfree,WA (Wed),ATL,QB,TB,L 24-31,--/--,,,,,,,,,,,,,,
+Landry Jones,FA,PIT,QB,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Zac Dysert,WA (Wed),MIA,QB,@Sea,L 10-12,--/--,,,,,,,,,,,,,,
+Matt Barkley,FA,ARI,QB,NE,Sun 8:30,--/--,,,,,,,,,,,,,,
+Ryan Griffin,WA (Wed),TAM,QB,@Atl,W 31-24,--/--,,,,,,,,,,,,,,
+Tyler Bray,WA (Wed),KAN,QB,SD,W 33-27,--/--,,,,,,,,,,,,,,
+Matt McGloin,WA (Wed),OAK,QB,@NO,W 35-34,--/--,,,,,,,,,,,,,,
+Teddy Bridgewater,WA (Wed),MIN,QB,@Ten,W 25-16,--/--,,,,,,,,,,,,,,
+Johnny Manziel,WA (Wed),CLE,QB,@Phi,L 10-29,--/--,,,,,,,,,,,,,,
+Jimmy Garoppolo,FA,NWE,QB,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+AJ McCarron,WA (Wed),CIN,QB,@NYJ,W 23-22,--/--,,,,,,,,,,,,,,
+Tajh Boyd,FA,PIT,QB,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Logan Thomas,WA (Wed),NYG,QB,@Dal,W 20-19,--/--,,,,,,,,,,,,,,
+Zach Mettenberger,FA,PIT,QB,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+David Fales,WA (Wed),CHI,QB,@Hou,L 14-23,--/--,,,,,,,,,,,,,,
+Keith Wenning,WA (Wed),CIN,QB,@NYJ,W 23-22,--/--,,,,,,,,,,,,,,
+Tom Savage,WA (Wed),HOU,QB,Chi,W 23-14,--/--,,,,,,,,,,,,,,
+Aaron Murray,WA (Wed),KAN,QB,SD,W 33-27,--/--,,,,,,,,,,,,,,
+Matt Blanchard,WA (Wed),CHI,QB,@Hou,L 14-23,--/--,,,,,,,,,,,,,,
+Dustin Vaughan,FA,PIT,QB,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Connor Shaw,WA (Wed),CHI,QB,@Hou,L 14-23,--/--,,,,,,,,,,,,,,
+Bryce Petty,WA (Wed),NYJ,QB,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+Dylan Thompson,FA,LAR,QB,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Sean Mannion,FA,LAR,QB,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Garrett Grayson,WA (Wed),NOR,QB,Oak,L 34-35,--/--,,,,,,,,,,,,,,
+Brett Hundley,WA (Wed),GNB,QB,@Jax,W 27-23,--/--,,,,,,,,,,,,,,
+Jared Goff,FA,LAR,QB,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Christian Hackenberg,WA (Wed),NYJ,QB,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+Jacoby Brissett,FA,NWE,QB,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Cody Kessler,WA (Wed),CLE,QB,@Phi,L 10-29,--/--,,,,,,,,,,,,,,
+Connor Cook,WA (Wed),OAK,QB,@NO,W 35-34,--/--,,,,,,,,,,,,,,
+Cardale Jones,WA (Wed),BUF,QB,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+Kevin Hogan,WA (Wed),KAN,QB,SD,W 33-27,--/--,,,,,,,,,,,,,,
+Nate Sudfeld,FA,WAS,QB,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Jake Rudock,WA (Wed),DET,QB,@Ind,W 39-35,--/--,,,,,,,,,,,,,,
+Brandon Allen,WA (Wed),JAC,QB,GB,L 23-27,--/--,,,,,,,,,,,,,,
+Jeff Driskel,WA (Wed),CIN,QB,@NYJ,W 23-22,--/--,,,,,,,,,,,,,,
+Brandon Doughty,WA (Wed),MIA,QB,@Sea,L 10-12,--/--,,,,,,,,,,,,,,
+Trevone Boykin,WA (Wed),SEA,QB,Mia,W 12-10,--/--,,,,,,,,,,,,,,
+Taylor Heinicke,WA (Wed),MIN,QB,@Ten,W 25-16,--/--,,,,,,,,,,,,,,
+Stephen Morris,WA (Wed),IND,QB,Det,L 35-39,--/--,,,,,,,,,,,,,,
+Joe Callahan,WA (Wed),GNB,QB,@Jax,W 27-23,--/--,,,,,,,,,,,,,,
+C.J. Anderson,SCOT,DEN,RB,Car,W 21-20,0/0,0.0,0.0,0.0,20.0,92.0,1.0,4.0,47.0,1.0,5.0,0.0,0.0,0.0,25.9
+Spencer Ware,SCOT,KAN,RB,SD,W 33-27,0/0,0.0,0.0,0.0,11.0,70.0,1.0,7.0,129.0,0.0,8.0,0.0,0.0,0.0,25.9
+Theo Riddick,WA (Wed),DET,RB,@Ind,W 39-35,0/0,0.0,0.0,0.0,7.0,45.0,1.0,5.0,63.0,1.0,5.0,0.0,0.0,0.0,22.8
+Danny Woodhead,LOS,SDG,RB,@KC,L 27-33,0/0,0.0,0.0,0.0,16.0,89.0,0.0,5.0,31.0,1.0,7.0,0.0,0.0,0.0,18.0
+Ameer Abdullah,APE,DET,RB,@Ind,W 39-35,0/0,0.0,0.0,0.0,12.0,63.0,0.0,5.0,57.0,1.0,5.0,0.0,0.0,0.0,18.0
+DeMarco Murray,SLIV,TEN,RB,Min,L 16-25,0/0,0.0,0.0,0.0,13.0,42.0,0.0,5.0,35.0,2.0,7.0,0.0,1.0,0.0,17.7
+Melvin Gordon,BKN,SDG,RB,@KC,L 27-33,0/0,0.0,0.0,0.0,14.0,57.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,17.7
+Matt Forte,FUNK,NYJ,RB,Cin,L 22-23,0/0,0.0,0.0,0.0,22.0,96.0,0.0,5.0,59.0,0.0,7.0,0.0,0.0,0.0,15.5
+Jalen Richard,WA (Wed),OAK,RB,@NO,W 35-34,0/0,0.0,0.0,0.0,3.0,84.0,1.0,2.0,11.0,0.0,2.0,0.0,0.0,0.0,15.5
+Isaiah Crowell,WA (Wed),CLE,RB,@Phi,L 10-29,0/0,0.0,0.0,0.0,12.0,62.0,1.0,2.0,16.0,0.0,2.0,0.0,0.0,0.0,13.8
+Ryan Mathews,SCOT,PHI,RB,Cle,W 29-10,0/0,0.0,0.0,0.0,22.0,77.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,13.7
+Latavius Murray,GARI,OAK,RB,@NO,W 35-34,0/0,0.0,0.0,0.0,14.0,59.0,1.0,1.0,13.0,0.0,2.0,0.0,0.0,0.0,13.2
+LeSean McCoy,SLIV,BUF,RB,@Bal,L 7-13,0/0,0.0,0.0,0.0,16.0,58.0,1.0,4.0,12.0,0.0,4.0,0.0,0.0,0.0,13.0
+T.J. Yeldon,APE,JAC,RB,GB,L 23-27,0/0,0.0,0.0,0.0,21.0,39.0,1.0,4.0,30.0,0.0,6.0,0.0,0.0,0.0,12.9
+Jeremy Langford,SLIV,CHI,RB,@Hou,L 14-23,0/0,0.0,0.0,0.0,17.0,57.0,1.0,2.0,6.0,0.0,4.0,0.0,0.0,0.0,12.3
+Lamar Miller,FUNK,HOU,RB,Chi,W 23-14,0/0,0.0,0.0,0.0,28.0,106.0,0.0,4.0,11.0,0.0,4.0,0.0,0.0,0.0,11.7
+Tevin Coleman,SLIV,ATL,RB,TB,L 24-31,0/0,0.0,0.0,0.0,8.0,22.0,0.0,5.0,95.0,0.0,6.0,0.0,0.0,0.0,11.7
+Ezekiel Elliott,SCOT,DAL,RB,NYG,L 19-20,0/0,0.0,0.0,0.0,20.0,51.0,1.0,1.0,1.0,0.0,2.0,0.0,0.0,0.0,11.2
+Charles Sims,WA (Wed),TAM,RB,@Atl,W 31-24,0/0,0.0,0.0,0.0,4.0,9.0,0.0,3.0,32.0,1.0,3.0,0.0,0.0,0.0,10.1
+Arian Foster,NOG,MIA,RB,@Sea,L 10-12,0/0,0.0,0.0,0.0,13.0,38.0,0.0,3.0,62.0,0.0,5.0,0.0,0.0,0.0,10.0
+Doug Martin,NOG,TAM,RB,@Atl,W 31-24,0/0,0.0,0.0,0.0,18.0,62.0,0.0,5.0,34.0,0.0,5.0,0.0,0.0,0.0,9.6
+Jeremy Hill,BKN,CIN,RB,@NYJ,W 23-22,0/0,0.0,0.0,0.0,9.0,31.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,9.1
+Andy Janovich,WA (Wed),DEN,RB,Car,W 21-20,0/0,0.0,0.0,0.0,1.0,28.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,8.8
+Mark Ingram,BKN,NOR,RB,Oak,L 34-35,0/0,0.0,0.0,0.0,12.0,58.0,0.0,2.0,29.0,0.0,2.0,0.0,0.0,0.0,8.7
+Frank Gore,SCOT,IND,RB,Det,L 35-39,0/0,0.0,0.0,0.0,14.0,59.0,0.0,4.0,19.0,0.0,6.0,0.0,0.0,0.0,7.8
+Eddie Lacy,GARI,GNB,RB,@Jax,W 27-23,0/0,0.0,0.0,0.0,14.0,61.0,0.0,1.0,17.0,0.0,2.0,0.0,0.0,0.0,7.8
+Rashad Jennings,BKN,NYG,RB,@Dal,W 20-19,0/0,0.0,0.0,0.0,18.0,75.0,0.0,1.0,3.0,0.0,2.0,0.0,0.0,0.0,7.8
+Travaris Cadet,WA (Wed),NOR,RB,Oak,L 34-35,0/0,0.0,0.0,0.0,1.0,1.0,0.0,3.0,14.0,1.0,7.0,0.0,0.0,0.0,7.5
+Christine Michael,WA (Wed),SEA,RB,Mia,W 12-10,0/0,0.0,0.0,0.0,15.0,66.0,0.0,2.0,5.0,0.0,4.0,0.0,0.0,0.0,7.1
+Jonathan Stewart,NOG,CAR,RB,@Den,L 20-21,0/0,0.0,0.0,0.0,15.0,64.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,6.4
+Jamize Olawale,WA (Wed),OAK,RB,@NO,W 35-34,0/0,0.0,0.0,0.0,1.0,2.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,6.2
+Shane Vereen,WA (Wed),NYG,RB,@Dal,W 20-19,0/0,0.0,0.0,0.0,6.0,38.0,0.0,3.0,23.0,0.0,5.0,0.0,0.0,0.0,6.1
+Dwayne Washington,WA (Wed),DET,RB,@Ind,W 39-35,0/0,0.0,0.0,0.0,2.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,6.1
+Thomas Rawls,APE,SEA,RB,Mia,W 12-10,0/0,0.0,0.0,0.0,12.0,32.0,0.0,3.0,26.0,0.0,3.0,0.0,0.0,0.0,5.8
+Justin Forsett,LOS,BAL,RB,Buf,W 13-7,0/0,0.0,0.0,0.0,10.0,41.0,0.0,3.0,15.0,0.0,3.0,0.0,0.0,0.0,5.6
+Duke Johnson Jr.,NOG,CLE,RB,@Phi,L 10-29,0/0,0.0,0.0,0.0,3.0,22.0,0.0,3.0,28.0,0.0,5.0,0.0,0.0,0.0,5.0
+Bilal Powell,WA (Wed),NYJ,RB,Cin,L 22-23,0/0,0.0,0.0,0.0,4.0,41.0,0.0,2.0,7.0,0.0,4.0,0.0,0.0,0.0,4.8
+Derrick Henry,APE,TEN,RB,Min,L 16-25,0/0,0.0,0.0,0.0,5.0,3.0,0.0,2.0,41.0,0.0,2.0,0.0,0.0,0.0,4.4
+Kenjon Barner,WA (Wed),PHI,RB,Cle,W 29-10,0/0,0.0,0.0,0.0,4.0,42.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,4.2
+Devonta Freeman,SLIV,ATL,RB,TB,L 24-31,0/0,0.0,0.0,0.0,11.0,20.0,0.0,4.0,20.0,0.0,4.0,0.0,0.0,0.0,4.0
+Terrance West,WA (Wed),BAL,RB,Buf,W 13-7,0/0,0.0,0.0,0.0,12.0,32.0,0.0,2.0,6.0,0.0,2.0,0.0,0.0,0.0,3.8
+Damien Williams,WA (Wed),MIA,RB,@Sea,L 10-12,0/0,0.0,0.0,0.0,2.0,9.0,0.0,1.0,29.0,0.0,2.0,0.0,0.0,0.0,3.8
+Darren Sproles,WA (Wed),PHI,RB,Cle,W 29-10,0/0,0.0,0.0,0.0,5.0,12.0,0.0,2.0,24.0,0.0,5.0,0.0,0.0,0.0,3.6
+Alfred Morris,SCOT,DAL,RB,NYG,L 19-20,0/0,0.0,0.0,0.0,7.0,35.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,3.5
+Adrian Peterson,APE,MIN,RB,@Ten,W 25-16,0/0,0.0,0.0,0.0,19.0,31.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,3.1
+Giovani Bernard,NOG,CIN,RB,@NYJ,W 23-22,0/0,0.0,0.0,0.0,5.0,25.0,0.0,2.0,5.0,0.0,4.0,0.0,0.0,0.0,3.0
+DeAndre Washington,WA (Wed),OAK,RB,@NO,W 35-34,0/0,0.0,0.0,0.0,5.0,14.0,0.0,1.0,10.0,0.0,1.0,0.0,0.0,0.0,2.4
+Josh Ferguson,WA (Wed),IND,RB,Det,L 35-39,0/0,0.0,0.0,0.0,1.0,-2.0,0.0,2.0,26.0,0.0,2.0,0.0,0.0,0.0,2.4
+Kyle Juszczyk,WA (Wed),BAL,RB,Buf,W 13-7,0/0,0.0,0.0,0.0,1.0,2.0,0.0,2.0,21.0,0.0,3.0,0.0,0.0,0.0,2.3
+Charcandrick West,WA (Wed),KAN,RB,SD,W 33-27,0/0,0.0,0.0,0.0,3.0,-1.0,0.0,6.0,24.0,0.0,6.0,0.0,0.0,0.0,2.3
+Robert Turbin,WA (Wed),IND,RB,Det,L 35-39,0/0,0.0,0.0,0.0,1.0,4.0,0.0,2.0,15.0,0.0,2.0,0.0,0.0,0.0,1.9
+Fozzy Whittaker,WA (Wed),CAR,RB,@Den,L 20-21,0/0,0.0,0.0,0.0,3.0,13.0,0.0,1.0,4.0,0.0,1.0,0.0,0.0,0.0,1.7
+Lance Dunbar,WA (Wed),DAL,RB,NYG,L 19-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,16.0,0.0,2.0,0.0,0.0,0.0,1.6
+James Starks,WA (Wed),GNB,RB,@Jax,W 27-23,0/0,0.0,0.0,0.0,4.0,7.0,0.0,1.0,6.0,0.0,1.0,0.0,0.0,0.0,1.3
+Matt Asiata,WA (Wed),MIN,RB,@Ten,W 25-16,0/0,0.0,0.0,0.0,4.0,13.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.3
+C.J. Prosise,WA (Wed),SEA,RB,Mia,W 12-10,0/0,0.0,0.0,0.0,1.0,-2.0,0.0,1.0,13.0,0.0,1.0,0.0,0.0,0.0,1.1
+Tim Hightower,WA (Wed),NOR,RB,Oak,L 34-35,0/0,0.0,0.0,0.0,4.0,9.0,0.0,1.0,1.0,0.0,1.0,0.0,0.0,0.0,1.0
+Taiwan Jones,WA (Wed),OAK,RB,@NO,W 35-34,0/0,0.0,0.0,0.0,1.0,-8.0,0.0,2.0,17.0,0.0,2.0,0.0,0.0,0.0,0.9
+Jerick McKinnon,WA (Wed),MIN,RB,@Ten,W 25-16,0/0,0.0,0.0,0.0,1.0,6.0,0.0,1.0,3.0,0.0,2.0,0.0,0.0,0.0,0.9
+Malcolm Johnson,WA (Wed),CLE,RB,@Phi,L 10-29,0/0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,9.0,0.0,2.0,0.0,0.0,0.0,0.9
+Patrick DiMarco,WA (Wed),ATL,RB,TB,L 24-31,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,8.0,0.0,1.0,0.0,0.0,0.0,0.8
+Tyler Ervin,WA (Wed),HOU,RB,Chi,W 23-14,0/0,0.0,0.0,0.0,1.0,3.0,0.0,1.0,5.0,0.0,2.0,0.0,0.0,0.0,0.8
+Mike Tolbert,WA (Wed),CAR,RB,@Den,L 20-21,0/0,0.0,0.0,0.0,2.0,6.0,0.0,1.0,1.0,0.0,1.0,0.0,0.0,0.0,0.7
+Denard Robinson,WA (Wed),JAC,RB,GB,L 23-27,0/0,0.0,0.0,0.0,3.0,7.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.7
+Kapri Bibbs,WA (Wed),DEN,RB,Car,W 21-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,6.0,0.0,1.0,0.0,0.0,0.0,0.6
+John Kuhn,WA (Wed),NOR,RB,Oak,L 34-35,0/0,0.0,0.0,0.0,2.0,4.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.4
+Ka'Deem Carey,WA (Wed),CHI,RB,@Hou,L 14-23,0/0,0.0,0.0,0.0,1.0,4.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.4
+Alfred Blue,WA (Wed),HOU,RB,Chi,W 23-14,0/0,0.0,0.0,0.0,1.0,4.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.4
+Jay Prosch,WA (Wed),HOU,RB,Chi,W 23-14,0/0,0.0,0.0,0.0,1.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.2
+Wendell Smallwood,WA (Wed),PHI,RB,Cle,W 29-10,0/0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.1
+Ronnie Hillman,WA (Wed),DEN,RB,Car,W 21-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Jonathan Grimes,WA (Wed),HOU,RB,Chi,W 23-14,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Juwan Thompson,WA (Wed),DEN,RB,Car,W 21-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Ryan Hewitt,WA (Wed),CIN,RB,@NYJ,W 23-22,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Marcus Murphy,WA (Wed),NOR,RB,Oak,L 34-35,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Cameron Artis-Payne,WA (Wed),CAR,RB,@Den,L 20-21,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Brandon Wegher,WA (Wed),CAR,RB,@Den,L 20-21,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Corey Grant,WA (Wed),JAC,RB,GB,L 23-27,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Derek Watt,WA (Wed),SDG,RB,@KC,L 27-33,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Daniel Lasco,WA (Wed),NOR,RB,Oak,L 34-35,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Devon Johnson,WA (Wed),CAR,RB,@Den,L 20-21,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Glenn Gronkowski,WA (Wed),BUF,RB,@Bal,L 7-13,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Reggie Bush,WA (Wed),BUF,RB,@Bal,L 7-13,0/0,0.0,0.0,0.0,3.0,-4.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,-0.4
+Mike Gillislee,WA (Wed),BUF,RB,@Bal,L 7-13,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,-4.0,0.0,1.0,0.0,0.0,0.0,-0.4
+Devontae Booker,WA (Wed),DEN,RB,Car,W 21-20,0/0,0.0,0.0,0.0,3.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,-1.2
+Steven Jackson,FA,NWE,RB,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+DeAngelo Williams,GARI,PIT,RB,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Fred Jackson,WA (Wed),SEA,RB,Mia,W 12-10,--/--,,,,,,,,,,,,,,
+Marshawn Lynch,WA (Wed),SEA,RB,Mia,W 12-10,--/--,,,,,,,,,,,,,,
+Ahmad Bradshaw,WA (Wed),IND,RB,Det,L 35-39,--/--,,,,,,,,,,,,,,
+Pierre Thomas,FA,WAS,RB,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Darren McFadden,WA (Wed),DAL,RB,NYG,L 19-20,--/--,,,,,,,,,,,,,,
+Chris Johnson,FA,ARI,RB,NE,Sun 8:30,--/--,,,,,,,,,,,,,,
+Ray Rice,FA,FA,RB,** BYE **,,,,,,,,,,,,,,,,
+Jamaal Charles,LOS,KAN,RB,SD,W 33-27,--/--,,,,,,,,,,,,,,
+Jerome Felton,WA (Wed),BUF,RB,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+Marcel Reece,WA (Wed),OAK,RB,@NO,W 35-34,--/--,,,,,,,,,,,,,,
+Donald Brown,FA,NWE,RB,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Jorvorskie Lane,WA (Wed),TAM,RB,@Atl,W 31-24,--/--,,,,,,,,,,,,,,
+Knowshon Moreno,FA,FA,RB,** BYE **,,,,,,,,,,,,,,,,
+Cedric Peerman,WA (Wed),CIN,RB,@NYJ,W 23-22,--/--,,,,,,,,,,,,,,
+Marcus Thigpen,WA (Wed),BUF,RB,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+Darrel Young,WA (Wed),CHI,RB,@Hou,L 14-23,--/--,,,,,,,,,,,,,,
+Antone Smith,WA (Wed),NYJ,RB,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+C.J. Spiller,WA (Wed),NOR,RB,Oak,L 34-35,--/--,,,,,,,,,,,,,,
+Dexter McCluster,WA (Wed),TEN,RB,Min,L 16-25,--/--,,,,,,,,,,,,,,
+Ben Tate,FA,PIT,RB,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Toby Gerhart,WA (Wed),JAC,RB,GB,L 23-27,--/--,,,,,,,,,,,,,,
+Boobie Dixon,WA (Wed),BUF,RB,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+LeGarrette Blount,FA,NWE,RB,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Joique Bell,WA (Wed),DET,RB,@Ind,W 39-35,--/--,,,,,,,,,,,,,,
+Chris Ivory,GARI,JAC,RB,GB,L 23-27,--/--,,,,,,,,,,,,,,
+James Develin,FA,NWE,RB,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Tyler Clutts,WA (Wed),DAL,RB,NYG,L 19-20,--/--,,,,,,,,,,,,,,
+Stevan Ridley,WA (Wed),IND,RB,Det,L 35-39,--/--,,,,,,,,,,,,,,
+Ryan Williams,WA (Wed),DAL,RB,NYG,L 19-20,--/--,,,,,,,,,,,,,,
+Daniel Thomas,WA (Wed),MIA,RB,@Sea,L 10-12,--/--,,,,,,,,,,,,,,
+Anthony Sherman,WA (Wed),KAN,RB,SD,W 33-27,--/--,,,,,,,,,,,,,,
+Kendall Hunter,WA (Wed),NOR,RB,Oak,L 34-35,--/--,,,,,,,,,,,,,,
+Jordan Todman,WA (Wed),IND,RB,Det,L 35-39,--/--,,,,,,,,,,,,,,
+Roy Helu Jr.,WA (Wed),OAK,RB,@NO,W 35-34,--/--,,,,,,,,,,,,,,
+Jacquizz Rodgers,WA (Wed),CHI,RB,@Hou,L 14-23,--/--,,,,,,,,,,,,,,
+Dion Lewis,FA,NWE,RB,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+DuJuan Harris,FA,SFO,RB,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Shaun Draughn,FA,SFO,RB,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Chase Reynolds,FA,LAR,RB,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Will Johnson,WA (Wed),NYG,RB,@Dal,W 20-19,--/--,,,,,,,,,,,,,,
+Trent Richardson,WA (Wed),BAL,RB,Buf,W 13-7,--/--,,,,,,,,,,,,,,
+Isaiah Pead,WA (Wed),MIA,RB,@Sea,L 10-12,--/--,,,,,,,,,,,,,,
+Chris Polk,WA (Wed),HOU,RB,Chi,W 23-14,--/--,,,,,,,,,,,,,,
+LaMike James,WA (Wed),MIA,RB,@Sea,L 10-12,--/--,,,,,,,,,,,,,,
+Bernard Pierce,WA (Wed),NYJ,RB,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+Cyrus Gray,WA (Wed),ATL,RB,TB,L 24-31,--/--,,,,,,,,,,,,,,
+Vick Ballard,WA (Wed),NOR,RB,Oak,L 34-35,--/--,,,,,,,,,,,,,,
+Daniel Herron,WA (Wed),BUF,RB,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+Bryce Brown,WA (Wed),SEA,RB,Mia,W 12-10,--/--,,,,,,,,,,,,,,
+Daryl Richardson,FA,PIT,RB,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Cory Harkey,FA,LAR,RB,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Joe Banyard,WA (Wed),JAC,RB,GB,L 23-27,--/--,,,,,,,,,,,,,,
+Derrick Coleman,WA (Wed),SEA,RB,Mia,W 12-10,--/--,,,,,,,,,,,,,,
+Jonas Gray,WA (Wed),JAC,RB,GB,L 23-27,--/--,,,,,,,,,,,,,,
+Brandon Bolden,FA,NWE,RB,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Bobby Rainey,WA (Wed),NYG,RB,@Dal,W 20-19,--/--,,,,,,,,,,,,,,
+Montee Ball,FA,FA,RB,** BYE **,,,,,,,,,,,,,,,,
+Le'Veon Bell,SCOT,PIT,RB,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Knile Davis,WA (Wed),KAN,RB,SD,W 33-27,--/--,,,,,,,,,,,,,,
+Andre Ellington,FA,ARI,RB,NE,Sun 8:30,--/--,,,,,,,,,,,,,,
+Chris Thompson,FA,WAS,RB,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Mike James,WA (Wed),TAM,RB,@Atl,W 31-24,--/--,,,,,,,,,,,,,,
+Rex Burkhead,WA (Wed),CIN,RB,@NYJ,W 23-22,--/--,,,,,,,,,,,,,,
+Tommy Bohanon,WA (Wed),NYJ,RB,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+Stepfan Taylor,FA,ARI,RB,NE,Sun 8:30,--/--,,,,,,,,,,,,,,
+Zac Stacy,WA (Wed),NYJ,RB,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+Joseph Randle,FA,FA,RB,** BYE **,,,,,,,,,,,,,,,,
+Kerwynn Williams,FA,ARI,RB,NE,Sun 8:30,--/--,,,,,,,,,,,,,,
+Benjamin Cunningham,FA,LAR,RB,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Kendall Gaskins,FA,SFO,RB,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Steven Miller,WA (Wed),DET,RB,@Ind,W 39-35,--/--,,,,,,,,,,,,,,
+Zach Line,WA (Wed),MIN,RB,@Ten,W 25-16,--/--,,,,,,,,,,,,,,
+George Winn,WA (Wed),DET,RB,@Ind,W 39-35,--/--,,,,,,,,,,,,,,
+Khiry Robinson,WA (Wed),NYJ,RB,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+Dri Archer,WA (Wed),BUF,RB,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+Carlos Hyde,SLIV,SFO,RB,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Tre Mason,FA,LAR,RB,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Bishop Sankey,WA (Wed),TEN,RB,Min,L 16-25,--/--,,,,,,,,,,,,,,
+Tyler Gaffney,FA,NWE,RB,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Storm Johnson,WA (Wed),TAM,RB,@Atl,W 31-24,--/--,,,,,,,,,,,,,,
+Lache Seastrunk,WA (Wed),NYJ,RB,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+Andre Williams,WA (Wed),SDG,RB,@KC,L 27-33,--/--,,,,,,,,,,,,,,
+James White,FA,NWE,RB,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Lorenzo Taliaferro,WA (Wed),BAL,RB,Buf,W 13-7,--/--,,,,,,,,,,,,,,
+Marion Grice,FA,ARI,RB,NE,Sun 8:30,--/--,,,,,,,,,,,,,,
+Branden Oliver,WA (Wed),SDG,RB,@KC,L 27-33,--/--,,,,,,,,,,,,,,
+Antonio Andrews,WA (Wed),TEN,RB,Min,L 16-25,--/--,,,,,,,,,,,,,,
+Darrin Reaves,WA (Wed),KAN,RB,SD,W 33-27,--/--,,,,,,,,,,,,,,
+Silas Redd,FA,WAS,RB,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Trey Watts,FA,LAR,RB,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Austin Johnson,WA (Wed),NOR,RB,Oak,L 34-35,--/--,,,,,,,,,,,,,,
+Orleans Darkwa,WA (Wed),NYG,RB,@Dal,W 20-19,--/--,,,,,,,,,,,,,,
+Senorise Perry,WA (Wed),CHI,RB,@Hou,L 14-23,--/--,,,,,,,,,,,,,,
+Glenn Winston,WA (Wed),CLE,RB,@Phi,L 10-29,--/--,,,,,,,,,,,,,,
+Fitzgerald Toussaint,FA,PIT,RB,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Roosevelt Nix,FA,PIT,RB,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+David Johnson,GARI,ARI,RB,NE,Sun 8:30,--/--,,,,,,,,,,,,,,
+Michael Burton,WA (Wed),DET,RB,@Ind,W 39-35,--/--,,,,,,,,,,,,,,
+Jalston Fowler,WA (Wed),TEN,RB,Min,L 16-25,--/--,,,,,,,,,,,,,,
+Joey Iosefa,FA,NWE,RB,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Jay Ajayi,WA (Wed),MIA,RB,@Sea,L 10-12,--/--,,,,,,,,,,,,,,
+David Cobb,WA (Wed),TEN,RB,Min,L 16-25,--/--,,,,,,,,,,,,,,
+Karlos Williams,WA (Wed),BUF,RB,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+Javorius Allen,WA (Wed),BAL,RB,Buf,W 13-7,--/--,,,,,,,,,,,,,,
+Kenny Hilliard,WA (Wed),HOU,RB,Chi,W 23-14,--/--,,,,,,,,,,,,,,
+Josh Robinson,WA (Wed),IND,RB,Det,L 35-39,--/--,,,,,,,,,,,,,,
+Aaron Ripkowski,WA (Wed),GNB,RB,@Jax,W 27-23,--/--,,,,,,,,,,,,,,
+Tyler Varga,WA (Wed),IND,RB,Det,L 35-39,--/--,,,,,,,,,,,,,,
+Todd Gurley,BKN,LAR,RB,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Matt Jones,FUNK,WAS,RB,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Mike Davis,FA,SFO,RB,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Michael Dyer,WA (Wed),OAK,RB,@NO,W 35-34,--/--,,,,,,,,,,,,,,
+John Crockett,WA (Wed),GNB,RB,@Jax,W 27-23,--/--,,,,,,,,,,,,,,
+Terrence Magee,FA,LAR,RB,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Gus Johnson,WA (Wed),SDG,RB,@KC,L 27-33,--/--,,,,,,,,,,,,,,
+Zach Zenner,WA (Wed),DET,RB,@Ind,W 39-35,--/--,,,,,,,,,,,,,,
+Malcolm Brown,FA,LAR,RB,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Terron Ward,WA (Wed),ATL,RB,TB,L 24-31,--/--,,,,,,,,,,,,,,
+Jarryd Hayne,FA,SFO,RB,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Alonzo Harris,WA (Wed),GNB,RB,@Jax,W 27-23,--/--,,,,,,,,,,,,,,
+Nikita Whitlock,WA (Wed),NYG,RB,@Dal,W 20-19,--/--,,,,,,,,,,,,,,
+Raheem Mostert,WA (Wed),CLE,RB,@Phi,L 10-29,--/--,,,,,,,,,,,,,,
+Rod Smith,WA (Wed),DAL,RB,NYG,L 19-20,--/--,,,,,,,,,,,,,,
+Trey Williams,WA (Wed),IND,RB,Det,L 35-39,--/--,,,,,,,,,,,,,,
+Akeem Hunt,WA (Wed),HOU,RB,Chi,W 23-14,--/--,,,,,,,,,,,,,,
+Kenyan Drake,WA (Wed),MIA,RB,@Sea,L 10-12,--/--,,,,,,,,,,,,,,
+Kenneth Dixon,WA (Wed),BAL,RB,Buf,W 13-7,--/--,,,,,,,,,,,,,,
+Paul Perkins,WA (Wed),NYG,RB,@Dal,W 20-19,--/--,,,,,,,,,,,,,,
+Jordan Howard,WA (Wed),CHI,RB,@Hou,L 14-23,--/--,,,,,,,,,,,,,,
+Jonathan Williams,WA (Wed),BUF,RB,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+Alex Collins,WA (Wed),SEA,RB,Mia,W 12-10,--/--,,,,,,,,,,,,,,
+Kelvin Taylor,FA,SFO,RB,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Darius Jackson,WA (Wed),DAL,RB,NYG,L 19-20,--/--,,,,,,,,,,,,,,
+Keith Marshall,FA,WAS,RB,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Zac Brooks,WA (Wed),SEA,RB,Mia,W 12-10,--/--,,,,,,,,,,,,,,
+Terrell Watson,WA (Wed),CLE,RB,@Phi,L 10-29,--/--,,,,,,,,,,,,,,
+Brandon Wilds,WA (Wed),ATL,RB,TB,L 24-31,--/--,,,,,,,,,,,,,,
+Jhurell Pressley,WA (Wed),GNB,RB,@Jax,W 27-23,--/--,,,,,,,,,,,,,,
+Byron Marshall,WA (Wed),PHI,RB,Cle,W 29-10,--/--,,,,,,,,,,,,,,
+George Atkinson III,WA (Wed),CLE,RB,@Phi,L 10-29,--/--,,,,,,,,,,,,,,
+James Wilder Jr.,WA (Wed),BUF,RB,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+D.J. Foster,FA,NWE,RB,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Dreamius Smith,WA (Wed),SDG,RB,@KC,L 27-33,--/--,,,,,,,,,,,,,,
+Robert Kelley,FA,WAS,RB,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Troymaine Pope,WA (Wed),NYJ,RB,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+Julian Howsare,WA (Wed),NYJ,RB,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+Kenneth Farrow,WA (Wed),SDG,RB,@KC,L 27-33,--/--,,,,,,,,,,,,,,
+Brandin Cooks,SCOT,NOR,WR,Oak,L 34-35,0/0,0.0,0.0,0.0,1.0,11.0,0.0,6.0,143.0,2.0,9.0,0.0,0.0,0.0,27.4
+A.J. Green,LOS,CIN,WR,@NYJ,W 23-22,0/0,0.0,0.0,0.0,0.0,0.0,0.0,12.0,180.0,1.0,13.0,0.0,0.0,0.0,24.0
+Willie Snead,APE,NOR,WR,Oak,L 34-35,0/0,0.0,0.0,0.0,0.0,0.0,0.0,9.0,172.0,1.0,9.0,0.0,0.0,0.0,23.2
+Jordan Matthews,FUNK,PHI,WR,Cle,W 29-10,0/0,0.0,0.0,0.0,0.0,0.0,0.0,7.0,114.0,1.0,14.0,0.0,0.0,0.0,17.4
+Will Fuller,WA (Wed),HOU,WR,Chi,W 23-14,0/0,0.0,0.0,0.0,0.0,0.0,0.0,5.0,107.0,1.0,11.0,0.0,0.0,0.0,16.7
+Mike Wallace,WA (Wed),BAL,WR,Buf,W 13-7,0/0,0.0,0.0,0.0,1.0,11.0,0.0,3.0,91.0,1.0,6.0,0.0,0.0,0.0,16.2
+Mohamed Sanu,WA (Wed),ATL,WR,TB,L 24-31,0/0,0.0,0.0,0.0,0.0,0.0,0.0,5.0,80.0,1.0,8.0,1.0,0.0,0.0,16.0
+Mike Evans,APE,TAM,WR,@Atl,W 31-24,0/0,0.0,0.0,0.0,0.0,0.0,0.0,5.0,99.0,1.0,7.0,0.0,0.0,0.0,15.9
+Amari Cooper,GARI,OAK,WR,@NO,W 35-34,0/0,0.0,0.0,0.0,0.0,0.0,0.0,6.0,137.0,0.0,11.0,1.0,0.0,0.0,15.7
+Doug Baldwin,FUNK,SEA,WR,Mia,W 12-10,0/0,0.0,0.0,0.0,0.0,0.0,0.0,9.0,92.0,1.0,11.0,0.0,0.0,0.0,15.2
+Kelvin Benjamin,SCOT,CAR,WR,@Den,L 20-21,0/0,0.0,0.0,0.0,0.0,0.0,0.0,6.0,91.0,1.0,12.0,0.0,0.0,0.0,15.1
+Julio Jones,SCOT,ATL,WR,TB,L 24-31,0/0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,66.0,1.0,8.0,0.0,0.0,0.0,12.6
+Donte Moncrief,BKN,IND,WR,Det,L 35-39,0/0,0.0,0.0,0.0,0.0,0.0,0.0,6.0,64.0,1.0,7.0,0.0,0.0,0.0,12.4
+Jeremy Maclin,LOS,KAN,WR,SD,W 33-27,0/0,0.0,0.0,0.0,1.0,-1.0,0.0,5.0,63.0,1.0,7.0,0.0,0.0,0.0,12.2
+Eddie Royal,WA (Wed),CHI,WR,@Hou,L 14-23,0/0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,57.0,1.0,6.0,0.0,0.0,0.0,11.7
+Nelson Agholor,WA (Wed),PHI,WR,Cle,W 29-10,0/0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,57.0,1.0,5.0,0.0,0.0,0.0,11.7
+DeAndre Hopkins,FUNK,HOU,WR,Chi,W 23-14,0/0,0.0,0.0,0.0,0.0,0.0,0.0,5.0,54.0,1.0,8.0,0.0,0.0,0.0,11.4
+Quincy Enunwa,WA (Wed),NYJ,WR,Cin,L 22-23,0/0,0.0,0.0,0.0,0.0,0.0,0.0,7.0,54.0,1.0,8.0,0.0,0.0,0.0,11.4
+Davante Adams,WA (Wed),GNB,WR,@Jax,W 27-23,0/0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,50.0,1.0,7.0,0.0,0.0,0.0,11.0
+Michael Crabtree,WA (Wed),OAK,WR,@NO,W 35-34,0/0,0.0,0.0,0.0,0.0,0.0,0.0,7.0,87.0,0.0,9.0,1.0,0.0,0.0,10.7
+Alshon Jeffery,GARI,CHI,WR,@Hou,L 14-23,0/0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,105.0,0.0,6.0,0.0,0.0,0.0,10.5
+Sterling Shepard,NOG,NYG,WR,@Dal,W 20-19,0/0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,43.0,1.0,4.0,0.0,0.0,0.0,10.3
+Stefon Diggs,WA (Wed),MIN,WR,@Ten,W 25-16,0/0,0.0,0.0,0.0,1.0,-1.0,0.0,7.0,103.0,0.0,9.0,0.0,0.0,0.0,10.2
+Eric Decker,NOG,NYJ,WR,Cin,L 22-23,0/0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,37.0,1.0,7.0,0.0,0.0,0.0,9.7
+Victor Cruz,WA (Wed),NYG,WR,@Dal,W 20-19,0/0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,34.0,1.0,4.0,0.0,0.0,0.0,9.4
+Phillip Dorsett,WA (Wed),IND,WR,Det,L 35-39,0/0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,94.0,0.0,6.0,0.0,0.0,0.0,9.4
+Jordy Nelson,APE,GNB,WR,@Jax,W 27-23,0/0,0.0,0.0,0.0,0.0,0.0,0.0,6.0,32.0,1.0,9.0,0.0,0.0,0.0,9.2
+Brandon LaFell,WA (Wed),CIN,WR,@NYJ,W 23-22,0/0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,91.0,0.0,4.0,0.0,0.0,0.0,9.1
+Marvin Jones,BKN,DET,WR,@Ind,W 39-35,0/0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,85.0,0.0,10.0,0.0,0.0,0.0,8.5
+T.Y. Hilton,LOS,IND,WR,Det,L 35-39,0/0,0.0,0.0,0.0,0.0,0.0,0.0,6.0,79.0,0.0,12.0,0.0,0.0,0.0,7.9
+Seth Roberts,WA (Wed),OAK,WR,@NO,W 35-34,0/0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,19.0,1.0,4.0,0.0,0.0,0.0,7.9
+Tajae Sharpe,GARI,TEN,WR,Min,L 16-25,0/0,0.0,0.0,0.0,0.0,0.0,0.0,7.0,76.0,0.0,11.0,0.0,0.0,0.0,7.6
+Allen Hurns,GARI,JAC,WR,GB,L 23-27,0/0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,75.0,0.0,5.0,0.0,0.0,0.0,7.5
+Odell Beckham Jr.,SLIV,NYG,WR,@Dal,W 20-19,0/0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,73.0,0.0,8.0,0.0,0.0,0.0,7.3
+Allen Robinson,GARI,JAC,WR,GB,L 23-27,0/0,0.0,0.0,0.0,0.0,0.0,0.0,6.0,72.0,0.0,15.0,0.0,0.0,0.0,7.2
+Tyrell Williams,WA (Wed),SDG,WR,@KC,L 27-33,0/0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,71.0,0.0,5.0,0.0,0.0,0.0,7.1
+Corey Coleman,WA (Wed),CLE,WR,@Phi,L 10-29,0/0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,69.0,0.0,5.0,0.0,0.0,0.0,6.9
+Randall Cobb,SLIV,GNB,WR,@Jax,W 27-23,0/0,0.0,0.0,0.0,3.0,11.0,0.0,6.0,57.0,0.0,8.0,0.0,0.0,0.0,6.8
+Terrelle Pryor,WA (Wed),CLE,WR,@Phi,L 10-29,0/0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,68.0,0.0,7.0,0.0,0.0,0.0,6.8
+Cole Beasley,WA (Wed),DAL,WR,NYG,L 19-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,8.0,65.0,0.0,12.0,0.0,0.0,0.0,6.5
+Keenan Allen,BKN,SDG,WR,@KC,L 27-33,0/0,0.0,0.0,0.0,0.0,0.0,0.0,6.0,63.0,0.0,7.0,0.0,0.0,0.0,6.3
+Jarvis Landry,SLIV,MIA,WR,@Sea,L 10-12,0/0,0.0,0.0,0.0,0.0,0.0,0.0,7.0,59.0,0.0,10.0,0.0,0.0,0.0,5.9
+Michael Thomas,WA (Wed),NOR,WR,Oak,L 34-35,0/0,0.0,0.0,0.0,0.0,0.0,0.0,6.0,58.0,0.0,6.0,0.0,0.0,0.0,5.8
+Jermaine Kearse,WA (Wed),SEA,WR,Mia,W 12-10,0/0,0.0,0.0,0.0,0.0,0.0,0.0,5.0,57.0,0.0,7.0,0.0,0.0,0.0,5.7
+Adam Thielen,WA (Wed),MIN,WR,@Ten,W 25-16,0/0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,54.0,0.0,5.0,0.0,0.0,0.0,5.4
+Emmanuel Sanders,FUNK,DEN,WR,Car,W 21-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,5.0,49.0,0.0,8.0,0.0,0.0,0.0,4.9
+Demaryius Thomas,NOG,DEN,WR,Car,W 21-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,48.0,0.0,6.0,0.0,0.0,0.0,4.8
+Golden Tate,APE,DET,WR,@Ind,W 39-35,0/0,0.0,0.0,0.0,1.0,2.0,0.0,7.0,41.0,0.0,7.0,0.0,0.0,0.0,4.3
+Sammy Watkins,APE,BUF,WR,@Bal,L 7-13,0/0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,43.0,0.0,6.0,0.0,0.0,0.0,4.3
+Chris Conley,WA (Wed),KAN,WR,SD,W 33-27,0/0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,43.0,0.0,7.0,0.0,0.0,0.0,4.3
+Adam Humphries,WA (Wed),TAM,WR,@Atl,W 31-24,0/0,0.0,0.0,0.0,1.0,7.0,0.0,3.0,34.0,0.0,5.0,0.0,0.0,0.0,4.1
+Anquan Boldin,WA (Wed),DET,WR,@Ind,W 39-35,0/0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,35.0,0.0,3.0,0.0,0.0,0.0,3.5
+Breshad Perriman,WA (Wed),BAL,WR,Buf,W 13-7,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,35.0,0.0,2.0,0.0,0.0,0.0,3.5
+Terrance Williams,WA (Wed),DAL,WR,NYG,L 19-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,34.0,0.0,4.0,0.0,0.0,0.0,3.4
+Kevin White,WA (Wed),CHI,WR,@Hou,L 14-23,0/0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,34.0,0.0,7.0,0.0,0.0,0.0,3.4
+Brandon Marshall,SCOT,NYJ,WR,Cin,L 22-23,0/0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,32.0,0.0,8.0,0.0,0.0,0.0,3.2
+Travis Benjamin,WA (Wed),SDG,WR,@KC,L 27-33,0/0,0.0,0.0,0.0,0.0,0.0,0.0,7.0,32.0,0.0,8.0,0.0,0.0,0.0,3.2
+Andre Johnson,WA (Wed),TEN,WR,Min,L 16-25,0/0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,30.0,0.0,7.0,0.0,0.0,0.0,3.0
+Rishard Matthews,WA (Wed),TEN,WR,Min,L 16-25,0/0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,26.0,0.0,4.0,0.0,0.0,0.0,2.6
+Ted Ginn Jr.,WA (Wed),CAR,WR,@Den,L 20-21,0/0,0.0,0.0,0.0,1.0,20.0,0.0,1.0,5.0,0.0,1.0,0.0,0.0,0.0,2.5
+Tyler Boyd,WA (Wed),CIN,WR,@NYJ,W 23-22,0/0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,24.0,0.0,3.0,0.0,0.0,0.0,2.4
+Marqise Lee,WA (Wed),JAC,WR,GB,L 23-27,0/0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,22.0,0.0,4.0,0.0,0.0,0.0,2.2
+Harry Douglas,WA (Wed),TEN,WR,Min,L 16-25,0/0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,21.0,0.0,5.0,0.0,0.0,0.0,2.1
+Robert Woods,WA (Wed),BUF,WR,@Bal,L 7-13,0/0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,20.0,0.0,5.0,0.0,0.0,0.0,2.0
+Steve Smith Sr.,WA (Wed),BAL,WR,Buf,W 13-7,0/0,0.0,0.0,0.0,0.0,0.0,0.0,5.0,19.0,0.0,9.0,0.0,0.0,0.0,1.9
+Vincent Jackson,WA (Wed),TAM,WR,@Atl,W 31-24,0/0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,18.0,0.0,7.0,0.0,0.0,0.0,1.8
+Tyler Lockett,NOG,SEA,WR,Mia,W 12-10,0/0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,17.0,0.0,8.0,0.0,0.0,0.0,1.7
+Brice Butler,WA (Wed),DAL,WR,NYG,L 19-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,16.0,0.0,2.0,0.0,0.0,0.0,1.6
+Kenny Stills,WA (Wed),MIA,WR,@Sea,L 10-12,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,16.0,0.0,5.0,0.0,0.0,0.0,1.6
+Kamar Aiken,WA (Wed),BAL,WR,Buf,W 13-7,0/0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,14.0,0.0,2.0,0.0,0.0,0.0,1.4
+Cordarrelle Patterson,WA (Wed),MIN,WR,@Ten,W 25-16,0/0,0.0,0.0,0.0,1.0,8.0,0.0,1.0,6.0,0.0,1.0,0.0,0.0,0.0,1.4
+Dorial Green-Beckham,WA (Wed),PHI,WR,Cle,W 29-10,0/0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,14.0,0.0,2.0,0.0,0.0,0.0,1.4
+Leonte Carroo,WA (Wed),MIA,WR,@Sea,L 10-12,0/0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,14.0,0.0,2.0,0.0,0.0,0.0,1.4
+Chris Moore,WA (Wed),BAL,WR,Buf,W 13-7,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,13.0,0.0,2.0,0.0,0.0,0.0,1.3
+Paul Richardson,WA (Wed),SEA,WR,Mia,W 12-10,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,11.0,0.0,2.0,0.0,0.0,0.0,1.1
+Corey Brown,WA (Wed),CAR,WR,@Den,L 20-21,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,11.0,0.0,2.0,0.0,0.0,0.0,1.1
+Russell Shepard,WA (Wed),TAM,WR,@Atl,W 31-24,0/0,0.0,0.0,0.0,1.0,9.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9
+Rashad Greene,WA (Wed),JAC,WR,GB,L 23-27,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,9.0,0.0,2.0,0.0,0.0,0.0,0.9
+Devin Funchess,WA (Wed),CAR,WR,@Den,L 20-21,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,9.0,0.0,4.0,0.0,0.0,0.0,0.9
+Dez Bryant,BKN,DAL,WR,NYG,L 19-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,8.0,0.0,5.0,0.0,0.0,0.0,0.8
+Andre Roberts,WA (Wed),DET,WR,@Ind,W 39-35,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,8.0,0.0,1.0,0.0,0.0,0.0,0.8
+Jared Abbrederis,WA (Wed),GNB,WR,@Jax,W 27-23,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,8.0,0.0,1.0,0.0,0.0,0.0,0.8
+Dontrelle Inman,WA (Wed),SDG,WR,@KC,L 27-33,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,6.0,0.0,3.0,0.0,0.0,0.0,0.6
+Braxton Miller,WA (Wed),HOU,WR,Chi,W 23-14,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,6.0,0.0,3.0,0.0,0.0,0.0,0.6
+Charles Johnson,WA (Wed),MIN,WR,@Ten,W 25-16,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,5.0,0.0,6.0,0.0,0.0,0.0,0.5
+Albert Wilson,WA (Wed),KAN,WR,SD,W 33-27,0/0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,1.0,0.0,5.0,0.0,0.0,0.0,0.1
+James Wright,WA (Wed),CIN,WR,@NYJ,W 23-22,0/0,0.0,0.0,0.0,2.0,-6.0,0.0,1.0,7.0,0.0,1.0,0.0,0.0,0.0,0.1
+Jerricho Cotchery,WA (Wed),CAR,WR,@Den,L 20-21,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Devin Hester,WA (Wed),BAL,WR,Buf,W 13-7,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Eric Weems,WA (Wed),ATL,WR,TB,L 24-31,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Jordan Norwood,WA (Wed),DEN,WR,Car,W 21-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0
+Brandon Tate,WA (Wed),BUF,WR,@Bal,L 7-13,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Arrelious Benn,WA (Wed),JAC,WR,GB,L 23-27,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Marc Mariani,WA (Wed),TEN,WR,Min,L 16-25,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Dwayne Harris,WA (Wed),NYG,WR,@Dal,W 20-19,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Greg Salas,WA (Wed),BUF,WR,@Bal,L 7-13,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0
+Andre Holmes,WA (Wed),OAK,WR,@NO,W 35-34,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0
+Stephen Hill,WA (Wed),CAR,WR,@Den,L 20-21,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+DeVier Posey,WA (Wed),DEN,WR,Car,W 21-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Deonte Thompson,WA (Wed),CHI,WR,@Hou,L 14-23,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+LaRon Byrd,WA (Wed),CAR,WR,@Den,L 20-21,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Josh Huff,WA (Wed),PHI,WR,Cle,W 29-10,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,0.0,0.0,0.0,0.0
+Cody Latimer,WA (Wed),DEN,WR,Car,W 21-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Kevin Norwood,WA (Wed),CAR,WR,@Den,L 20-21,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Brenton Bersin,WA (Wed),CAR,WR,@Den,L 20-21,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Justin Hardy,WA (Wed),ATL,WR,TB,L 24-31,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0
+Quan Bray,WA (Wed),IND,WR,Det,L 35-39,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Ty Montgomery,WA (Wed),GNB,WR,@Jax,W 27-23,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Bennie Fowler,WA (Wed),DEN,WR,Car,W 21-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Lucky Whitehead,WA (Wed),DAL,WR,NYG,L 19-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Ricardo Louis,WA (Wed),CLE,WR,@Phi,L 10-29,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Jakeem Grant,WA (Wed),MIA,WR,@Sea,L 10-12,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Damiere Byrd,WA (Wed),CAR,WR,@Den,L 20-21,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Jordan Taylor,WA (Wed),DEN,WR,Car,W 21-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Alex Erickson,WA (Wed),CIN,WR,@NYJ,W 23-22,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Keyarris Garrett,WA (Wed),CAR,WR,@Den,L 20-21,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Jalin Marshall,WA (Wed),NYJ,WR,Cin,L 22-23,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Johnny Holton,WA (Wed),OAK,WR,@NO,W 35-34,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Andrew Hawkins,WA (Wed),CLE,WR,@Phi,L 10-29,0/0,0.0,0.0,0.0,1.0,-1.0,0.0,0.0,0.0,0.0,3.0,0.0,0.0,0.0,-0.1
+Larry Fitzgerald,NOG,ARI,WR,NE,Sun 8:30,--/--,,,,,,,,,,,,,,
+Wes Welker,FA,LAR,WR,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Roddy White,WA (Wed),ATL,WR,TB,L 24-31,--/--,,,,,,,,,,,,,,
+Joshua Cribbs,WA (Wed),IND,WR,Det,L 35-39,--/--,,,,,,,,,,,,,,
+Nate Washington,FA,NWE,WR,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Lance Moore,WA (Wed),ATL,WR,TB,L 24-31,--/--,,,,,,,,,,,,,,
+Greg Jennings,WA (Wed),MIA,WR,@Sea,L 10-12,--/--,,,,,,,,,,,,,,
+Derek Hagan,WA (Wed),TEN,WR,Min,L 16-25,--/--,,,,,,,,,,,,,,
+Jason Avant,WA (Wed),KAN,WR,SD,W 33-27,--/--,,,,,,,,,,,,,,
+Marques Colston,WA (Wed),NOR,WR,Oak,L 34-35,--/--,,,,,,,,,,,,,,
+Miles Austin,WA (Wed),PHI,WR,Cle,W 29-10,--/--,,,,,,,,,,,,,,
+Calvin Johnson,WA (Wed),DET,WR,@Ind,W 39-35,--/--,,,,,,,,,,,,,,
+Dwayne Bowe,WA (Wed),CLE,WR,@Phi,L 10-29,--/--,,,,,,,,,,,,,,
+Jacoby Jones,FA,PIT,WR,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+James Jones,WA (Wed),SDG,WR,@KC,L 27-33,--/--,,,,,,,,,,,,,,
+Jerome Simpson,FA,SFO,WR,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+DeSean Jackson,LOS,WAS,WR,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Andre Jerome Caldwell,WA (Wed),DET,WR,@Ind,W 39-35,--/--,,,,,,,,,,,,,,
+Matthew Slater,FA,NWE,WR,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Pierre Garcon,FA,WAS,WR,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Stevie Johnson,WA (Wed),SDG,WR,@KC,L 27-33,--/--,,,,,,,,,,,,,,
+Danny Amendola,FA,NWE,WR,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Kenny Britt,FA,LAR,WR,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Brandon Gibson,FA,NWE,WR,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Brian Hartline,WA (Wed),CLE,WR,@Phi,L 10-29,--/--,,,,,,,,,,,,,,
+Percy Harvin,WA (Wed),BUF,WR,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+Darrius Heyward-Bey,FA,PIT,WR,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Louis Murphy,WA (Wed),TAM,WR,@Atl,W 31-24,--/--,,,,,,,,,,,,,,
+Hakeem Nicks,WA (Wed),NOR,WR,Oak,L 34-35,--/--,,,,,,,,,,,,,,
+Kevin Ogletree,WA (Wed),NYG,WR,@Dal,W 20-19,--/--,,,,,,,,,,,,,,
+Julian Edelman,FA,NWE,WR,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Marcus Easley,WA (Wed),BUF,WR,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+Riley Cooper,WA (Wed),PHI,WR,Cle,W 29-10,--/--,,,,,,,,,,,,,,
+Kyle Williams,WA (Wed),NYJ,WR,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+Mike Williams,WA (Wed),KAN,WR,SD,W 33-27,--/--,,,,,,,,,,,,,,
+Seyi Ajirotutu,WA (Wed),PHI,WR,Cle,W 29-10,--/--,,,,,,,,,,,,,,
+Marlon Moore,WA (Wed),CLE,WR,@Phi,L 10-29,--/--,,,,,,,,,,,,,,
+Bryan Walters,WA (Wed),JAC,WR,GB,L 23-27,--/--,,,,,,,,,,,,,,
+Preston Parker,FA,FA,WR,** BYE **,,,,,,,,,,,,,,,,
+Antonio Brown,NOG,PIT,WR,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Danario Alexander,WA (Wed),SDG,WR,@KC,L 27-33,--/--,,,,,,,,,,,,,,
+Leonard Hankerson,WA (Wed),BUF,WR,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+Greg Little,WA (Wed),BUF,WR,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+Vincent Brown,WA (Wed),NOR,WR,Oak,L 34-35,--/--,,,,,,,,,,,,,,
+Torrey Smith,LOS,SFO,WR,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Jeremy Kerley,FA,SFO,WR,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Denarius Moore,WA (Wed),BUF,WR,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+Aldrick Robinson,WA (Wed),ATL,WR,TB,L 24-31,--/--,,,,,,,,,,,,,,
+Cecil Shorts III,WA (Wed),TAM,WR,@Atl,W 31-24,--/--,,,,,,,,,,,,,,
+Ricardo Lockette,WA (Wed),SEA,WR,Mia,W 12-10,--/--,,,,,,,,,,,,,,
+Chris Hogan,FA,NWE,WR,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Joe Morgan,WA (Wed),BAL,WR,Buf,W 13-7,--/--,,,,,,,,,,,,,,
+Jeremy Ross,WA (Wed),NYJ,WR,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+Justin Blackmon,WA (Wed),JAC,WR,GB,L 23-27,--/--,,,,,,,,,,,,,,
+Michael Floyd,SLIV,ARI,WR,NE,Sun 8:30,--/--,,,,,,,,,,,,,,
+Kendall Wright,WA (Wed),TEN,WR,Min,L 16-25,--/--,,,,,,,,,,,,,,
+Rueben Randle,WA (Wed),PHI,WR,Cle,W 29-10,--/--,,,,,,,,,,,,,,
+Brian Quick,FA,LAR,WR,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Keshawn Martin,FA,NWE,WR,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Jarius Wright,WA (Wed),MIN,WR,@Ten,W 25-16,--/--,,,,,,,,,,,,,,
+T.J. Graham,WA (Wed),PHI,WR,Cle,W 29-10,--/--,,,,,,,,,,,,,,
+Nick Toon,FA,LAR,WR,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+LaVon Brazill,WA (Wed),IND,WR,Det,L 35-39,--/--,,,,,,,,,,,,,,
+Chris Givens,WA (Wed),PHI,WR,Cle,W 29-10,--/--,,,,,,,,,,,,,,
+Kashif Moore,WA (Wed),KAN,WR,SD,W 33-27,--/--,,,,,,,,,,,,,,
+Nathan Palmer,WA (Wed),OAK,WR,@NO,W 35-34,--/--,,,,,,,,,,,,,,
+Chris Owusu,WA (Wed),NYJ,WR,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+Brian Tyms,WA (Wed),IND,WR,Det,L 35-39,--/--,,,,,,,,,,,,,,
+Jeff Fuller,WA (Wed),SEA,WR,Mia,W 12-10,--/--,,,,,,,,,,,,,,
+Jarrett Boykin,WA (Wed),BUF,WR,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+Griff Whalen,WA (Wed),MIA,WR,@Sea,L 10-12,--/--,,,,,,,,,,,,,,
+Rod Streater,FA,SFO,WR,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Joshua Bellamy,WA (Wed),CHI,WR,@Hou,L 14-23,--/--,,,,,,,,,,,,,,
+Brittan Golden,FA,ARI,WR,NE,Sun 8:30,--/--,,,,,,,,,,,,,,
+Damaris Johnson,WA (Wed),TEN,WR,Min,L 16-25,--/--,,,,,,,,,,,,,,
+Josh Gordon,SCOT,CLE,WR,@Phi,L 10-29,--/--,,,,,,,,,,,,,,
+Tavon Austin,FA,LAR,WR,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Stedman Bailey,FA,LAR,WR,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Aaron Dobson,FA,NWE,WR,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Marquise Goodwin,WA (Wed),BUF,WR,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+Justin Hunter,WA (Wed),MIA,WR,@Sea,L 10-12,--/--,,,,,,,,,,,,,,
+Markus Wheaton,FA,PIT,WR,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+B.J. Daniels,WA (Wed),CHI,WR,@Hou,L 14-23,--/--,,,,,,,,,,,,,,
+Tavarres King,WA (Wed),NYG,WR,@Dal,W 20-19,--/--,,,,,,,,,,,,,,
+Cobi Hamilton,FA,PIT,WR,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Josh Boyce,WA (Wed),CLE,WR,@Phi,L 10-29,--/--,,,,,,,,,,,,,,
+Chris Harper,WA (Wed),NYG,WR,@Dal,W 20-19,--/--,,,,,,,,,,,,,,
+Corey Fuller,WA (Wed),DET,WR,@Ind,W 39-35,--/--,,,,,,,,,,,,,,
+Marquess Wilson,WA (Wed),CHI,WR,@Hou,L 14-23,--/--,,,,,,,,,,,,,,
+Quinton Patton,FA,SFO,WR,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Da'Rick Rogers,WA (Wed),KAN,WR,SD,W 33-27,--/--,,,,,,,,,,,,,,
+Jaron Brown,FA,ARI,WR,NE,Sun 8:30,--/--,,,,,,,,,,,,,,
+Ryan Spadola,WA (Wed),DET,WR,@Ind,W 39-35,--/--,,,,,,,,,,,,,,
+Nick Williams,WA (Wed),ATL,WR,TB,L 24-31,--/--,,,,,,,,,,,,,,
+Rodney Smith,WA (Wed),DAL,WR,NYG,L 19-20,--/--,,,,,,,,,,,,,,
+Kenbrell Thompkins,WA (Wed),NYJ,WR,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+Myles White,WA (Wed),NYG,WR,@Dal,W 20-19,--/--,,,,,,,,,,,,,,
+Marlon Brown,WA (Wed),BAL,WR,Buf,W 13-7,--/--,,,,,,,,,,,,,,
+John Brown,APE,ARI,WR,NE,Sun 8:30,--/--,,,,,,,,,,,,,,
+Shaq Evans,WA (Wed),JAC,WR,GB,L 23-27,--/--,,,,,,,,,,,,,,
+Jeremy Gallon,FA,NWE,WR,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Martavis Bryant,FA,PIT,WR,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Jalen Saunders,FA,NWE,WR,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+De'Anthony Thomas,WA (Wed),KAN,WR,SD,W 33-27,--/--,,,,,,,,,,,,,,
+Bruce Ellington,FA,SFO,WR,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Devin Street,WA (Wed),DAL,WR,NYG,L 19-20,--/--,,,,,,,,,,,,,,
+Jeff Janis,WA (Wed),GNB,WR,@Jax,W 27-23,--/--,,,,,,,,,,,,,,
+Corey Washington,WA (Wed),ATL,WR,TB,L 24-31,--/--,,,,,,,,,,,,,,
+Robert Herron,WA (Wed),OAK,WR,@NO,W 35-34,--/--,,,,,,,,,,,,,,
+Brandon Coleman,WA (Wed),NOR,WR,Oak,L 34-35,--/--,,,,,,,,,,,,,,
+Michael Campanaro,WA (Wed),BAL,WR,Buf,W 13-7,--/--,,,,,,,,,,,,,,
+Taylor Gabriel,WA (Wed),ATL,WR,TB,L 24-31,--/--,,,,,,,,,,,,,,
+Ryan Grant,FA,WAS,WR,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Frankie Hammond,WA (Wed),KAN,WR,SD,W 33-27,--/--,,,,,,,,,,,,,,
+TJ Jones,WA (Wed),DET,WR,@Ind,W 39-35,--/--,,,,,,,,,,,,,,
+Isaiah Burse,WA (Wed),SDG,WR,@KC,L 27-33,--/--,,,,,,,,,,,,,,
+Jeremy Butler,WA (Wed),BAL,WR,Buf,W 13-7,--/--,,,,,,,,,,,,,,
+Damian Copeland,WA (Wed),DET,WR,@Ind,W 39-35,--/--,,,,,,,,,,,,,,
+Jonathan Krause,WA (Wed),TAM,WR,@Atl,W 31-24,--/--,,,,,,,,,,,,,,
+Walter Powell,WA (Wed),BUF,WR,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+Rashad Ross,FA,WAS,WR,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Freddie Martino,WA (Wed),TAM,WR,@Atl,W 31-24,--/--,,,,,,,,,,,,,,
+Kevin Smith,WA (Wed),SEA,WR,Mia,W 12-10,--/--,,,,,,,,,,,,,,
+Andre Debose,WA (Wed),IND,WR,Det,L 35-39,--/--,,,,,,,,,,,,,,
+DiAndre Campbell,FA,SFO,WR,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Issac Blakeney,FA,PIT,WR,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Geremy Davis,WA (Wed),NYG,WR,@Dal,W 20-19,--/--,,,,,,,,,,,,,,
+Da'Ron Brown,WA (Wed),KAN,WR,SD,W 33-27,--/--,,,,,,,,,,,,,,
+Kenny Bell,WA (Wed),TAM,WR,@Atl,W 31-24,--/--,,,,,,,,,,,,,,
+Dres Anderson,FA,SFO,WR,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Keith Mumphery,WA (Wed),HOU,WR,Chi,W 23-14,--/--,,,,,,,,,,,,,,
+J.J. Nelson,FA,ARI,WR,NE,Sun 8:30,--/--,,,,,,,,,,,,,,
+DeAndrew White,FA,SFO,WR,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Kaelin Clay,WA (Wed),BAL,WR,Buf,W 13-7,--/--,,,,,,,,,,,,,,
+Tre McBride,WA (Wed),TEN,WR,Min,L 16-25,--/--,,,,,,,,,,,,,,
+Dezmin Lewis,WA (Wed),BUF,WR,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+Sammie Coates,FA,PIT,WR,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Devin Smith,WA (Wed),NYJ,WR,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+Evan Spencer,WA (Wed),TAM,WR,@Atl,W 31-24,--/--,,,,,,,,,,,,,,
+DeVante Parker,WA (Wed),MIA,WR,@Sea,L 10-12,--/--,,,,,,,,,,,,,,
+Jamison Crowder,FA,WAS,WR,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Jaelen Strong,WA (Wed),HOU,WR,Chi,W 23-14,--/--,,,,,,,,,,,,,,
+Vince Mayle,WA (Wed),DAL,WR,NYG,L 19-20,--/--,,,,,,,,,,,,,,
+Mario Alford,WA (Wed),CIN,WR,@NYJ,W 23-22,--/--,,,,,,,,,,,,,,
+DeAndre Smelter,FA,SFO,WR,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Duron Carter,WA (Wed),IND,WR,Det,L 35-39,--/--,,,,,,,,,,,,,,
+Antwan Goodley,WA (Wed),SEA,WR,Mia,W 12-10,--/--,,,,,,,,,,,,,,
+Chris Matthews,WA (Wed),BAL,WR,Buf,W 13-7,--/--,,,,,,,,,,,,,,
+Seantavius Jones,WA (Wed),KAN,WR,SD,W 33-27,--/--,,,,,,,,,,,,,,
+Cameron Meredith,WA (Wed),CHI,WR,@Hou,L 14-23,--/--,,,,,,,,,,,,,,
+Matt Hazel,WA (Wed),MIA,WR,@Sea,L 10-12,--/--,,,,,,,,,,,,,,
+Chris Harper,FA,NWE,WR,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Tyler Murphy,WA (Wed),MIA,WR,@Sea,L 10-12,--/--,,,,,,,,,,,,,,
+Bradley Marquez,FA,LAR,WR,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Donteea Dye,WA (Wed),TAM,WR,@Atl,W 31-24,--/--,,,,,,,,,,,,,,
+Javontee Herndon,WA (Wed),SDG,WR,@KC,L 27-33,--/--,,,,,,,,,,,,,,
+Daniel Brown,WA (Wed),BAL,WR,Buf,W 13-7,--/--,,,,,,,,,,,,,,
+Eric Rogers,FA,SFO,WR,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Josh Doctson,FA,WAS,WR,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Laquon Treadwell,WA (Wed),MIN,WR,@Ten,W 25-16,--/--,,,,,,,,,,,,,,
+Malcolm Mitchell,FA,NWE,WR,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Pharoh Cooper,FA,LAR,WR,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Demarcus Robinson,WA (Wed),KAN,WR,SD,W 33-27,--/--,,,,,,,,,,,,,,
+Jordan Payton,WA (Wed),CLE,WR,@Phi,L 10-29,--/--,,,,,,,,,,,,,,
+Trevor Davis,WA (Wed),GNB,WR,@Jax,W 27-23,--/--,,,,,,,,,,,,,,
+Ty Hill,WA (Wed),KAN,WR,SD,W 33-27,--/--,,,,,,,,,,,,,,
+Rashard Higgins,WA (Wed),CLE,WR,@Phi,L 10-29,--/--,,,,,,,,,,,,,,
+Moritz Bohringer,WA (Wed),MIN,WR,@Ten,W 25-16,--/--,,,,,,,,,,,,,,
+Keenan Reynolds,WA (Wed),BAL,WR,Buf,W 13-7,--/--,,,,,,,,,,,,,,
+Kolby Listenbee,WA (Wed),BUF,WR,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+Cody Core,WA (Wed),CIN,WR,@NYJ,W 23-22,--/--,,,,,,,,,,,,,,
+Michael Thomas,FA,LAR,WR,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Aaron Burbridge,FA,SFO,WR,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Devin Lucien,FA,NWE,WR,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Demarcus Ayers,FA,PIT,WR,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Daniel Braverman,WA (Wed),CHI,WR,@Hou,L 14-23,--/--,,,,,,,,,,,,,,
+Devin Lewis Fuller,WA (Wed),ATL,WR,TB,L 24-31,--/--,,,,,,,,,,,,,,
+Charone Peake,WA (Wed),NYJ,WR,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+Kenny Lawler,WA (Wed),SEA,WR,Mia,W 12-10,--/--,,,,,,,,,,,,,,
+Max McCaffrey,WA (Wed),OAK,WR,@NO,W 35-34,--/--,,,,,,,,,,,,,,
+Eli Rogers,FA,PIT,WR,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Kasen Williams,WA (Wed),SEA,WR,Mia,W 12-10,--/--,,,,,,,,,,,,,,
+Reggie Bell,WA (Wed),NOR,WR,Oak,L 34-35,--/--,,,,,,,,,,,,,,
+Jake Kumerow,WA (Wed),CIN,WR,@NYJ,W 23-22,--/--,,,,,,,,,,,,,,
+Marquez North,FA,LAR,WR,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Andy Jones,WA (Wed),DAL,WR,NYG,L 19-20,--/--,,,,,,,,,,,,,,
+Roger Lewis,WA (Wed),NYG,WR,@Dal,W 20-19,--/--,,,,,,,,,,,,,,
+Xavier Rush,WA (Wed),PHI,WR,Cle,W 29-10,--/--,,,,,,,,,,,,,,
+Dom Williams,WA (Wed),SDG,WR,@KC,L 27-33,--/--,,,,,,,,,,,,,,
+R.J. Harris,WA (Wed),NOR,WR,Oak,L 34-35,--/--,,,,,,,,,,,,,,
+Bernard Reedy,WA (Wed),TAM,WR,@Atl,W 31-24,--/--,,,,,,,,,,,,,,
+Paul McRoberts,FA,LAR,WR,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Wendall Williams,WA (Wed),HOU,WR,Chi,W 23-14,--/--,,,,,,,,,,,,,,
+Anthony Dable,WA (Wed),NYG,WR,@Dal,W 20-19,--/--,,,,,,,,,,,,,,
+Darius Jennings,WA (Wed),CLE,WR,@Phi,L 10-29,--/--,,,,,,,,,,,,,,
+Devon Cajuste,FA,SFO,WR,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Mitch Mathews,WA (Wed),KAN,WR,SD,W 33-27,--/--,,,,,,,,,,,,,,
+Tanner McEvoy,WA (Wed),SEA,WR,Mia,W 12-10,--/--,,,,,,,,,,,,,,
+Bryce Treggs,WA (Wed),PHI,WR,Cle,W 29-10,--/--,,,,,,,,,,,,,,
+Chester Rogers,WA (Wed),IND,WR,Det,L 35-39,--/--,,,,,,,,,,,,,,
+Nelson Spruce,FA,LAR,WR,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Robby Anderson,WA (Wed),NYJ,WR,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+Tommylee Lewis,WA (Wed),NOR,WR,Oak,L 34-35,--/--,,,,,,,,,,,,,,
+Jack Doyle,WA (Wed),IND,TE,Det,L 35-39,0/0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,35.0,2.0,4.0,0.0,0.0,0.0,15.5
+Dwayne Allen,WA (Wed),IND,TE,Det,L 35-39,0/0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,53.0,1.0,6.0,1.0,0.0,0.0,13.3
+Julius Thomas,LOS,JAC,TE,GB,L 23-27,0/0,0.0,0.0,0.0,0.0,0.0,0.0,5.0,64.0,1.0,5.0,0.0,0.0,0.0,12.4
+Eric Ebron,WA (Wed),DET,TE,@Ind,W 39-35,0/0,0.0,0.0,0.0,0.0,0.0,0.0,5.0,46.0,1.0,5.0,0.0,0.0,0.0,10.6
+Austin Seferian-Jenkins,WA (Wed),TAM,TE,@Atl,W 31-24,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,30.0,1.0,1.0,0.0,0.0,0.0,9.0
+Larry Donnell,WA (Wed),NYG,TE,@Dal,W 20-19,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,15.0,1.0,2.0,0.0,0.0,0.0,7.5
+Travis Kelce,NOG,KAN,TE,SD,W 33-27,0/0,0.0,0.0,0.0,0.0,0.0,0.0,6.0,74.0,0.0,7.0,0.0,0.0,0.0,7.4
+Greg Olsen,SCOT,CAR,TE,@Den,L 20-21,0/0,0.0,0.0,0.0,0.0,0.0,0.0,7.0,73.0,0.0,9.0,0.0,0.0,0.0,7.3
+Jason Witten,FUNK,DAL,TE,NYG,L 19-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,9.0,66.0,0.0,14.0,0.0,0.0,0.0,6.6
+Kyle Rudolph,WA (Wed),MIN,TE,@Ten,W 25-16,0/0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,65.0,0.0,8.0,0.0,0.0,0.0,6.5
+Brandon Myers,WA (Wed),TAM,TE,@Atl,W 31-24,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,4.0,1.0,1.0,0.0,0.0,0.0,6.4
+C.J. Uzomah,WA (Wed),CIN,TE,@NYJ,W 23-22,0/0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,59.0,0.0,5.0,0.0,0.0,0.0,5.9
+Zach Ertz,LOS,PHI,TE,Cle,W 29-10,0/0,0.0,0.0,0.0,0.0,0.0,0.0,6.0,58.0,0.0,7.0,0.0,0.0,0.0,5.8
+Jacob Tamme,WA (Wed),ATL,TE,TB,L 24-31,0/0,0.0,0.0,0.0,0.0,0.0,0.0,6.0,51.0,0.0,8.0,0.0,0.0,0.0,5.1
+Marcedes Lewis,WA (Wed),JAC,TE,GB,L 23-27,0/0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,48.0,0.0,2.0,0.0,0.0,0.0,4.8
+Delanie Walker,FUNK,TEN,TE,Min,L 16-25,0/0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,42.0,0.0,5.0,0.0,0.0,0.0,4.2
+Charles Clay,WA (Wed),BUF,TE,@Bal,L 7-13,0/0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,40.0,0.0,3.0,0.0,0.0,0.0,4.0
+Dennis Pitta,WA (Wed),BAL,TE,Buf,W 13-7,0/0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,39.0,0.0,4.0,0.0,0.0,0.0,3.9
+Cameron Brate,WA (Wed),TAM,TE,@Atl,W 31-24,0/0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,30.0,0.0,4.0,0.0,0.0,0.0,3.0
+Virgil Green,WA (Wed),DEN,TE,Car,W 21-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,4.0,28.0,0.0,5.0,0.0,0.0,0.0,2.8
+Luke Willson,WA (Wed),SEA,TE,Mia,W 12-10,0/0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,26.0,0.0,4.0,0.0,0.0,0.0,2.6
+Clive Walford,WA (Wed),OAK,TE,@NO,W 35-34,0/0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,25.0,0.0,5.0,0.0,0.0,0.0,2.5
+Stephen Anderson,WA (Wed),HOU,TE,Chi,W 23-14,0/0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,25.0,0.0,3.0,0.0,0.0,0.0,2.5
+Richard Rodgers,WA (Wed),GNB,TE,@Jax,W 27-23,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,22.0,0.0,3.0,0.0,0.0,0.0,2.2
+Geoff Swaim,WA (Wed),DAL,TE,NYG,L 19-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,21.0,0.0,1.0,0.0,0.0,0.0,2.1
+Antonio Gates,APE,SDG,TE,@KC,L 27-33,0/0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,20.0,0.0,4.0,0.0,0.0,0.0,2.0
+Demetrius Harris,WA (Wed),KAN,TE,SD,W 33-27,0/0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,20.0,0.0,3.0,0.0,0.0,0.0,2.0
+Hunter Henry,WA (Wed),SDG,TE,@KC,L 27-33,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,20.0,0.0,2.0,0.0,0.0,0.0,2.0
+Ryan Griffin,WA (Wed),HOU,TE,Chi,W 23-14,0/0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,17.0,0.0,2.0,0.0,0.0,0.0,1.7
+Will Tye,WA (Wed),NYG,TE,@Dal,W 20-19,0/0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,16.0,0.0,3.0,0.0,0.0,0.0,1.6
+Zach Miller,BKN,CHI,TE,@Hou,L 14-23,0/0,0.0,0.0,0.0,0.0,0.0,0.0,3.0,14.0,0.0,4.0,0.0,0.0,0.0,1.4
+Austin Hooper,WA (Wed),ATL,TE,TB,L 24-31,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,14.0,0.0,1.0,0.0,0.0,0.0,1.4
+Brent Celek,WA (Wed),PHI,TE,Cle,W 29-10,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,11.0,0.0,1.0,0.0,0.0,0.0,1.1
+Jimmy Graham,FUNK,SEA,TE,Mia,W 12-10,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,11.0,0.0,1.0,0.0,0.0,0.0,1.1
+Jared Cook,WA (Wed),GNB,TE,@Jax,W 27-23,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,7.0,0.0,2.0,0.0,0.0,0.0,0.7
+Jordan Cameron,WA (Wed),MIA,TE,@Sea,L 10-12,0/0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,6.0,0.0,3.0,0.0,0.0,0.0,0.6
+Coby Fleener,GARI,NOR,TE,Oak,L 34-35,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,6.0,0.0,4.0,0.0,0.0,0.0,0.6
+C.J. Fiedorowicz,WA (Wed),HOU,TE,Chi,W 23-14,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,6.0,0.0,2.0,0.0,0.0,0.0,0.6
+Crockett Gillmore,WA (Wed),BAL,TE,Buf,W 13-7,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,5.0,0.0,1.0,0.0,0.0,0.0,0.5
+Cole Wick,WA (Wed),DET,TE,@Ind,W 39-35,0/0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,5.0,0.0,1.0,0.0,0.0,0.0,0.5
+Owen Daniels,WA (Wed),DEN,TE,Car,W 21-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Gary Barnidge,BKN,CLE,TE,@Phi,L 10-29,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,0.0,0.0,0.0,0.0
+Kellen Davis,WA (Wed),NYJ,TE,Cin,L 22-23,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+James Casey,WA (Wed),DEN,TE,Car,W 21-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+John Phillips,WA (Wed),DEN,TE,Car,W 21-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Ed Dickson,WA (Wed),CAR,TE,@Den,L 20-21,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Garrett Graham,WA (Wed),DEN,TE,Car,W 21-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Richie Brockel,WA (Wed),CAR,TE,@Den,L 20-21,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Logan Paulsen,WA (Wed),CHI,TE,@Hou,L 14-23,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0
+Lee Smith,WA (Wed),OAK,TE,@NO,W 35-34,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Rhett Ellison,WA (Wed),MIN,TE,@Ten,W 25-16,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Gavin Escobar,WA (Wed),DAL,TE,NYG,L 19-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Brandon Williams,WA (Wed),SEA,TE,Mia,W 12-10,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+MarQueis Gray,WA (Wed),MIA,TE,@Sea,L 10-12,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+James O'Shaughnessy,WA (Wed),KAN,TE,SD,W 33-27,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Jeff Heuerman,WA (Wed),DEN,TE,Car,W 21-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Nick O'Leary,WA (Wed),BUF,TE,@Bal,L 7-13,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0
+Beau Sandland,WA (Wed),CAR,TE,@Den,L 20-21,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Erik Swoope,WA (Wed),IND,TE,Det,L 35-39,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Ross Travis,WA (Wed),KAN,TE,SD,W 33-27,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0
+Scott Simonson,WA (Wed),CAR,TE,@Den,L 20-21,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Kellen Winslow,WA (Wed),NYJ,TE,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+Benjamin Watson,WA (Wed),BAL,TE,Buf,W 13-7,--/--,,,,,,,,,,,,,,
+Alex Smith,FA,WAS,TE,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Vernon Davis,FA,WAS,TE,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Anthony Fasano,WA (Wed),TEN,TE,Min,L 16-25,--/--,,,,,,,,,,,,,,
+Daniel Fells,WA (Wed),NYG,TE,@Dal,W 20-19,--/--,,,,,,,,,,,,,,
+Matt Spaeth,FA,PIT,TE,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Scott Chandler,FA,NWE,TE,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Clark Harris,WA (Wed),CIN,TE,@NYJ,W 23-22,--/--,,,,,,,,,,,,,,
+Fred Davis,FA,WAS,TE,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Martellus Bennett,FA,NWE,TE,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Craig Stevens,WA (Wed),TEN,TE,Min,L 16-25,--/--,,,,,,,,,,,,,,
+Matthew Mulligan,WA (Wed),DET,TE,@Ind,W 39-35,--/--,,,,,,,,,,,,,,
+David Johnson,FA,PIT,TE,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Chase Coffman,WA (Wed),IND,TE,Det,L 35-39,--/--,,,,,,,,,,,,,,
+Bear Pascoe,FA,NWE,TE,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Brandon Pettigrew,WA (Wed),DET,TE,@Ind,W 39-35,--/--,,,,,,,,,,,,,,
+Jermaine Gresham,FA,ARI,TE,NE,Sun 8:30,--/--,,,,,,,,,,,,,,
+Rob Gronkowski,FA,NWE,TE,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Tony Moeaki,WA (Wed),CHI,TE,@Hou,L 14-23,--/--,,,,,,,,,,,,,,
+Jim Dray,WA (Wed),BUF,TE,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+Clay Harbor,FA,NWE,TE,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Michael Hoomanawanui,WA (Wed),NOR,TE,Oak,L 34-35,--/--,,,,,,,,,,,,,,
+Anthony McCoy,WA (Wed),SEA,TE,Mia,W 12-10,--/--,,,,,,,,,,,,,,
+Andrew Quarless,WA (Wed),DET,TE,@Ind,W 39-35,--/--,,,,,,,,,,,,,,
+Jeff Cumberland,WA (Wed),SDG,TE,@KC,L 27-33,--/--,,,,,,,,,,,,,,
+Lance Kendricks,FA,LAR,TE,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Rob Housler,WA (Wed),CHI,TE,@Hou,L 14-23,--/--,,,,,,,,,,,,,,
+Bruce Miller,FA,SFO,TE,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Luke Stocker,WA (Wed),TAM,TE,@Atl,W 31-24,--/--,,,,,,,,,,,,,,
+David Ausberry,WA (Wed),DET,TE,@Ind,W 39-35,--/--,,,,,,,,,,,,,,
+Niles Paul,FA,WAS,TE,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+D.J. Williams,FA,WAS,TE,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Orson Charles,WA (Wed),DET,TE,@Ind,W 39-35,--/--,,,,,,,,,,,,,,
+Ladarius Green,FA,PIT,TE,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+James Hanna,WA (Wed),DAL,TE,NYG,L 19-20,--/--,,,,,,,,,,,,,,
+Greg Scruggs,WA (Wed),CHI,TE,@Hou,L 14-23,--/--,,,,,,,,,,,,,,
+Garrett Celek,FA,SFO,TE,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Phillip Supernaw,WA (Wed),TEN,TE,Min,L 16-25,--/--,,,,,,,,,,,,,,
+Dominique Jones,WA (Wed),MIA,TE,@Sea,L 10-12,--/--,,,,,,,,,,,,,,
+Derek Carrier,FA,WAS,TE,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Sean McGrath,WA (Wed),SDG,TE,@KC,L 27-33,--/--,,,,,,,,,,,,,,
+Chase Ford,WA (Wed),BAL,TE,Buf,W 13-7,--/--,,,,,,,,,,,,,,
+Cooper Helfet,WA (Wed),SEA,TE,Mia,W 12-10,--/--,,,,,,,,,,,,,,
+Brandon Bostick,WA (Wed),NYJ,TE,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+Ifeanyi Momah,FA,ARI,TE,NE,Sun 8:30,--/--,,,,,,,,,,,,,,
+Tyler Eifert,NOG,CIN,TE,@NYJ,W 23-22,--/--,,,,,,,,,,,,,,
+Vance McDonald,FA,SFO,TE,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Jordan Reed,SLIV,WAS,TE,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Michael Williams,FA,NWE,TE,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Mychal Rivera,WA (Wed),OAK,TE,@NO,W 35-34,--/--,,,,,,,,,,,,,,
+Chris Gragg,WA (Wed),BUF,TE,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+Dion Sims,WA (Wed),MIA,TE,@Sea,L 10-12,--/--,,,,,,,,,,,,,,
+Levine Toilolo,WA (Wed),ATL,TE,TB,L 24-31,--/--,,,,,,,,,,,,,,
+Justice Cunningham,FA,LAR,TE,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Josh Hill,WA (Wed),NOR,TE,Oak,L 34-35,--/--,,,,,,,,,,,,,,
+Chris Pantale,WA (Wed),PHI,TE,Cle,W 29-10,--/--,,,,,,,,,,,,,,
+Timothy Wright,WA (Wed),DET,TE,@Ind,W 39-35,--/--,,,,,,,,,,,,,,
+Zach Sudfeld,WA (Wed),NYJ,TE,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+Jake Stoneburner,FA,LAR,TE,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Jace Amaro,WA (Wed),TEN,TE,Min,L 16-25,--/--,,,,,,,,,,,,,,
+Troy Niklas,FA,ARI,TE,NE,Sun 8:30,--/--,,,,,,,,,,,,,,
+Darren Fells,FA,ARI,TE,NE,Sun 8:30,--/--,,,,,,,,,,,,,,
+Brian Leonhardt,WA (Wed),MIN,TE,@Ten,W 25-16,--/--,,,,,,,,,,,,,,
+Trey Burton,WA (Wed),PHI,TE,Cle,W 29-10,--/--,,,,,,,,,,,,,,
+Marcel Jensen,FA,WAS,TE,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Asante Cleveland,WA (Wed),SDG,TE,@KC,L 27-33,--/--,,,,,,,,,,,,,,
+Nic Jacobs,WA (Wed),JAC,TE,GB,L 23-27,--/--,,,,,,,,,,,,,,
+Blake Annen,WA (Wed),BUF,TE,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+RaShaun Allen,WA (Wed),NOR,TE,Oak,L 34-35,--/--,,,,,,,,,,,,,,
+Justin Perillo,WA (Wed),GNB,TE,@Jax,W 27-23,--/--,,,,,,,,,,,,,,
+MyCole Pruitt,WA (Wed),MIN,TE,@Ten,W 25-16,--/--,,,,,,,,,,,,,,
+Randall Telfer,WA (Wed),CLE,TE,@Phi,L 10-29,--/--,,,,,,,,,,,,,,
+Gerald Christian,FA,ARI,TE,NE,Sun 8:30,--/--,,,,,,,,,,,,,,
+Neal Sterling,WA (Wed),JAC,TE,GB,L 23-27,--/--,,,,,,,,,,,,,,
+Blake Bell,FA,SFO,TE,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Chris Manhertz,WA (Wed),NOR,TE,Oak,L 34-35,--/--,,,,,,,,,,,,,,
+Nick Boyle,WA (Wed),BAL,TE,Buf,W 13-7,--/--,,,,,,,,,,,,,,
+Darren Waller,WA (Wed),BAL,TE,Buf,W 13-7,--/--,,,,,,,,,,,,,,
+Busta Anderson,FA,SFO,TE,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Ben Koyack,WA (Wed),JAC,TE,GB,L 23-27,--/--,,,,,,,,,,,,,,
+Kennard Backman,WA (Wed),GNB,TE,@Jax,W 27-23,--/--,,,,,,,,,,,,,,
+Tyler Kroft,WA (Wed),CIN,TE,@NYJ,W 23-22,--/--,,,,,,,,,,,,,,
+Maxx Williams,WA (Wed),BAL,TE,Buf,W 13-7,--/--,,,,,,,,,,,,,,
+Jesse James,FA,PIT,TE,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+AJ Derby,FA,NWE,TE,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+E.J. Bibbs,WA (Wed),CLE,TE,@Phi,L 10-29,--/--,,,,,,,,,,,,,,
+Khari Lee,WA (Wed),DET,TE,@Ind,W 39-35,--/--,,,,,,,,,,,,,,
+Jerome Cunningham,WA (Wed),TEN,TE,Min,L 16-25,--/--,,,,,,,,,,,,,,
+Wes Saxton,WA (Wed),NYJ,TE,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+Nick Vannett,WA (Wed),SEA,TE,Mia,W 12-10,--/--,,,,,,,,,,,,,,
+Tyler Higbee,FA,LAR,TE,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Seth DeValve,WA (Wed),CLE,TE,@Phi,L 10-29,--/--,,,,,,,,,,,,,,
+Temarrick Hemingway,FA,LAR,TE,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Jerell Adams,WA (Wed),NYG,TE,@Dal,W 20-19,--/--,,,,,,,,,,,,,,
+David Morgan II,WA (Wed),MIN,TE,@Ten,W 25-16,--/--,,,,,,,,,,,,,,
+Dan Vitale,WA (Wed),BUF,TE,@Bal,L 7-13,--/--,,,,,,,,,,,,,,
+Rico Darnell Gathers,WA (Wed),DAL,TE,NYG,L 19-20,--/--,,,,,,,,,,,,,,
+Thomas Duarte,WA (Wed),MIA,TE,@Sea,L 10-12,--/--,,,,,,,,,,,,,,
+Ben Braunecker,WA (Wed),CHI,TE,@Hou,L 14-23,--/--,,,,,,,,,,,,,,
+Matt LaCosse,WA (Wed),NYG,TE,@Dal,W 20-19,--/--,,,,,,,,,,,,,,
+Anthony Denham,WA (Wed),HOU,TE,Chi,W 23-14,--/--,,,,,,,,,,,,,,
+Bryce Williams,FA,NWE,TE,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Alan Cross,WA (Wed),TAM,TE,@Atl,W 31-24,--/--,,,,,,,,,,,,,,
+Braedon Bowman,WA (Wed),NYJ,TE,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+Brian Parker,WA (Wed),NYJ,TE,Cin,L 22-23,--/--,,,,,,,,,,,,,,
+Dillon Gordon,WA (Wed),PHI,TE,Cle,W 29-10,--/--,,,,,,,,,,,,,,
+Joshua Perkins,WA (Wed),ATL,TE,TB,L 24-31,--/--,,,,,,,,,,,,,,
+Xavier Grimble,FA,PIT,TE,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Vikings,BKN,MIN,DST,@Ten,W 25-16,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0,21.0
+Eagles,WA (Wed),PHI,DST,Cle,W 29-10,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,12.0
+Dolphins,WA (Wed),MIA,DST,@Sea,L 10-12,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,11.0
+Seahawks,NOG,SEA,DST,Mia,W 12-10,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,11.0
+Texans,SCOT,HOU,DST,Chi,W 23-14,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,10.0
+Bills,SLIV,BUF,DST,@Bal,L 7-13,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,9.0
+Jets,FUNK,NYJ,DST,Cin,L 22-23,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,8.0
+Panthers,FUNK,CAR,DST,@Den,L 20-21,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,8.0
+Ravens,GARI,BAL,DST,Buf,W 13-7,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,8.0
+Bengals,LOS,CIN,DST,@NYJ,W 23-22,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5.0
+Broncos,BKN,DEN,DST,Car,W 21-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5.0
+Packers,LOS,GNB,DST,@Jax,W 27-23,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5.0
+Bears,WA (Wed),CHI,DST,@Hou,L 14-23,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,4.0
+Cowboys,WA (Wed),DAL,DST,NYG,L 19-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,4.0
+Jaguars,WA (Wed),JAC,DST,GB,L 23-27,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0
+Buccaneers,WA (Wed),TAM,DST,@Atl,W 31-24,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0
+Chargers,WA (Wed),SDG,DST,@KC,L 27-33,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0
+Falcons,WA (Wed),ATL,DST,TB,L 24-31,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Titans,WA (Wed),TEN,DST,Min,L 16-25,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Chiefs,GARI,KAN,DST,SD,W 33-27,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Giants,WA (Wed),NYG,DST,@Dal,W 20-19,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Browns,WA (Wed),CLE,DST,@Phi,L 10-29,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-2.0
+Raiders,WA (Wed),OAK,DST,@NO,W 35-34,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-4.0
+Colts,WA (Wed),IND,DST,Det,L 35-39,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-5.0
+Lions,WA (Wed),DET,DST,@Ind,W 39-35,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-6.0
+Saints,WA (Wed),NOR,DST,Oak,L 34-35,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,-8.0
+Rams,APE,LAR,DST,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Patriots,FA,NWE,DST,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Cardinals,SLIV,ARI,DST,NE,Sun 8:30,--/--,,,,,,,,,,,,,,
+Steelers,FA,PIT,DST,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+49ers,FA,SFO,DST,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Redskins,FA,WAS,DST,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Dan Bailey,FUNK,DAL,K,NYG,L 19-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,17.0
+Blair Walsh,WA (Wed),MIN,K,@Ten,W 25-16,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,14.0
+Jason Myers,WA (Wed),JAC,K,GB,L 23-27,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,13.0
+Adam Vinatieri,LOS,IND,K,Det,L 35-39,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,12.0
+Mike Nugent,WA (Wed),CIN,K,@NYJ,W 23-22,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,11.0
+Nick Novak,WA (Wed),HOU,K,Chi,W 23-14,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,11.0
+Matt Bryant,WA (Wed),ATL,K,TB,L 24-31,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,10.0
+Nick Folk,WA (Wed),NYJ,K,Cin,L 22-23,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,10.0
+Cairo Santos,SCOT,KAN,K,SD,W 33-27,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,10.0
+Mason Crosby,FUNK,GNB,K,@Jax,W 27-23,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,9.0
+Justin Tucker,BKN,BAL,K,Buf,W 13-7,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,9.0
+Wil Lutz,WA (Wed),NOR,K,Oak,L 34-35,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,9.0
+Sebastian Janikowski,WA (Wed),OAK,K,@NO,W 35-34,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,8.0
+Matt Prater,APE,DET,K,@Ind,W 39-35,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,8.0
+Graham Gano,NOG,CAR,K,@Den,L 20-21,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,8.0
+Caleb Sturgis,WA (Wed),PHI,K,Cle,W 29-10,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,8.0
+Josh Lambo,WA (Wed),SDG,K,@KC,L 27-33,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,8.0
+Roberto Aguayo,SLIV,TAM,K,@Atl,W 31-24,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,8.0
+Steven Hauschka,LOS,SEA,K,Mia,W 12-10,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,6.0
+Ryan Succop,WA (Wed),TEN,K,Min,L 16-25,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,4.0
+Patrick Murray,WA (Wed),CLE,K,@Phi,L 10-29,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,4.0
+Andrew Franks,WA (Wed),MIA,K,@Sea,L 10-12,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,4.0
+Brandon McManus,WA (Wed),DEN,K,Car,W 21-20,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0
+Connor Barth,WA (Wed),CHI,K,@Hou,L 14-23,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0
+Randy Bullock,WA (Wed),NYG,K,@Dal,W 20-19,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0
+Dan Carpenter,WA (Wed),BUF,K,@Bal,L 7-13,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Jordan Gay,WA (Wed),BUF,K,@Bal,L 7-13,0/0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Phil Dawson,FA,SFO,K,LA,Mon 10:20,--/--,,,,,,,,,,,,,,
+Jay Feely,FA,FA,K,** BYE **,,,,,,,,,,,,,,,,
+Shayne Graham,WA (Wed),ATL,K,TB,L 24-31,--/--,,,,,,,,,,,,,,
+Billy Cundiff,WA (Wed),CLE,K,@Phi,L 10-29,--/--,,,,,,,,,,,,,,
+Josh Brown,WA (Wed),NYG,K,@Dal,W 20-19,--/--,,,,,,,,,,,,,,
+Josh Scobee,WA (Wed),NOR,K,Oak,L 34-35,--/--,,,,,,,,,,,,,,
+Robbie Gould,WA (Wed),CHI,K,@Hou,L 14-23,--/--,,,,,,,,,,,,,,
+Shaun Suisham,FA,PIT,K,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Stephen Gostkowski,FA,NWE,K,@Ari,Sun 8:30,--/--,,,,,,,,,,,,,,
+Garrett Hartley,FA,PIT,K,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Alex Henery,FA,FA,K,** BYE **,,,,,,,,,,,,,,,,
+Kai Forbath,WA (Wed),NOR,K,Oak,L 34-35,--/--,,,,,,,,,,,,,,
+Greg Zuerlein,FA,LAR,K,@SF,Mon 10:20,--/--,,,,,,,,,,,,,,
+Brandon Bogotay,WA (Wed),TAM,K,@Atl,W 31-24,--/--,,,,,,,,,,,,,,
+Dustin Hopkins,FA,WAS,K,Pit,Mon 7:10,--/--,,,,,,,,,,,,,,
+Zach Hocker,WA (Wed),CIN,K,@NYJ,W 23-22,--/--,,,,,,,,,,,,,,
+Travis Coons,WA (Wed),CLE,K,@Phi,L 10-29,--/--,,,,,,,,,,,,,,
+Chandler Catanzaro,GARI,ARI,K,NE,Sun 8:30,--/--,,,,,,,,,,,,,,
+Cody Parkey,WA (Wed),PHI,K,Cle,W 29-10,--/--,,,,,,,,,,,,,,
+Chris Boswell,FA,PIT,K,@Wsh,Mon 7:10,--/--,,,,,,,,,,,,,,
+Kyle Brindza,WA (Wed),NYJ,K,Cin,L 22-23,--/--,,,,,,,,,,,,,,
