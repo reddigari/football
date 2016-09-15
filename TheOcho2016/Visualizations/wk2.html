@@ -118,8 +118,10 @@
                     d3.json("wk2.json", function(json) {
 
                         scoreTime = json[0].scoreTime;
+                        var timeString = "Projections as of " + json[0].projTime + "<br>Scores as of " + json[0].scoreTime;
+                        if (json[0].rosterTime != null) timeString = "Rosters as of " + json[0].rosterTime + "<br>" + timeString;
                         d3.select("#wk1Proj").append("p")
-                            .html("Scores as of " + scoreTime + ".");
+                            .html(timeString);
                         json = json.slice(1);
 
                         json.forEach(function(d) {
