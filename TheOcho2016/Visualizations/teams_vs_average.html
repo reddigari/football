@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>The Ocho: Week 1</title>
+    <link rel="stylesheet" href="https://reddigari.github.io/styles/ff_style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://reddigari.github.io/styles/style_functions.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.9.0/d3-legend.min.js"></script>
+    <style>
+    .projRect, .ptsRect {
+      stroke-width: 0;
+      stroke: none;
+    }
+    /*div.tooltip {
+      position: absolute;
+      text-align: center;
+      vertical-align: middle;
+      width: 60px;
+      height: 28px;
+      padding: 2px;
+      font: 12px sans-serif;
+      background: lightsteelblue;
+      border: 0px;
+      border-radius: 8px;
+      pointer-events: none;
+    }*/
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="sidebar">
+            <div id="field" style="padding:10px">
+                <svg width="180" height="80">
+                    <line x1="2" x2="2" y1="0" y2="80" style="stroke: white; stroke-width:4px;" />
+                    <line x1="178" x2="178" y1="0" y2="80" style="stroke: white; stroke-width:4px;" />
+                    <line x1="0" x2="180" y1="78" y2="78" style="stroke: white; stroke-width:4px;" />
+                    <line x1="0" x2="180" y1="2" y2="2" style="stroke: white; stroke-width:4px;" />
+                    <rect x="4" y="4" width="16" height="72" style="stroke-width: 0; fill: blue;" />
+                    <rect x="160" y="4" width="16" height="72" style="stroke-width: 0; fill: blue;" />
+                    <line x1="20" x2="160" y1="35" y2="35" style="stroke: white; stroke-dasharray: 1, 1" />
+                    <line x1="20" x2="160" y1="45" y2="45" style="stroke: white; stroke-dasharray: 1, 1" />
+                </svg>
+            </div>
+            <script>
+                var lines = [];
+                for (count = 0; count < 21; count++) {
+                    lines.push(20 + (7 * count));
+                };
+                d3.select("#field svg")
+                    .selectAll(".ydline")
+                    .data(lines)
+                    .enter().append("line")
+                    .style("stroke", "white")
+                    .style("stroke-width", function(d, i) {
+                        if (i % 2 == 0) return "2";
+                        else return "1";
+                    })
+                    .attr("x1", function(d) {
+                        return d;
+                    })
+                    .attr("x2", function(d) {
+                        return d;
+                    })
+                    .attr("y1", 0)
+                    .attr("y2", 80);
+            </script>
+            <ul>
+                <li><a href="https://reddigari.github.io/fantasy2016">Posts</a></li>
+                <li><a href="https://reddigari.github.io/fantasy2016/the_ocho" style="color: black">The Ocho</a></li>
+                <li><a href="https://github.com/reddigari/football">Code</a></li>
+            </ul>
+        </div>
+
+        <div id="header">
+            <h1>Fantasy Football</h1>
+        </div>
+        <div id="text">
+            <div id="chart">
+                <h2></h2>
+                <script>
+                    var margin = {
+                            top: 30,
+                            right: 20,
+                            bottom: 40,
+                            left: 60
+                        },
+                        width = 700 - margin.left - margin.right,
+                        height = 1000 - margin.top - margin.bottom;
+
+
+                    var xNeg = d3.scaleLinear()
+                        .range([0, (width/2)-(width/50)]);
+
+                    var xPos = d3.scaleLinear()
+                        .range([(width/2)+(width/50), width]);
+
+                    var y = d3.scaleBand()
+                        .rangeRound([0, height])
+                        .paddingInner(0.25)
+                        .paddingOuter(0.1);
+
+                    var y1 = d3.scaleBand()
+                        .paddingInner(0.05);
+
+                    var xAxisNeg = d3.axisTop(xNeg)
+                        .ticks(5)
+                        .tickFormat(d3.format(".0%"));
+                    var xAxisPos = d3.axisTop(xPos)
+                        .ticks(5)
+                        .tickFormat(d3.format(".0%"));
+
+                    var yAxis = d3.axisLeft(y)
+                        .tickFormat('')
+                        .tickSize(0);
+
+                    // var colors = ["#cc1010", "#293dc1", "#008c1f", "#ff730e", "#65008f", "#6cc6eb", "#c7df50"];
+                    // var colorScale = d3.scaleOrdinal(colors);
+                    var colorScale = d3.scaleLinear().range(["red", "white", "green"]);
+
+                    var g = d3.select("#chart").append("svg")
+                        .attr("width", width + margin.left + margin.right)
+                        .attr("height", height + margin.top + margin.bottom)
+                        .append("g")
+                        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+
+                    // d3.json("https://raw.githubusercontent.com/reddigari/football/master/TheOcho2016/Visualizations/wk1.json", function(json) {
+                    d3.json("teams_vs_average.json", function(json) {
+                        json.forEach(function(d) {
+                            d.data.forEach(function (dd) {
+                                dd.Pct = parseFloat(dd.Pct)/100;
+                            });
+                        });
+                        console.log(json);
+
+                        var max = d3.max(json, function(d) {
+                            return d3.max(d.data, function(dd) {
+                                return Math.abs(dd.Pct);
+                            });
+                        });
+
+                        xNeg.domain([-max, 0]);
+                        xPos.domain([0, max]);
+                        colorScale.domain([-1, 0, 1]);
+
+                        var owners = json.map(function(d) { return d.Owner; });
+                        y.domain(owners);
+                        var slots = json[0].data.map(function(d) { return d.Slot; });
+                        // colorScale.domain(slots);
+
+                        y1.rangeRound([0, y.bandwidth()])
+                            .domain(slots);
+
+                        g.append("g")
+                           .attr("class", "x axis")
+                           .call(xAxisNeg);
+
+                        g.append("g")
+                           .attr("class", "x axis")
+                           .call(xAxisPos);
+
+                        // g.append("g")
+                        //    .attr("class", "y axis")
+                        //    .attr("transform", "translate(" + (width/2) + ",0)")
+                        //    .call(yAxis);
+
+                        var teams = g.selectAll(".team")
+                            .data(json)
+                            .enter().append("g")
+                            .attr("class", "team")
+                            .attr("transform", function(d) { return "translate(0," + y(d.Owner) + ")" });
+
+                        teams.selectAll(".rect")
+                            .data(function(d) {return d.data;})
+                            .enter().append("rect")
+                            .attr("class", "rect")
+                            .attr("y", function(d) {return y1(d.Slot)})
+                            .attr("height", y1.bandwidth())
+                            .attr("x", function(d) {return (d.Pct > 0) ? xPos(0) : xNeg(d.Pct);})
+                            .attr("width", function(d) {return (d.Pct > 0) ? (xPos(d.Pct) - xPos(0)): (xNeg(0)-xNeg(d.Pct));})
+                            .style("fill", function(d) {return colorScale(d.Pct);});
+
+                        teams.selectAll(".posLabel")
+                            .data(slots)
+                            .enter().append("text")
+                            .text(function(d) {return d;})
+                            .attr("y", function(d) {return y1(d) + 0.75*y1.bandwidth();})
+                            .attr("x", width/2)
+                            .attr("font-family", "sans-serif")
+                            .attr("font-size", width/80)
+                            .attr("text-anchor", "middle");
+
+
+                        g.selectAll(".teamLabel")
+                            .data(owners)
+                            .enter().append("text")
+                            .text(function(d) {return d})
+                            .attr("y", function(d) {return y(d) + 0.5*y.bandwidth();})
+                            .attr("text-anchor", "middle")
+                            .attr("transform", function(d) {return "rotate(-90, 0," + (y(d) + 0.5*y.bandwidth()) + ")"});
+
+                        g.selectAll(".divLine")
+                            .data(owners.slice(1))
+                            .enter().append("line")
+                            .attr("class", "divLine")
+                            .attr("x1", 0)
+                            .attr("x2", width)
+                            .attr("y1", function(d) { return y(d) - (0.5*y.paddingInner()*y.bandwidth()); })
+                            .attr("y2", function(d) { return y(d) - (0.5*y.paddingInner()*y.bandwidth()); })
+                            .style("stroke", "black");
+
+                        // d3.select("#chart").insert("svg", "svg:first-of-type")
+                        //     .attr("transform", "translate(" + margin.left + "," + margin.top +")")
+                        //     .append("g")
+                        //     .attr("class", "legendOrdinal");
+                        //
+                        // var legendOrdinal = d3.legendColor()
+                        //   .shape("path", d3.symbol().type(d3.symbolCircle).size(60)())
+                        //   .shapePadding(5)
+                        //   .scale(colorScale);
+                        //
+                        // d3.select(".legendOrdinal")
+                        //   .call(legendOrdinal);
+
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+
+</html>
