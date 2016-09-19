@@ -86,7 +86,7 @@
                 <h2></h2>
                 <script>
                     var margin = {
-                            top: 30,
+                            top: 50,
                             right: 20,
                             bottom: 40,
                             left: 60
@@ -134,12 +134,6 @@
 
                     // d3.json("https://raw.githubusercontent.com/reddigari/football/master/TheOcho2016/Visualizations/wk1.json", function(json) {
                     d3.json("teams_vs_average.json", function(json) {
-                        json.forEach(function(d) {
-                            d.data.forEach(function (dd) {
-                                dd.Pct = parseFloat(dd.Pct)/100;
-                            });
-                        });
-                        console.log(json);
 
                         var max = d3.max(json, function(d) {
                             return d3.max(d.data, function(dd) {
@@ -167,11 +161,6 @@
                            .attr("class", "x axis")
                            .call(xAxisPos);
 
-                        // g.append("g")
-                        //    .attr("class", "y axis")
-                        //    .attr("transform", "translate(" + (width/2) + ",0)")
-                        //    .call(yAxis);
-
                         var teams = g.selectAll(".team")
                             .data(json)
                             .enter().append("g")
@@ -198,7 +187,6 @@
                             .attr("font-size", width/80)
                             .attr("text-anchor", "middle");
 
-
                         g.selectAll(".teamLabel")
                             .data(owners)
                             .enter().append("text")
@@ -216,6 +204,78 @@
                             .attr("y1", function(d) { return y(d) - (0.5*y.paddingInner()*y.bandwidth()); })
                             .attr("y2", function(d) { return y(d) - (0.5*y.paddingInner()*y.bandwidth()); })
                             .style("stroke", "black");
+
+                        g.append("text")
+                            .attr("x", width/2)
+                            .attr("y", -margin.top/1.5)
+                            .text("Performance vs. League Average")
+                            .attr("text-anchor", "middle");
+
+                        var smallHeight = 250;
+                        var totals = json.map(function(d) {
+                            return {
+                                Owner: d.Owner,
+                                Total: d3.sum(d.data, function(d) {return d.FFPts;})
+                            }
+                        });
+                        totals.sort(function(a, b) { return a.Total < b.Total});
+                        console.log(totals);
+
+                        teamPts = d3.select("#chart").insert("svg", "svg:first-of-type")
+                            .attr("width", width + margin.left + margin.right)
+                            .attr("height", smallHeight + margin.top + margin.bottom)
+                            .attr("transform", "translate(" + margin.left + "," + margin.top +")")
+                            .append("g")
+                            .attr("id", "teamPts");
+
+                        var xOrd = d3.scaleBand()
+                            .rangeRound([0, width])
+                            .paddingInner(0.5)
+                            .paddingOuter(0.1)
+                            .domain(totals.map(function(d) {return d.Owner;}));
+
+                        var y2 = d3.scaleLinear()
+                            .range([smallHeight, 0])
+                            .domain([0, d3.max(totals, function(d) {return d.Total;})+5]);
+
+                        var xOrdAxis = d3.axisBottom(xOrd)
+                            .tickSize(0)
+                            .tickPadding(5);
+                        var y2Axis = d3.axisLeft(y2)
+                            .ticks(4);
+
+                        teamPts.append("g")
+                            .attr("class", "x axis")
+                            .attr("transform", "translate(0," + smallHeight + ")")
+                            .call(xOrdAxis);
+                        teamPts.append("g")
+                            .attr("class", "y axis")
+                            .call(y2Axis);
+                        teamPts.append("line")
+                            .attr("x1", 0)
+                            .attr("x2", width)
+                            .attr("y1", y2(d3.mean(totals, function(d) {return d.Total;})))
+                            .attr("y2", y2(d3.mean(totals, function(d) {return d.Total;})))
+                            .style("stroke", "red");
+                        teamPts.selectAll(".rect")
+                            .data(totals)
+                            .enter().append("rect")
+                            .attr("x", function(d) {return xOrd(d.Owner);})
+                            .attr("y", function(d) {return y2(d.Total);})
+                            .attr("width", xOrd.bandwidth())
+                            .attr("height", function(d) {return smallHeight-y2(d.Total)})
+                            .style("fill", "#8c8c8c");
+                        teamPts.selectAll(".ptsLabel")
+                            .data(totals)
+                            .enter().append("text")
+                            .attr("x", function(d) {return xOrd(d.Owner) + 0.5*xOrd.bandwidth();})
+                            .attr("y", function(d) {return y2(d.Total) + 12;})
+                            .text(function(d) {return d.Total.toFixed(1)})
+                            .attr("fill", "white")
+                            .attr("font-size", 10)
+                            .attr("font-family", "sans-serif")
+                            .attr("text-anchor", "middle");
+
 
                         // d3.select("#chart").insert("svg", "svg:first-of-type")
                         //     .attr("transform", "translate(" + margin.left + "," + margin.top +")")
