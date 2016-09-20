@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>The Ocho: Week 1</title>
+    <title>The Ocho</title>
     <link rel="stylesheet" href="https://reddigari.github.io/styles/ff_style.css">
     <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
@@ -12,23 +12,25 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.9.0/d3-legend.min.js"></script>
     <style>
-    .projRect, .ptsRect {
-      stroke-width: 0;
-      stroke: none;
+    hr {
+      margin: 25px 0px;
     }
-    /*div.tooltip {
+    text {
+      font-family: sans-serif;
+    }
+    div.tooltip {
       position: absolute;
       text-align: center;
       vertical-align: middle;
-      width: 60px;
-      height: 28px;
-      padding: 2px;
+      width: auto;
+      height: auto;
+      padding: 8px;
       font: 12px sans-serif;
       background: lightsteelblue;
       border: 0px;
       border-radius: 8px;
       pointer-events: none;
-    }*/
+    }
     </style>
 </head>
 
@@ -37,40 +39,8 @@
 
         <div id="sidebar">
             <div id="field" style="padding:10px">
-                <svg width="180" height="80">
-                    <line x1="2" x2="2" y1="0" y2="80" style="stroke: white; stroke-width:4px;" />
-                    <line x1="178" x2="178" y1="0" y2="80" style="stroke: white; stroke-width:4px;" />
-                    <line x1="0" x2="180" y1="78" y2="78" style="stroke: white; stroke-width:4px;" />
-                    <line x1="0" x2="180" y1="2" y2="2" style="stroke: white; stroke-width:4px;" />
-                    <rect x="4" y="4" width="16" height="72" style="stroke-width: 0; fill: blue;" />
-                    <rect x="160" y="4" width="16" height="72" style="stroke-width: 0; fill: blue;" />
-                    <line x1="20" x2="160" y1="35" y2="35" style="stroke: white; stroke-dasharray: 1, 1" />
-                    <line x1="20" x2="160" y1="45" y2="45" style="stroke: white; stroke-dasharray: 1, 1" />
-                </svg>
             </div>
-            <script>
-                var lines = [];
-                for (count = 0; count < 21; count++) {
-                    lines.push(20 + (7 * count));
-                };
-                d3.select("#field svg")
-                    .selectAll(".ydline")
-                    .data(lines)
-                    .enter().append("line")
-                    .style("stroke", "white")
-                    .style("stroke-width", function(d, i) {
-                        if (i % 2 == 0) return "2";
-                        else return "1";
-                    })
-                    .attr("x1", function(d) {
-                        return d;
-                    })
-                    .attr("x2", function(d) {
-                        return d;
-                    })
-                    .attr("y1", 0)
-                    .attr("y2", 80);
-            </script>
+
             <ul>
                 <li><a href="https://reddigari.github.io/fantasy2016">Posts</a></li>
                 <li><a href="https://reddigari.github.io/fantasy2016/the_ocho" style="color: black">The Ocho</a></li>
@@ -82,18 +52,18 @@
             <h1>Fantasy Football</h1>
         </div>
         <div id="text">
+          <h2>The Ocho</h2>
             <div id="chart">
                 <h2></h2>
                 <script>
                     var margin = {
                             top: 50,
                             right: 20,
-                            bottom: 40,
+                            bottom: 20,
                             left: 60
                         },
                         width = 700 - margin.left - margin.right,
                         height = 1000 - margin.top - margin.bottom;
-
 
                     var xNeg = d3.scaleLinear()
                         .range([0, (width/2)-(width/50)]);
@@ -120,8 +90,6 @@
                         .tickFormat('')
                         .tickSize(0);
 
-                    // var colors = ["#cc1010", "#293dc1", "#008c1f", "#ff730e", "#65008f", "#6cc6eb", "#c7df50"];
-                    // var colorScale = d3.scaleOrdinal(colors);
                     var colorScale = d3.scaleLinear().range(["red", "white", "green"]);
 
                     var g = d3.select("#chart").append("svg")
@@ -129,8 +97,6 @@
                         .attr("height", height + margin.top + margin.bottom)
                         .append("g")
                         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-
 
                     // d3.json("https://raw.githubusercontent.com/reddigari/football/master/TheOcho2016/Visualizations/wk1.json", function(json) {
                     d3.json("teams_vs_average.json", function(json) {
@@ -148,7 +114,6 @@
                         var owners = json.map(function(d) { return d.Owner; });
                         y.domain(owners);
                         var slots = json[0].data.map(function(d) { return d.Slot; });
-                        // colorScale.domain(slots);
 
                         y1.rangeRound([0, y.bandwidth()])
                             .domain(slots);
@@ -175,7 +140,14 @@
                             .attr("height", y1.bandwidth())
                             .attr("x", function(d) {return (d.Pct > 0) ? xPos(0) : xNeg(d.Pct);})
                             .attr("width", function(d) {return (d.Pct > 0) ? (xPos(d.Pct) - xPos(0)): (xNeg(0)-xNeg(d.Pct));})
-                            .style("fill", function(d) {return colorScale(d.Pct);});
+                            .style("fill", function(d) {return colorScale(d.Pct);})
+                            .on("mouseover", function(d) {
+                                tooltip.html(d.FFPts.toFixed(1))
+                                .style("opacity", 0.8)
+                                .style("left", (d3.event.pageX) + "px")
+                                .style("top", (d3.event.pageY) + "px");
+                            })
+                            .on("mouseout", function() {tooltip.style("opacity", 0);});
 
                         teams.selectAll(".posLabel")
                             .data(slots)
@@ -183,7 +155,6 @@
                             .text(function(d) {return d;})
                             .attr("y", function(d) {return y1(d) + 0.75*y1.bandwidth();})
                             .attr("x", width/2)
-                            .attr("font-family", "sans-serif")
                             .attr("font-size", width/80)
                             .attr("text-anchor", "middle");
 
@@ -208,30 +179,34 @@
                         g.append("text")
                             .attr("x", width/2)
                             .attr("y", -margin.top/1.5)
-                            .text("Performance vs. League Average")
-                            .attr("text-anchor", "middle");
+                            .text("Difference from League Average by Position")
+                            .attr("font-size", "12")
+                            .attr("text-anchor", "middle")
 
-                        var smallHeight = 250;
+                        var smallHeight = 200;
+                        var smallWidth = 400;
                         var totals = json.map(function(d) {
                             return {
                                 Owner: d.Owner,
+                                Record: d.Record,
                                 Total: d3.sum(d.data, function(d) {return d.FFPts;})
                             }
                         });
                         totals.sort(function(a, b) { return a.Total < b.Total});
-                        console.log(totals);
 
                         teamPts = d3.select("#chart").insert("svg", "svg:first-of-type")
-                            .attr("width", width + margin.left + margin.right)
+                            .attr("width", smallWidth + margin.left + margin.right)
                             .attr("height", smallHeight + margin.top + margin.bottom)
+                            .style("margin", "auto")
+                            .style("display", "block")
                             .attr("transform", "translate(" + margin.left + "," + margin.top +")")
                             .append("g")
                             .attr("id", "teamPts");
 
                         var xOrd = d3.scaleBand()
-                            .rangeRound([0, width])
-                            .paddingInner(0.5)
-                            .paddingOuter(0.1)
+                            .rangeRound([0, smallWidth])
+                            .paddingInner(0.4)
+                            .paddingOuter(0.3)
                             .domain(totals.map(function(d) {return d.Owner;}));
 
                         var y2 = d3.scaleLinear()
@@ -250,10 +225,26 @@
                             .call(xOrdAxis);
                         teamPts.append("g")
                             .attr("class", "y axis")
-                            .call(y2Axis);
+                            .call(y2Axis)
+                            .append("text")
+                            .text("Average Fantasy Points")
+                            .attr("dx", -0.5*smallHeight)
+                            .attr("dy", -0.5*margin.left)
+                            .attr("transform", "rotate(-90)")
+                            .attr("font-size", 12)
+                            .style("fill", "black")
+                            .attr("text-anchor", "middle");
+                        teamPts.append("text")
+                            .attr("id", "lgAveLabel")
+                            .attr("x", smallWidth)
+                            .attr("y", y2(d3.mean(totals, function(d) {return d.Total;})))
+                            .text("League Average")
+                            .attr("text-anchor", "end")
+                            .attr("font-size", 10)
+                            .style("fill", "red");
                         teamPts.append("line")
                             .attr("x1", 0)
-                            .attr("x2", width)
+                            .attr("x2", smallWidth-75)
                             .attr("y1", y2(d3.mean(totals, function(d) {return d.Total;})))
                             .attr("y2", y2(d3.mean(totals, function(d) {return d.Total;})))
                             .style("stroke", "red");
@@ -273,10 +264,23 @@
                             .text(function(d) {return d.Total.toFixed(1)})
                             .attr("fill", "white")
                             .attr("font-size", 10)
-                            .attr("font-family", "sans-serif")
+                            .attr("text-anchor", "middle");
+                        teamPts.selectAll(".recordLabel")
+                            .data(totals)
+                            .enter().append("text")
+                            .attr("x", function(d) {return xOrd(d.Owner) + 0.5*xOrd.bandwidth();})
+                            .attr("y", y2(0) - 10)
+                            .text(function(d) {return d.Record})
+                            .attr("fill", "black")
+                            .attr("font-size", 10)
+                            .attr("font-weight", "bold")
                             .attr("text-anchor", "middle");
 
+                        d3.select("#chart").insert("hr", "svg:nth-of-type(2)");
 
+                        var tooltip = d3.select("body").append("div")
+                            .attr("class", "tooltip")
+                            .style("opacity", 0);
                         // d3.select("#chart").insert("svg", "svg:first-of-type")
                         //     .attr("transform", "translate(" + margin.left + "," + margin.top +")")
                         //     .append("g")
