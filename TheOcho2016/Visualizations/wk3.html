@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>The Ocho: Week 2</title>
+    <title>The Ocho: Week 3</title>
     <link rel="stylesheet" href="https://reddigari.github.io/styles/ff_style.css">
     <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
@@ -51,7 +51,7 @@
         </div>
         <div id="text">
             <div id="wk1Proj">
-                <h2>The Ocho: Week 2</h2>
+                <h2>The Ocho: Week 3</h2>
                 <script>
                     var margin = {
                             top: 30,
@@ -79,7 +79,7 @@
                     var yAxis = d3.axisLeft(y)
                         .ticks(5);
 
-                    var colors = ["#ff7f0e", "#2ca02c", "#d62728", "#1f77b4", "#9467bd", "#8c564b", "#e377c2", "#e8e91f", "#17becf"]
+                    var colors = ["#ff7f0e", "#2ca02c", "#1f77b4", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#e8e91f", "#17becf"]
                     var colorScale = d3.scaleOrdinal(colors);
 
                     // d3.json("https://raw.githubusercontent.com/reddigari/football/master/TheOcho2016/Visualizations/wk3.json", function(json) {
@@ -89,7 +89,7 @@
                         if (json[0].rosterTime != null) timeString = "Rosters as of " + json[0].rosterTime + "<br>" + timeString;
                         d3.select("#wk1Proj").append("p")
                             .html(timeString);
-                        json = json.slice(1);
+                        json = json.slice(1).sort(function(a, b) {return a.owner > b.owner;});
 
                         json.forEach(function(d) {
                             d.data.forEach(function(dd) {
