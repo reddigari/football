@@ -1,5 +1,12 @@
-import numpy as pd
+import numpy as np
 import pandas as pd
+import os
+from espnffl import *
+
+latest_week = 2
+
+lg = FFLeague('The Ocho', path=os.path.join(os.getcwd(), 'TheOcho2016'), league_id=914065)
+
 
 url = 'http://games.espn.com/ffl/schedule?leagueId=914065'
 
@@ -11,11 +18,32 @@ sch.drop([0,2,3], 1, inplace=True)
 sch.columns = ['Away', 'Home', 'Result']
 sch.insert(0, 'Week', np.repeat(np.arange(1, 14), 4))
 
+### specific to who has a ridiculous name at time of scraping
+name_map = {'Ya': 'Adam'}
+
+def fix_names(x, owners, name_map):
+    x = x.split()[0]
+    if x in lg.owners:
+        return x
+    else:
+        return name_map[x]
+
+sch['Away'] = sch.Away.apply(lambda x: fix_names(x, lg.owners, name_map))
+sch['Home'] = sch.Home.apply(lambda x: fix_names(x, lg.owners, name_map))
+
+
 def parse_score(row):
-    if row['Result'] == 'Preview':
-        return None
+    if row['Result'] in ['Preview', 'Box']:
+        return None, None, None
     scores = map(float, row['Result'].split('-'))
     teams = [row['Away'], row['Home']]
-    return teams[np.argmax(scores)]
+    return scores[0], scores[1], teams[np.argmax(scores)]
 
-sch['Result'] = sch.apply(parse_score, 1)
+score_info = sch.apply(parse_score, 1)
+sch['PtsAway'] = [i[0] for i in score_info]
+sch['PtsHome'] = [i[1] for i in score_info]
+sch['Winner'] = [i[2] for i in score_info]
+del sch['Results']
+
+pp = lg.merge_proj_scores(week=latest_week, all_players=False, prev_weeks=True)
+ave = pp[pp.Slot != 'Bench'].groupby('Owner').sum()['FFPts_real']/float(latest_week)
