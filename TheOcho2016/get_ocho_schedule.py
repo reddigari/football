@@ -7,7 +7,6 @@ latest_week = 2
 
 lg = FFLeague('The Ocho', path=os.path.join(os.getcwd(), 'TheOcho2016'), league_id=914065)
 
-
 url = 'http://games.espn.com/ffl/schedule?leagueId=914065'
 
 raw = pd.read_html(url, attrs={'class', 'tableBody'})[0]
@@ -43,7 +42,7 @@ score_info = sch.apply(parse_score, 1)
 sch['PtsAway'] = [i[0] for i in score_info]
 sch['PtsHome'] = [i[1] for i in score_info]
 sch['Winner'] = [i[2] for i in score_info]
-del sch['Results']
+del sch['Result']
 
 pp = lg.merge_proj_scores(week=latest_week, all_players=False, prev_weeks=True)
 ave = pp[pp.Slot != 'Bench'].groupby('Owner').sum()['FFPts_real']/float(latest_week)
