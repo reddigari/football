@@ -7,7 +7,7 @@ import seaborn as sns
 import statsmodels.formula.api as smf
 from espnffl import FFLeague
 
-def plot_espn_accuracy(week, save=True):
+def plot_espn_accuracy(week, prev_weeks=False, save=False):
     # computer specific font settings
     fontpath = '/Library/Fonts/Microsoft/cmunss.ttf'
     # fontpath = '/usr/share/fonts/truetype/cm-unicode-0.7.0/cmunss.ttf'
@@ -17,7 +17,7 @@ def plot_espn_accuracy(week, save=True):
 
     lg = FFLeague('The Ocho', path=os.path.join(os.getcwd(), 'TheOcho2016'), league_id=914065)
 
-    pp = lg.merge_proj_scores(week, all_players=True)
+    pp = lg.merge_proj_scores(week, all_players=True, prev_weeks=prev_weeks)
     data = pp[(pp.FFPts_proj >= 3) & (pp.FFPts_real.notnull())]
     gb = data.groupby('Pos')
     models = {}
@@ -40,7 +40,11 @@ def plot_espn_accuracy(week, save=True):
         ax.text(x=0.02, y=.98, s=r'$\mathrm{\mathsf{R^2}}$' + '= %0.3f' %mod.rsquared, transform=ax.transAxes, va='top', ha='left')
         ax.set_title(pos)
 
-    fig.suptitle('ESPN Projections vs. Performance by Position: Week %d' %week, fontsize=16)
+    if prev_weeks:
+        title_str = 'ESPN Projections vs. Performance by Position: Weeks  1-%d' %week
+    else:
+        title_str = 'ESPN Projections vs. Performance by Position: Week %d' %week
+    fig.suptitle(title_str, fontsize=16)
     fig.text(0.5, 0.01, 'Projected Fantasy Points', va='bottom', ha='center', fontsize=14)
     fig.text(0.05, 0.5, 'Fantasy Points', va='center', ha='left', rotation=90, fontsize=14)
     plt.subplots_adjust(hspace=0.6)
@@ -51,5 +55,9 @@ def plot_espn_accuracy(week, save=True):
     sns.despine()
 
     if save:
-        fig.savefig('Fantasy/Figures/espn_accuracy_wk%d.png' %week, dpi=200)
+        if prev_weeks:
+            fname = 'Fantasy/Figures/espn_accuracy_wk1-%d.png' %week
+        else:
+            fname = 'Fantasy/Figures/espn_accuracy_wk%d.png' %week
+        fig.savefig(fname, dpi=200)
     plt.show()
