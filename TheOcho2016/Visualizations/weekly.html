@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title>The Ocho</title>
     <link rel="stylesheet" href="https://reddigari.github.io/styles/ff_style.css">
-    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://reddigari.github.io/styles/style_functions.js"></script>
@@ -49,6 +49,7 @@
         margin: auto;
     }
     #wkSelect {
+        display: inline-block;
         width: 150px;
         font-weight: bold;
         text-align: center;
@@ -79,11 +80,11 @@
                 <h2></h2>
                 <div id="selectDiv">
                 <select id="wkSelect">
-                    <option value="1">Week 1</option>
-                    <option value="2">Week 2</option>
-                    <option value="3">Week 3</option>
-                    <option value="4">Week 4</option>
-                    <option value="5">Week 5</option>
+                    <option id="wk1" value="1">Week 1</option>
+                    <option id="wk2" value="2">Week 2</option>
+                    <option id="wk3" value="3">Week 3</option>
+                    <option id="wk4" value="4">Week 4</option>
+                    <option id="wk5" value="5">Week 5</option>
                 </select>
                 </div>
                 <p id="timeP"></p>
@@ -126,10 +127,11 @@
                     var yAxisBig = d3.axisLeft(yBig)
                         .ticks(5);
 
-                    var colors = ["#ff7f0e", "#2ca02c", "#1f77b4", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#e8e91f", "#17becf"]
+                    var colors = ["#ff7f0e", "#2ca02c", "#1f77b4", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#b8bf37", "#17becf"]
                     var colorScale = d3.scaleOrdinal(colors);
 
                     function setup() {
+
                         d3.json("wk1.json", function(json) {
 
                             json = json.slice(1).sort(function(a, b) {return a.owner > b.owner;});
@@ -194,6 +196,8 @@
                                 .attr("class", "slot")
                                 .attr("id", function(d) { return "bars"+d.Slot; })
                                 // .attr("transform", function(d) { return "translate(" + xBig(d.Slot) + ",0)"; });
+                            league.append("g")
+                              .attr("class", "legendOrdinal")
                         });
                     }
 
@@ -266,19 +270,19 @@
                                 .attr("class", "ptsRect")
                                 //   .style("fill", colorScale(d.owner))
                                 .merge(ptsRects)
-                                .style("fill", "grey")
+                                .on("mouseover", function(d) {
+                                    tooltip.html(d.player)
+                                    .style("opacity", 0.8)
+                                    .style("left", (d3.event.pageX) + "px")
+                                    .style("top", (d3.event.pageY) + "px");
+                                })
+                                .on("mouseout", function() {tooltip.style("opacity", 0);})
                                 .transition(t)
                                 .attr("x", function(d) { return x(d.Slot); })
                                 .attr("width", x.bandwidth())
                                 .attr("y", function(d) { return (isNaN(d.pts)) ?  null : y(d.pts); })
                                 .attr("height", function(d) { return (isNaN(d.pts)) ? null : height-y(d.pts);});
-                                //   .on("mouseover", function(d) {
-                                //       tooltip.html(d.player)
-                                //       .style("opacity", 0.8)
-                                //       .style("left", (d3.event.pageX) + "px")
-                                //       .style("top", (d3.event.pageY) + "px");
-                                //   })
-                                //   .on("mouseout", function() {tooltip.style("opacity", 0);});
+
 
 
                             var projLines = teams.selectAll(".projLine")
@@ -404,23 +408,26 @@
                             d3.selectAll("#meanChart .x.axis text").attr("font-weight", "bold");
                             d3.selectAll(".ptsRect")
                                 .style("fill", function(d) {return colorScale(this.parentNode.parentNode.id);});
-                            //
-                            // league.append("g")
-                            //   .attr("class", "legendOrdinal")
-                            //   .attr("transform", "translate(" + x('K') +",0)");
-                            //
-                            // var legendOrdinal = d3.legendColor()
-                            //   .shape("path", d3.symbol().type(d3.symbolCircle).size(60)())
-                            //   .shapePadding(5)
-                            //   .scale(colorScale);
-                            //
-                            // league.select(".legendOrdinal")
-                            //   .call(legendOrdinal);
-                            //
-                            //
+
+                            var legendOrdinal = d3.legendColor()
+                              .shape("path", d3.symbol().type(d3.symbolCircle).size(60)())
+                              .shapePadding(5)
+                              .scale(colorScale);
+
+                            league.select(".legendOrdinal")
+                              .attr("transform", "translate(" + xBig('K') +",0)")
+                              .call(legendOrdinal);
+
                     });
 
                 }
+                    var q = window.location.search,
+                        qWk = q.match(/wk=(\d+)/i);
+                    if (qWk) {
+                      qWk = qWk[1];
+                      d3.select("#wk" + qWk).attr("selected", "selected");
+                    };
+
                     d3.select("#wkSelect")
                         .on("change", updateChart);
                     var tooltip = d3.select("body").append("div")
