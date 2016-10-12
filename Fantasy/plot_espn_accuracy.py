@@ -7,7 +7,7 @@ import seaborn as sns
 import statsmodels.formula.api as smf
 from espnffl import FFLeague
 
-def plot_espn_accuracy(week, prev_weeks=False, save=False):
+def plot_espn_accuracy(week, prev_weeks=False, min_proj=5, save=False):
     # computer specific font settings
     fontpath = '/Library/Fonts/Microsoft/cmunss.ttf'
     # fontpath = '/usr/share/fonts/truetype/cm-unicode-0.7.0/cmunss.ttf'
@@ -15,10 +15,10 @@ def plot_espn_accuracy(week, prev_weeks=False, save=False):
         fontprop = mpl.font_manager.FontProperties(fname=fontpath, size=16)
         mpl.rcParams['font.family'] = fontprop.get_name()
 
-    lg = FFLeague('The Ocho', path=os.path.join(os.getcwd(), 'TheOcho2016'), league_id=914065)
+    lg = FFLeague('NFL', path=os.path.join(os.getcwd(), 'GenericLeague'))
 
     pp = lg.merge_proj_scores(week, all_players=True, prev_weeks=prev_weeks)
-    data = pp[(pp.FFPts_proj >= 3) & (pp.FFPts_real.notnull())]
+    data = pp[(pp.FFPts_proj >= min_proj) & (pp.FFPts_real.notnull())]
     gb = data.groupby('Pos')
     models = {}
     fig, ax = plt.subplots(3, 2, figsize=(12, 8))
@@ -34,7 +34,7 @@ def plot_espn_accuracy(week, prev_weeks=False, save=False):
         m, c = mod.params.FFPts_proj, mod.params.Intercept
         d = gb.get_group(pos)
         x, y = d.FFPts_proj.values, d.FFPts_real.values
-        ax.scatter(x, y, facecolor='k')
+        ax.scatter(x, y, facecolor='k', edgecolor='none', alpha=0.6)
         line_x = np.linspace(x.min(), x.max(), 100)
         ax.plot(line_x, m*line_x + c, 'r')
         ax.text(x=0.02, y=.98, s=r'$\mathrm{\mathsf{R^2}}$' + '= %0.3f' %mod.rsquared, transform=ax.transAxes, va='top', ha='left')
