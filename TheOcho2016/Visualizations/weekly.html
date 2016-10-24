@@ -180,6 +180,7 @@
                             league.append("g")
                                 .attr("class", "x axis")
                                 .attr("transform", "translate(0," + heightBig + ")")
+                                // .attr("transform", "translate(0," + yBig(0) + ")")
                                 .call(xAxisBig);
                             league.append("g")
                                 .attr("class", "y axis")
@@ -230,13 +231,14 @@
                                     return d3.max([dd.proj, dd.pts]);
                                 });
                             });
-                            var min = d3.min(json, function(d) {
-                                return d3.min(d.data, function(dd) {
-                                    return d3.min([dd.proj, dd.pts]);
-                                });
-                            });
-                            if (min > 0) min = 0;
-                            y.domain([min, max]);
+                            // var min = d3.min(json, function(d) {
+                            //     return d3.min(d.data, function(dd) {
+                            //         return d3.min([dd.proj, dd.pts]);
+                            //     });
+                            // });
+                            // if (min > 0) min = 0;
+                            // y.domain([min, max]);
+                            y.domain([0, max]);
 
                             var owners = json.map(function(d) { return d.owner; });
                             colorScale.domain(owners)
@@ -318,6 +320,7 @@
                                 // .transition(t)
                                 .attr("x", function(d) { return x(d.Slot) + 0.5*x.bandwidth(); })
                                 .attr("y", function(d) {
+                                    if (d.pts < 0) return y(0); else
                                     return ((d.pts >= d.proj) || (d.pts <= 2.0)) ? y(d.pts) - 2 : y(d.pts) + 8;
                                 })
                                 .text(function(d) { return (isNaN(d.pts)) ? null : d.pts.toFixed(1); })
@@ -344,12 +347,12 @@
 
 
                             var league = d3.select("#meanChart");
-                            league.select(".x.axis").call(xAxisBig);
+                            league.select(".x.axis")
+                                .call(xAxisBig);
                             league.select(".y.axis").transition(t).call(yAxisBig);
                             var slotGroups = league.selectAll(".slot")
                                 .data(aveData, function(d) {return d.Slot;})
                                 .attr("transform", function(d) { return "translate(" + xBig(d.Slot) + ",0)"; });
-        ;
 
                             var meanRects = slotGroups.selectAll(".rect")
                                 .data(function(d) {return [d.proj, d.pts.filter(function(a) {return (!(isNaN(a)));})];});
