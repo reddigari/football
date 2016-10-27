@@ -3,7 +3,7 @@ import pandas as pd
 import os
 from espnffl import *
 
-latest_week = 2
+latest_week = 7
 
 lg = FFLeague('The Ocho', path=os.path.join(os.getcwd(), 'TheOcho2016'), league_id=914065)
 
@@ -18,18 +18,17 @@ sch.columns = ['Away', 'Home', 'Result']
 sch.insert(0, 'Week', np.repeat(np.arange(1, 14), 4))
 
 ### specific to who has a ridiculous name at time of scraping
-name_map = {'Ya': 'Adam'}
+name_map = {'Ya': u'Adam'}
 
 def fix_names(x, owners, name_map):
     x = x.split()[0]
-    if x in lg.owners:
+    if x in owners:
         return x
     else:
         return name_map[x]
 
 sch['Away'] = sch.Away.apply(lambda x: fix_names(x, lg.owners, name_map))
 sch['Home'] = sch.Home.apply(lambda x: fix_names(x, lg.owners, name_map))
-
 
 def parse_score(row):
     if row['Result'] in ['Preview', 'Box']:
@@ -43,6 +42,3 @@ sch['PtsAway'] = [i[0] for i in score_info]
 sch['PtsHome'] = [i[1] for i in score_info]
 sch['Winner'] = [i[2] for i in score_info]
 del sch['Result']
-
-pp = lg.merge_proj_scores(week=latest_week, all_players=False, prev_weeks=True)
-ave = pp[pp.Slot != 'Bench'].groupby('Owner').sum()['FFPts_real']/float(latest_week)
