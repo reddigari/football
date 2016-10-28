@@ -42,3 +42,5 @@ sch['PtsAway'] = [i[0] for i in score_info]
 sch['PtsHome'] = [i[1] for i in score_info]
 sch['Winner'] = [i[2] for i in score_info]
 del sch['Result']
+
+sch.to_csv('TheOcho2016/TheOcho_schedule_after%d.csv' %latest_week, index=False)

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>The Ocho</title>
+    <link rel="stylesheet" href="https://reddigari.github.io/styles/ff_style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://reddigari.github.io/styles/style_functions.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.9.0/d3-legend.min.js"></script>
+    <style>
+    hr {
+      margin: 25px 0px;
+    }
+    text {
+      font-family: sans-serif;
+      fill: black;
+    }
+    div.tooltip {
+      position: absolute;
+      text-align: center;
+      vertical-align: middle;
+      width: auto;
+      height: auto;
+      padding: 8px;
+      font: 12px sans-serif;
+      background: lightsteelblue;
+      border: 0px;
+      border-radius: 8px;
+      pointer-events: none;
+    }
+    fieldset {
+      font-family: sans-serif;
+      border-radius: 7px;
+    }
+    .colLabel {
+      font-size: 15px;
+      text-anchor: middle;
+    }
+    .ptLabel {
+      font-size: 8pt;
+      text-anchor: middle;
+    }
+    .ptRange {
+      stroke: #707070;
+      stroke-width: 4px;
+    }
+    .teamLabel {
+      text-anchor: start;
+    }
+    .chanceLabel, .winLabel {
+      font-size: 20pt;
+      font-weight: bold;
+      text-anchor: middle;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="sidebar">
+            <div id="field" style="padding:10px">
+            </div>
+
+            <ul>
+                <li><a href="https://reddigari.github.io/fantasy2016">Posts</a></li>
+                <li><a href="https://reddigari.github.io/fantasy2016/the_ocho" style="color: black">The Ocho</a></li>
+                <li><a href="https://github.com/reddigari/football">Code</a></li>
+            </ul>
+        </div>
+
+        <div id="header">
+            <h1>Fantasy Football</h1>
+        </div>
+        <div id="text">
+          <h2>The Ocho</h2>
+            <div id="chart">
+              <fieldset id="simSelect" style="display:inline-block">
+                  <!-- <legend>Source</legend> -->
+                  <input type="radio" name="simType" value="random" checked>Random</input><br>
+                  <input type="radio" name="simType" value="trend">Between Team &amp; League Ave.</input><br>
+                  <input type="radio" name="simType" value="team_average">Team Ave.</input>
+              </fieldset>
+                <script>
+                    var margin = {
+                            top: 50,
+                            right: 20,
+                            bottom: 20,
+                            left: 60
+                        },
+                        width = 700 - margin.left - margin.right,
+                        height = 500 - margin.top - margin.bottom,
+                        ptWidth = width/2.5,
+                        winWidth = width/5,
+                        numWidth = width/10,
+                        colGap = width/15;
+
+                    var y = d3.scaleBand()
+                        .rangeRound([0, height])
+                        .paddingInner(0.25)
+                        .paddingOuter(0.1);
+                    var xPts = d3.scaleLinear()
+                        .range([0, ptWidth]);
+                    var yWin = d3.scaleLinear();
+                    var xWin = d3.scaleBand()
+                        .domain([2,3,4,5,6,7,8,9,10,11,12])
+                        .rangeRound([0, winWidth])
+                        .paddingInner(0.1)
+                        .paddingOuter(0.1);
+
+                    var colorScale = d3.scaleLinear()
+                      .domain([0, 1])
+                      .range(["blue", "red"]);
+
+                    var xPtsAxis = d3.axisTop(xPts)
+                        .ticks(4)
+                        .tickSizeOuter(0);
+                    var xWinAxis = d3.axisTop(xWin)
+                        .tickSizeOuter(0);
+                    var yWinAxis = d3.axisLeft(yWin)
+                        .ticks(2)
+                        .tickSizeOuter(0);
+                    var yAxis = d3.axisLeft(y)
+
+                    var chart = d3.select("#chart").append("svg")
+                        .attr("width", width + margin.left + margin.right)
+                        .attr("height", height + margin.top + margin.bottom)
+                        .append("g")
+                        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                    // var assumption = "trend";
+
+                    function setup() {
+                      var assumption = d3.select("input[name='simType']:checked").property("value");
+                    // d3.json("https://raw.githubusercontent.com/reddigari/football/master/TheOcho2016/Visualizations/wk1.json", function(json) {
+                      d3.json("sim_data.json", function(json) {
+                          var data = json[assumption];
+                          data.sort(function(a, b) { return a.team > b.team; })
+
+                          // var maxWinFreq = d3.max(data, function(d) {
+                          //     return d3.max(d.wins.dist, function(d) {
+                          //         return d.freq;
+                          //     });
+                          // });
+                          // var maxPts = d3.max(data, function(d) {
+                          //     return d.pts.pct90;
+                          // });
+                          // var minPts = d3.min(data, function(d) {
+                          //     return d.pts.pct10;
+                          // });
+
+                          // xPts.domain([minPts-100, maxPts+100]);
+                          xPts.domain([900, 1500]);
+
+                          var owners = data.map(function(d) { return d.team; });
+                          y.domain(owners);
+                          yWin.range([y.bandwidth(), 0]);
+
+                          // yWin.domain([0, maxWinFreq])
+                          yWin.domain([0, 0.4])
+
+
+                          chart.append("g")
+                              .attr("transform", "translate(0, -20)")
+                              .append("text")
+                              .attr("class", "colLabel")
+                              .selectAll("tspan")
+                              .data(["Playoff", "Chances"])
+                              .enter().append("tspan")
+                              .attr("x", 0.5 * numWidth + 0.5 * colGap)
+                              .text(function(d) {return d;})
+                              .attr("dy", function(d, i) {return i > 0 ? 20 : 0;});
+                          chart.append("g")
+                              .attr("class", "x axis")
+                              .attr("transform", "translate(" + (numWidth+2*colGap) + ",0)")
+                              .call(xWinAxis)
+                              .append("text")
+                              .attr("class", "colLabel")
+                              .text("Simulated Wins")
+                              .attr("x", 0.5 * winWidth)
+                              .attr("y", -(xWinAxis.tickSize()+15));
+                          chart.append("g")
+                              .attr("transform", "translate(" + (numWidth+winWidth+2.5*colGap) + ", -20)")
+                              .append("text")
+                              .attr("class", "colLabel")
+                              .selectAll("tspan")
+                              .data(["Estimated", "Wins"])
+                              .enter().append("tspan")
+                              .attr("x", numWidth/2)
+                              .text(function(d) {return d;})
+                              .attr("dy", function(d, i) {return i > 0 ? 20 : 0 ;}) ;
+                          chart.append("g")
+                              .attr("class", "x axis")
+                              .attr("transform", "translate(" + (width-ptWidth) + ",0)")
+                              .call(xPtsAxis)
+                              .append("text")
+                              .attr("class", "colLabel")
+                              .text("Estimated Point Total")
+                              .attr("x", 0.5 * ptWidth)
+                              .attr("y", -(xPtsAxis.tickSize()+15));
+
+                          var teams = chart.selectAll(".team")
+                              .data(data)
+                              .enter().append("g")
+                              .attr("class", "team")
+                              .attr("transform", function(d) { return "translate(0," + y(d.team) + ")" });
+
+                          teams.append("text")
+                              .attr("class", "teamLabel")
+                              .selectAll("tspan")
+                              .data(function(d) { return [d.team, d.record]; })
+                              .enter().append("tspan")
+                              .text(function(d) { return d; })
+                              .attr("x", 0.5 * -margin.left)
+                              .attr("y", 0.3 * y.bandwidth())
+                              .attr("dy", function(d, i) { return i > 0 ? 20 : 0 ;})
+                              .attr("font-weight", function(d, i) { return i == 0 ? "bold" : "normal"})
+                              .attr("text-anchor", "middle");
+                              // ;
+
+                          teams.append("g")
+                              .attr("class", "label")
+                              // .attr("transform", "translate(0," + (5 + 0.5 * y.bandwidth()) + ")")
+                              // .attr("transform", "translate(0," + (numWidth+winWidth+2*colGap) + "," + (5 + 0.5 * y.bandwidth()) + ")")
+                              .append("text")
+                              .attr("class", "chanceLabel")
+                              .datum(function(d) { return d.poChance; })
+                              .text(function(d) { return d3.format(".1%")(d);; })
+                              .attr("x", 0.5 * numWidth + 0.5 * colGap)
+                              .attr("y", 0.7 * y.bandwidth())
+                              .style("fill", function(d) { return colorScale(d); });
+
+                          teams.append("g")
+                              .attr("class", "label")
+                              // .attr("transform", "translate(" + (numWidth+winWidth+2*colGap) + "," + (5 + 0.5 * y.bandwidth()) + ")")
+                              .attr("transform", "translate(" + (numWidth+winWidth+2.5*colGap) + ",0)")
+                              .append("text")
+                              .attr("class", "winLabel")
+                              .datum(function(d) { return d.wins.mean; })
+                              .text(function(d) { return d3.format(".2g")(d);; })
+                              .attr("x", numWidth/2)
+                              .attr("y", 0.7 * y.bandwidth());
+                              // .attr("text-anchor", "middle");
+
+                          var ptSpreads = teams.append("g")
+                              .attr("class", "ptSpread")
+                              .attr("transform", "translate(" + (width-ptWidth) + "," + (0.5 * y.bandwidth()) + ")");
+
+                          ptSpreads.append("line")
+                              .datum(function(d) { return {min: d.pts.pct10, max: d.pts.pct90}; })
+                              .attr("class", "ptRange")
+                              .attr("x1", function(d) { return xPts(d.min); })
+                              .attr("x2", function(d) { return xPts(d.max); })
+                          ptSpreads.append("circle")
+                              .datum(function(d) { return d.pts.mean; })
+                              .attr("class", "ptDot")
+                              .attr("cx", function(d) {return xPts(d); })
+                              .attr("r", 5)
+                              .style("fill", "red");
+                          ptSpreads.append("text")
+                              .datum(function(d) { return d.pts.mean; })
+                              .attr("class", "ptLabel")
+                              .text(function(d) { return d3.format("d")(d); })
+                              .attr("x", function(d) {return xPts(d); })
+                              .attr("dy", -10);
+
+                          var winDists = teams.append("g")
+                              .attr("class", "winDist")
+                              .attr("transform", "translate(" + (numWidth+2*colGap) + ",0)");
+                          winDists.append("g")
+                              .attr("transform", "translate(0, " + y.bandwidth() + ")")
+                              .call(xWinAxis.tickSize(0).tickFormat(""));
+                          winDists.append("g")
+                              .call(yWinAxis);
+
+                          winDists.selectAll(".winRect")
+                              .data(function(d) { return d.wins.dist; }, function(d) { return d.w; })
+                              .enter().append("rect")
+                              .attr("class", "winRect")
+                              .attr("x", function(d) { return xWin(d.w); })
+                              .attr("y", function(d) { return yWin(d.freq); })
+                              .attr("height", function(d) { return y.bandwidth() - yWin(d.freq); })
+                              .attr("width", xWin.bandwidth())
+                              .style("fill", "steelblue");
+
+                          });
+                      }
+
+                      function update() {
+                        var assumption = d3.select("input[name='simType']:checked").property("value");
+                        var t = d3.transition(500);
+                        var tShort = d3.transition().duration(250);
+
+                        d3.json("sim_data.json", function(json) {
+                            var data = json[assumption];
+                            data.sort(function(a, b) { return a.team > b.team; })
+
+                          teams = chart.selectAll(".team")
+                              .data(data);
+
+                          teams.select(".chanceLabel")
+                              .datum(function(d) { return d.poChance; })
+                              .transition(tShort)
+                              .style("fill-opacity", 1e-6)
+                              .transition(tShort)
+                              .text(function(d) { return d3.format(".1%")(d);; })
+                              .style("fill-opacity", 1)
+                              .style("fill", function(d) { return colorScale(d); });
+                          teams.select(".winLabel")
+                              .datum(function(d) { return d.wins.mean; })
+                              .transition(tShort)
+                              .style("fill-opacity", 1e-6)
+                              .transition(tShort)
+                              .style("fill-opacity", 1)
+                              .text(function(d) { return d3.format(".2g")(d);; });
+
+                          winRects = teams.selectAll(".winRect")
+                              .data(function(d) { return d.wins.dist; }, function(d) { return d.w; });
+                          winRects.exit().remove();
+                          winRects.enter().append("rect")
+                              .attr("x", function(d) { return xWin(d.w); })
+                              .attr("width", xWin.bandwidth())
+                              .style("fill", "steelblue")
+                          .merge(winRects)
+                              .transition(t)
+                              .attr("y", function(d) { return yWin(d.freq); })
+                              .attr("height", function(d) { return y.bandwidth() - yWin(d.freq); });
+
+                          teams.select(".ptDot")
+                              .datum(function(d) { return d.pts.mean; })
+                              .transition(t)
+                              .attr("cx", function(d) { return xPts(d); });
+                          teams.select(".ptRange")
+                              .datum(function(d) { return {min: d.pts.pct10, max: d.pts.pct90}; })
+                              .transition(t)
+                              .attr("x1", function(d) { return xPts(d.min); })
+                              .attr("x2", function(d) { return xPts(d.max); });
+                        });
+                      }
+
+                      d3.selectAll("#simSelect input")
+                          .on("change", update);
+
+                      setup();
+                </script>
+            </div>
+        </div>
+    </div>
+
+</html>
