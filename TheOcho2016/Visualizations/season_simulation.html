@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://reddigari.github.io/styles/style_functions.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.9.0/d3-legend.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.9.0/d3-legend.min.js"></script> -->
     <style>
     hr {
       margin: 25px 0px;
@@ -31,10 +31,6 @@
       border: 0px;
       border-radius: 8px;
       pointer-events: none;
-    }
-    fieldset {
-      font-family: sans-serif;
-      border-radius: 7px;
     }
     .colLabel {
       font-size: 15px;
@@ -77,14 +73,14 @@
             <h1>Fantasy Football</h1>
         </div>
         <div id="text">
-          <h2>The Ocho</h2>
+          <h2>The Ocho: Season Simulations</h2>
+          <p>10,000 simulations of the rest of the regular season (weeks 8&ndash;13).</p>
+          <p>Each simulation generated scores for the remaining games by drawing a random sample from a normal distribution that reflects each team's performance in one of three ways:</p>
+          <input type="radio" name="simType" value="random" checked><b>Random</b>: assumes all teams are equally good; distribution centered at league average score.</input><br>
+          <input type="radio" name="simType" value="team_average"><b>Team Av.</b>: assumes team averages are accurate; distribution centered on team's average score.</input><br>
+          <input type="radio" name="simType" value="trend"><b>Adj. Team Av.</b>: assumes regression toward mean; distribution centered halfway between team and league averages.</input>
+
             <div id="chart">
-              <fieldset id="simSelect" style="display:inline-block">
-                  <!-- <legend>Source</legend> -->
-                  <input type="radio" name="simType" value="random" checked>Random</input><br>
-                  <input type="radio" name="simType" value="trend">Between Team &amp; League Ave.</input><br>
-                  <input type="radio" name="simType" value="team_average">Team Ave.</input>
-              </fieldset>
                 <script>
                     var margin = {
                             top: 50,
@@ -188,7 +184,7 @@
                               .append("text")
                               .attr("class", "colLabel")
                               .selectAll("tspan")
-                              .data(["Estimated", "Wins"])
+                              .data(["Expected", "Wins"])
                               .enter().append("tspan")
                               .attr("x", numWidth/2)
                               .text(function(d) {return d;})
@@ -199,7 +195,7 @@
                               .call(xPtsAxis)
                               .append("text")
                               .attr("class", "colLabel")
-                              .text("Estimated Point Total")
+                              .text("Expected Point Total")
                               .attr("x", 0.5 * ptWidth)
                               .attr("y", -(xPtsAxis.tickSize()+15));
 
@@ -236,7 +232,6 @@
 
                           teams.append("g")
                               .attr("class", "label")
-                              // .attr("transform", "translate(" + (numWidth+winWidth+2*colGap) + "," + (5 + 0.5 * y.bandwidth()) + ")")
                               .attr("transform", "translate(" + (numWidth+winWidth+2.5*colGap) + ",0)")
                               .append("text")
                               .attr("class", "winLabel")
@@ -244,7 +239,6 @@
                               .text(function(d) { return d3.format(".2g")(d);; })
                               .attr("x", numWidth/2)
                               .attr("y", 0.7 * y.bandwidth());
-                              // .attr("text-anchor", "middle");
 
                           var ptSpreads = teams.append("g")
                               .attr("class", "ptSpread")
@@ -299,55 +293,61 @@
                             var data = json[assumption];
                             data.sort(function(a, b) { return a.team > b.team; })
 
-                          teams = chart.selectAll(".team")
-                              .data(data);
+                            teams = chart.selectAll(".team")
+                                .data(data);
 
-                          teams.select(".chanceLabel")
-                              .datum(function(d) { return d.poChance; })
-                              .transition(tShort)
-                              .style("fill-opacity", 1e-6)
-                              .transition(tShort)
-                              .text(function(d) { return d3.format(".1%")(d);; })
-                              .style("fill-opacity", 1)
-                              .style("fill", function(d) { return colorScale(d); });
-                          teams.select(".winLabel")
-                              .datum(function(d) { return d.wins.mean; })
-                              .transition(tShort)
-                              .style("fill-opacity", 1e-6)
-                              .transition(tShort)
-                              .style("fill-opacity", 1)
-                              .text(function(d) { return d3.format(".2g")(d);; });
+                            teams.select(".chanceLabel")
+                                .datum(function(d) { return d.poChance; })
+                                .transition(tShort)
+                                .style("fill-opacity", 1e-6)
+                                .transition(tShort)
+                                .text(function(d) { return d3.format(".1%")(d);; })
+                                .style("fill-opacity", 1)
+                                .style("fill", function(d) { return colorScale(d); });
+                            teams.select(".winLabel")
+                                .datum(function(d) { return d.wins.mean; })
+                                .transition(tShort)
+                                .style("fill-opacity", 1e-6)
+                                .transition(tShort)
+                                .style("fill-opacity", 1)
+                                .text(function(d) { return d3.format(".2g")(d);; });
 
-                          winRects = teams.selectAll(".winRect")
-                              .data(function(d) { return d.wins.dist; }, function(d) { return d.w; });
-                          winRects.exit().remove();
-                          winRects.enter().append("rect")
-                              .attr("x", function(d) { return xWin(d.w); })
-                              .attr("width", xWin.bandwidth())
-                              .style("fill", "steelblue")
-                          .merge(winRects)
-                              .transition(t)
-                              .attr("y", function(d) { return yWin(d.freq); })
-                              .attr("height", function(d) { return y.bandwidth() - yWin(d.freq); });
+                            winRects = teams.selectAll(".winRect")
+                                .data(function(d) { return d.wins.dist; }, function(d) { return d.w; });
+                            winRects.exit().remove();
+                            winRects.enter().append("rect")
+                                .attr("x", function(d) { return xWin(d.w); })
+                                .attr("width", xWin.bandwidth())
+                                .style("fill", "steelblue")
+                                .merge(winRects)
+                                .transition(t)
+                                .attr("y", function(d) { return yWin(d.freq); })
+                                .attr("height", function(d) { return y.bandwidth() - yWin(d.freq); });
 
-                          teams.select(".ptDot")
-                              .datum(function(d) { return d.pts.mean; })
-                              .transition(t)
-                              .attr("cx", function(d) { return xPts(d); });
-                          teams.select(".ptRange")
-                              .datum(function(d) { return {min: d.pts.pct10, max: d.pts.pct90}; })
-                              .transition(t)
-                              .attr("x1", function(d) { return xPts(d.min); })
-                              .attr("x2", function(d) { return xPts(d.max); });
+                            teams.select(".ptDot")
+                                .datum(function(d) { return d.pts.mean; })
+                                .transition(t)
+                                .attr("cx", function(d) { return xPts(d); });
+                            teams.select(".ptRange")
+                                .datum(function(d) { return {min: d.pts.pct10, max: d.pts.pct90}; })
+                                .transition(t)
+                                .attr("x1", function(d) { return xPts(d.min); })
+                                .attr("x2", function(d) { return xPts(d.max); });
+                            teams.select(".ptLabel")
+                                .datum(function(d) { return d.pts.mean; })
+                                .transition()
+                                .text(function(d) { return d3.format("d")(d); })
+                                .attr("x", function(d) {return xPts(d); })
                         });
                       }
 
-                      d3.selectAll("#simSelect input")
-                          .on("change", update);
+                      d3.selectAll("input")
+                        .on("change", update);
 
                       setup();
                 </script>
             </div>
+            <p>Histogram y-axes show frequency of simulations with given number of wins. Red circles show mean point totals, and grey error bars span the 10th&ndash;90th percentile of simulated totals.</p>
         </div>
     </div>
 
