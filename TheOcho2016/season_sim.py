@@ -1,12 +1,12 @@
 import numpy as np
 import pandas as pd
 from collections import Counter
-import copy, os, glob
+import copy, os, glob, json
 from espnffl import *
 
 latest_week = 8
 
-sch = pd.read_csv('TheOcho2016/TheOcho_schedule_after7.csv')
+sch = pd.read_csv('TheOcho2016/TheOcho_schedule_after%d.csv' %latest_week)
 lg = FFLeague('The Ocho', path=os.path.join(os.getcwd(), 'TheOcho2016'), league_id=914065)
 
 pp = lg.merge_proj_scores(week=latest_week, all_players=False, prev_weeks=True)
@@ -15,7 +15,7 @@ grand_ave = all_wk_scores.mean()
 stdev = all_wk_scores.std()
 ave = pp[pp.Slot != 'Bench'].groupby('Owner').sum()['FFPts_real']/float(latest_week)
 
-start_scores = Counter((7 * ave).to_dict())
+start_scores = Counter((latest_week * ave).to_dict())
 start_wins = Counter(sch.Winner[sch.Winner.notnull()].values)
 
 to_play = sch[sch.Winner.isnull()]

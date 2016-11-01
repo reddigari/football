@@ -74,7 +74,7 @@
         </div>
         <div id="text">
           <h2>The Ocho: Season Simulations</h2>
-          <p>10,000 simulations of the rest of the regular season (weeks 8&ndash;13).</p>
+          <p>10,000 simulations of the rest of the regular season.</p>
           <p>Each simulation generated scores for the remaining games by drawing a random sample from a normal distribution that reflects each team's performance in one of three ways:</p>
           <input type="radio" name="simType" value="random" checked><b>Random</b>: assumes all teams are equally good; distribution centered at league average score.</input><br>
           <input type="radio" name="simType" value="team_average"><b>Team Av.</b>: assumes team averages are accurate; distribution centered on team's average score.</input><br>
@@ -347,7 +347,7 @@
                       setup();
                 </script>
             </div>
-            <p>Histogram y-axes show frequency of simulations with given number of wins. Red circles show mean point totals, and grey error bars span the 10th&ndash;90th percentile of simulated totals.</p>
+            <p>The standard deviation of all weekly team scores is used for every point distribution. Histogram y-axes show frequency of simulations with given number of wins. Red circles show mean point totals, and grey error bars span the 10th&ndash;90th percentile of simulated totals.</p>
         </div>
     </div>
 
