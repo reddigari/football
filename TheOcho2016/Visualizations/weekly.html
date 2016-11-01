@@ -87,7 +87,8 @@
                     <option id="wk5" value="5">Week 5</option>
                     <option id="wk6" value="6">Week 6</option>
                     <option id="wk7" value="7">Week 7</option>
-                    <option id="wk8" value="8" selected>Week 8</option>
+                    <option id="wk8" value="8">Week 8</option>
+                    <option id="wk9" value="9" selected>Week 9</option>
                 </select>
                 </div>
                 <p id="timeP"></p>
@@ -201,7 +202,8 @@
                                 .attr("id", function(d) { return "bars"+d.Slot; })
                                 // .attr("transform", function(d) { return "translate(" + xBig(d.Slot) + ",0)"; });
                             league.append("g")
-                              .attr("class", "legendOrdinal")
+                              .attr("class", "legendOrdinal");
+                            updateChart();
                         });
                     }
 
