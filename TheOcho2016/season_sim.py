@@ -4,7 +4,7 @@ from collections import Counter
 import copy, os, glob, json
 from espnffl import *
 
-latest_week = 8
+latest_week = 9
 
 sch = pd.read_csv('TheOcho2016/TheOcho_schedule_after%d.csv' %latest_week)
 lg = FFLeague('The Ocho', path=os.path.join(os.getcwd(), 'TheOcho2016'), league_id=914065)
@@ -96,5 +96,5 @@ for sim in all_sims:
         summary['wins'] = dict(mean=data['wins'].mean(), dist=[{'w': w, 'freq': ct/10000.} for w, ct in c.items()])
         out[sim].append(summary)
 
-with open('TheOcho2016/sim_data.json', 'w') as f:
+with open('TheOcho2016/Visualizations/sim_data.json', 'w') as f:
     json.dump(out, f)
