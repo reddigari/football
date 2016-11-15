@@ -4,7 +4,7 @@ from collections import Counter
 import copy, os, glob, json
 from espnffl import *
 
-latest_week = 9
+latest_week = 10
 
 sch = pd.read_csv('TheOcho2016/TheOcho_schedule_after%d.csv' %latest_week)
 lg = FFLeague('The Ocho', path=os.path.join(os.getcwd(), 'TheOcho2016'), league_id=914065)

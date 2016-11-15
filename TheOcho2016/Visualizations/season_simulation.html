@@ -236,7 +236,7 @@
                               .append("text")
                               .attr("class", "winLabel")
                               .datum(function(d) { return d.wins.mean; })
-                              .text(function(d) { return d3.format(".2g")(d);; })
+                              .text(function(d) { return d3.format(".1f")(d);; })
                               .attr("x", numWidth/2)
                               .attr("y", 0.7 * y.bandwidth());
 

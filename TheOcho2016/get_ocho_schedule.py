@@ -3,7 +3,7 @@ import pandas as pd
 import os
 from espnffl import *
 
-latest_week = 9
+latest_week = 10
 
 lg = FFLeague('The Ocho', path=os.path.join(os.getcwd(), 'TheOcho2016'), league_id=914065)
 
