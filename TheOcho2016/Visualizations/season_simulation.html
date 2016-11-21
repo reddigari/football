@@ -310,7 +310,7 @@
                                 .style("fill-opacity", 1e-6)
                                 .transition(tShort)
                                 .style("fill-opacity", 1)
-                                .text(function(d) { return d3.format(".2g")(d);; });
+                                .text(function(d) { return d3.format(".1f")(d);; });
 
                             winRects = teams.selectAll(".winRect")
                                 .data(function(d) { return d.wins.dist; }, function(d) { return d.w; });
