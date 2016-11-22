@@ -41,17 +41,29 @@ def simulate_season(assumption="random"):
     sim_wins.update(start_wins)
     return sim_wins, sim_scores
 
-def figure_playoffs(ws, pts):
+## needs to account for stupid conference rule
+## top team from both each conference makes playoffs, then two highest records
+conferences = {'East': ['Matt', 'Daniel', 'Samir', 'Tyler'], 'West': ['Adam', 'Petr', 'Scott', 'David']}
+
+def find_top_team(ws, pts):
+    max_ws = max(ws.values())
+    top = [t for t, w in ws.items() if w == max_ws]
+    if len(top) == 1:
+        return top[0]
+    else:
+        pt_tots = [pts[t] for t in top]
+        max_idx = np.argmax(pt_tots)
+        return top[max_idx]
+
+def figure_playoffs(ws, pts, conf_dict):
     teams_in = []
-    while len(teams_in) < 4:
-        max_pts = max(ws.values())
-        top = [t for t, w in ws.items() if w == max_pts]
-        if len(top) == 1:
-            winner = top[0]
-        else:
-            pt_tots = [pts[t] for t in top]
-            max_idx = np.argmax(pt_tots)
-            winner = top[max_idx]
+    for conf, teams in conf_dict.items():
+        conf_ws = {t: ws[t] for t in teams}
+        winner = find_top_team(conf_ws, pts)
+        teams_in.append(winner)
+        del ws[winner]
+    for i in range(2):
+        winner = find_top_team(ws, pts)
         teams_in.append(winner)
         del ws[winner]
     return teams_in
@@ -71,7 +83,7 @@ for assumption in ['team_average', 'trend', 'random']:
         for team in wins:
             sims[team]['wins'][i] = wins[team]
             sims[team]['pts'][i] = points[team]
-        po_teams = figure_playoffs(wins, points)
+        po_teams = figure_playoffs(wins, points, conferences)
         for team in po_teams:
             sims[team]['poChance'][i] += 1
 

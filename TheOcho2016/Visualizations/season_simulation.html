@@ -137,11 +137,11 @@
                           var data = json[assumption];
                           data.sort(function(a, b) { return a.team > b.team; })
 
-                          // var maxWinFreq = d3.max(data, function(d) {
-                          //     return d3.max(d.wins.dist, function(d) {
-                          //         return d.freq;
-                          //     });
-                          // });
+                          var maxWinFreq = d3.max(data, function(d) {
+                              return d3.max(d.wins.dist, function(d) {
+                                  return d.freq;
+                              });
+                          });
                           // var maxPts = d3.max(data, function(d) {
                           //     return d.pts.pct90;
                           // });
@@ -157,7 +157,7 @@
                           yWin.range([y.bandwidth(), 0]);
 
                           // yWin.domain([0, maxWinFreq])
-                          yWin.domain([0, 0.4])
+                          yWin.domain([0, maxWinFreq])
 
 
                           chart.append("g")
