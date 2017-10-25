@@ -1,0 +1,73 @@
+Slot,Player,Team,Pos,Owner
+QB,Dak Prescott,DAL,QB,Matt
+RB,Mark Ingram,NOR,RB,Matt
+RB,Latavius Murray,MIN,RB,Matt
+WR,Keenan Allen,LAC,WR,Matt
+WR,Rishard Matthews,TEN,WR,Matt
+TE,Rob Gronkowski,NWE,TE,Matt
+FLEX,Doug Baldwin,SEA,WR,Matt
+D/ST,Jaguars,JAC,DST,Matt
+K,Jake Elliott,PHI,K,Matt
+QB,Carson Palmer,ARI,QB,Daniel
+RB,LeSean McCoy,BUF,RB,Daniel
+RB,Jordan Howard,CHI,RB,Daniel
+WR,Amari Cooper,OAK,WR,Daniel
+WR,John Brown,ARI,WR,Daniel
+TE,Austin Seferian-Jenkins,NYJ,TE,Daniel
+FLEX,Carlos Hyde,SFO,RB,Daniel
+D/ST,Broncos,DEN,DST,Daniel
+K,Ryan Succop,TEN,K,Daniel
+QB,Cam Newton,CAR,QB,Samir
+RB,Jay Ajayi,MIA,RB,Samir
+RB,Ty Montgomery,GNB,RB,Samir
+WR,Julio Jones,ATL,WR,Samir
+WR,Dez Bryant,DAL,WR,Samir
+TE,Kyle Rudolph,MIN,TE,Samir
+FLEX,Jarvis Landry,MIA,WR,Samir
+D/ST,Chiefs,KAN,DST,Samir
+K,Adam Vinatieri,IND,K,Samir
+QB,Matt Ryan,ATL,QB,Meera
+RB,Christian McCaffrey,CAR,RB,Meera
+RB,Frank Gore,IND,RB,Meera
+WR,Pierre Garcon,SFO,WR,Meera
+WR,Adam Thielen,MIN,WR,Meera
+TE,Travis Kelce,KAN,TE,Meera
+FLEX,Orleans Darkwa,NYG,RB,Meera
+D/ST,Saints,NOR,DST,Meera
+K,Dan Bailey,DAL,K,Meera
+QB,Drew Brees,NOR,QB,David
+RB,Le'Veon Bell,PIT,RB,David
+RB,DeMarco Murray,TEN,RB,David
+WR,A.J. Green,CIN,WR,David
+WR,Larry Fitzgerald,ARI,WR,David
+TE,Cameron Brate,TAM,TE,David
+FLEX,Stefon Diggs,MIN,WR,David
+D/ST,Titans,TEN,DST,David
+K,Wil Lutz,NOR,K,David
+QB,Carson Wentz,PHI,QB,Adam
+RB,Devonta Freeman,ATL,RB,Adam
+RB,Melvin Gordon,LAC,RB,Adam
+WR,Antonio Brown,PIT,WR,Adam
+WR,Tyreek Hill,KAN,WR,Adam
+TE,Delanie Walker,TEN,TE,Adam
+FLEX,Michael Crabtree,OAK,WR,Adam
+D/ST,Steelers,PIT,DST,Adam
+K,Graham Gano,CAR,K,Adam
+QB,Kirk Cousins,WAS,QB,Scott
+RB,Ezekiel Elliott,DAL,RB,Scott
+RB,Kareem Hunt,KAN,RB,Scott
+WR,Michael Thomas,NOR,WR,Scott
+WR,Nelson Agholor,PHI,WR,Scott
+TE,Jordan Reed,WAS,TE,Scott
+FLEX,Alvin Kamara,NOR,RB,Scott
+D/ST,Seahawks,SEA,DST,Scott
+K,Greg Zuerlein,LAR,K,Scott
+QB,Alex Smith,KAN,QB,Petr
+RB,Todd Gurley II,LAR,RB,Petr
+RB,C.J. Anderson,DEN,RB,Petr
+WR,Mike Evans,TAM,WR,Petr
+WR,T.Y. Hilton,IND,WR,Petr
+TE,Zach Ertz,PHI,TE,Petr
+FLEX,Adrian Peterson,ARI,RB,Petr
+D/ST,Bills,BUF,DST,Petr
+K,Harrison Butker,KAN,K,Petr
