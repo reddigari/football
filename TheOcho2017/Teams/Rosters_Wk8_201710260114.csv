@@ -1,0 +1,129 @@
+Player,Team,Pos,Owner,Slot,Acq
+Dak Prescott,DAL,QB,Matt,QB,Draft
+Mark Ingram,NOR,RB,Matt,RB,Draft
+Latavius Murray,MIN,RB,Matt,RB,Free Agency
+Doug Baldwin,SEA,WR,Matt,WR,Draft
+Keenan Allen,LAC,WR,Matt,WR,Draft
+Rob Gronkowski,NWE,TE,Matt,TE,Draft
+Lamar Miller,HOU,RB,Matt,FLEX,Draft
+Vikings,MIN,DST,Matt,D/ST,Free Agency
+Jake Elliott,PHI,K,Matt,K,Free Agency
+Danny Woodhead,BAL,RB,Matt,Bench,Draft
+Marshawn Lynch,OAK,RB,Matt,Bench,Draft
+Russell Wilson,SEA,QB,Matt,Bench,Draft
+Jaguars,JAC,DST,Matt,Bench,Draft
+Golden Tate,DET,WR,Matt,Bench,Draft
+Rams,LAR,DST,Matt,Bench,Draft
+Rishard Matthews,TEN,WR,Matt,Bench,Free Agency
+Derek Carr,OAK,QB,Daniel,QB,Draft
+LeSean McCoy,BUF,RB,Daniel,RB,Draft
+Jordan Howard,CHI,RB,Daniel,RB,Draft
+Amari Cooper,OAK,WR,Daniel,WR,Draft
+DeAndre Hopkins,HOU,WR,Daniel,WR,Draft
+Austin Seferian-Jenkins,NYJ,TE,Daniel,TE,Free Agency
+Carlos Hyde,SFO,RB,Daniel,FLEX,Draft
+Dolphins,MIA,DST,Daniel,D/ST,Free Agency
+Stephen Hauschka,BUF,K,Daniel,K,Free Agency
+Martavis Bryant,PIT,WR,Daniel,Bench,Draft
+Broncos,DEN,DST,Daniel,Bench,Draft
+Tevin Coleman,ATL,RB,Daniel,Bench,Draft
+Chris Thompson,WAS,RB,Daniel,Bench,Free Agency
+Ryan Succop,TEN,K,Daniel,Bench,Free Agency
+Deshaun Watson,HOU,QB,Daniel,Bench,Free Agency
+Jerick McKinnon,MIN,RB,Daniel,Bench,Free Agency
+Cam Newton,CAR,QB,Samir,QB,Draft
+Jay Ajayi,MIA,RB,Samir,RB,Draft
+Isaiah Crowell,CLE,RB,Samir,RB,Draft
+Julio Jones,ATL,WR,Samir,WR,Draft
+Dez Bryant,DAL,WR,Samir,WR,Draft
+Kyle Rudolph,MIN,TE,Samir,TE,Free Agency
+Jarvis Landry,MIA,WR,Samir,FLEX,Draft
+Bengals,CIN,DST,Samir,D/ST,Draft
+Adam Vinatieri,IND,K,Samir,K,Draft
+Leonard Fournette,JAC,RB,Samir,Bench,Draft
+Jimmy Graham,SEA,TE,Samir,Bench,Draft
+Kelvin Benjamin,CAR,WR,Samir,Bench,Draft
+Ty Montgomery,GNB,RB,Samir,Bench,Draft
+Willie Snead,NOR,WR,Samir,Bench,Draft
+Chiefs,KAN,DST,Samir,Bench,Draft
+Jameis Winston,TAM,QB,Samir,Bench,Draft
+Matt Ryan,ATL,QB,Meera,QB,Draft
+Christian McCaffrey,CAR,RB,Meera,RB,Draft
+Frank Gore,IND,RB,Meera,RB,Draft
+Pierre Garcon,SFO,WR,Meera,WR,Draft
+Adam Thielen,MIN,WR,Meera,WR,Free Agency
+Travis Kelce,KAN,TE,Meera,TE,Draft
+Orleans Darkwa,NYG,RB,Meera,FLEX,Free Agency
+Saints,NOR,DST,Meera,D/ST,Free Agency
+Dan Bailey,DAL,K,Meera,K,Draft
+Jordy Nelson,GNB,WR,Meera,Bench,Draft
+Matthew Stafford,DET,QB,Meera,Bench,Draft
+Joe Mixon,CIN,RB,Meera,Bench,Draft
+Terrance West,BAL,RB,Meera,Bench,Draft
+Emmanuel Sanders,DEN,WR,Meera,Bench,Draft
+DeVante Parker,MIA,WR,Meera,Bench,Draft
+J.J. Nelson,ARI,WR,Meera,Bench,Free Agency
+Drew Brees,NOR,QB,David,QB,Draft
+Le'Veon Bell,PIT,RB,David,RB,Draft
+Matt Forte,NYJ,RB,David,RB,Draft
+A.J. Green,CIN,WR,David,WR,Draft
+DeSean Jackson,TAM,WR,David,WR,Draft
+Cameron Brate,TAM,TE,David,TE,Free Agency
+Jermaine Kearse,NYJ,WR,David,FLEX,Free Agency
+Falcons,ATL,DST,David,D/ST,Free Agency
+Wil Lutz,NOR,K,David,K,Free Agency
+DeMarco Murray,TEN,RB,David,Bench,Draft
+Davante Adams,GNB,WR,David,Bench,Draft
+Stefon Diggs,MIN,WR,David,Bench,Draft
+Larry Fitzgerald,ARI,WR,David,Bench,Draft
+Jonathan Stewart,CAR,RB,David,Bench,Draft
+Javorius Allen,BAL,RB,David,Bench,Free Agency
+Titans,TEN,DST,David,Bench,Free Agency
+Carson Wentz,PHI,QB,Adam,QB,Free Agency
+Devonta Freeman,ATL,RB,Adam,RB,Draft
+Melvin Gordon,LAC,RB,Adam,RB,Draft
+Antonio Brown,PIT,WR,Adam,WR,Draft
+Tyreek Hill,KAN,WR,Adam,WR,Draft
+Jason Witten,DAL,TE,Adam,TE,Free Agency
+Michael Crabtree,OAK,WR,Adam,FLEX,Draft
+Steelers,PIT,DST,Adam,D/ST,Draft
+Graham Gano,CAR,K,Adam,K,Free Agency
+Demaryius Thomas,DEN,WR,Adam,Bench,Draft
+Alshon Jeffery,PHI,WR,Adam,Bench,Draft
+Marcus Mariota,TEN,QB,Adam,Bench,Draft
+Ameer Abdullah,DET,RB,Adam,Bench,Draft
+Aaron Jones,GNB,RB,Adam,Bench,Free Agency
+Alfred Morris,DAL,RB,Adam,Bench,Free Agency
+Lions,DET,DST,Adam,Bench,Free Agency
+Kirk Cousins,WAS,QB,Scott,QB,Draft
+Ezekiel Elliott,DAL,RB,Scott,RB,Draft
+Kareem Hunt,KAN,RB,Scott,RB,Draft
+Michael Thomas,NOR,WR,Scott,WR,Draft
+Nelson Agholor,PHI,WR,Scott,WR,Free Agency
+Jordan Reed,WAS,TE,Scott,TE,Free Agency
+Alvin Kamara,NOR,RB,Scott,FLEX,Free Agency
+Ravens,BAL,DST,Scott,D/ST,Free Agency
+Greg Zuerlein,LAR,K,Scott,K,Free Agency
+Seahawks,SEA,DST,Scott,Bench,Draft
+Derrick Henry,TEN,RB,Scott,Bench,Free Agency
+LeGarrette Blount,PHI,RB,Scott,Bench,Free Agency
+Will Fuller V,HOU,WR,Scott,Bench,Free Agency
+Evan Engram,NYG,TE,Scott,Bench,Free Agency
+Duke Johnson Jr.,CLE,RB,Scott,Bench,Free Agency
+Rob Kelley,WAS,RB,Scott,Bench,Free Agency
+Alex Smith,KAN,QB,Petr,QB,Free Agency
+C.J. Anderson,DEN,RB,Petr,RB,Draft
+Doug Martin,TAM,RB,Petr,RB,Draft
+Mike Evans,TAM,WR,Petr,WR,Draft
+T.Y. Hilton,IND,WR,Petr,WR,Draft
+Zach Ertz,PHI,TE,Petr,TE,Draft
+Devin Funchess,CAR,WR,Petr,FLEX,Free Agency
+Eagles,PHI,DST,Petr,D/ST,Free Agency
+Harrison Butker,KAN,K,Petr,K,Free Agency
+David Johnson,ARI,RB,Petr,Bench,Draft
+Aaron Rodgers,GNB,QB,Petr,Bench,Draft
+Todd Gurley II,LAR,RB,Petr,Bench,Draft
+Sammy Watkins,LAR,WR,Petr,Bench,Draft
+Jamaal Charles,DEN,RB,Petr,Bench,Free Agency
+Adrian Peterson,ARI,RB,Petr,Bench,Free Agency
+Bilal Powell,NYJ,RB,Petr,Bench,Free Agency
