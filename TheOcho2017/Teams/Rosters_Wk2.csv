@@ -14,6 +14,21 @@ BENCH,Andrew Luck,IND,QB,Matt
 BENCH,Dak Prescott,DAL,QB,Matt
 BENCH,Golden Tate,DET,WR,Matt
 BENCH,Rams,LAR,DST,Matt
+QB,Matt Ryan,ATL,QB,Meera
+RB,Joe Mixon,CIN,RB,Meera
+RB,Terrance West,BAL,RB,Meera
+WR,Jordy Nelson,GNB,WR,Meera
+WR,Adam Thielen,MIN,WR,Meera
+TE,Travis Kelce,KAN,TE,Meera
+FLEX,Christian McCaffrey,CAR,RB,Meera
+D/ST,Vikings,MIN,DST,Meera
+K,Dan Bailey,DAL,K,Meera
+BENCH,Frank Gore,IND,RB,Meera
+BENCH,Emmanuel Sanders,DEN,WR,Meera
+BENCH,Pierre Garcon,SFO,WR,Meera
+BENCH,Brandon Marshall,NYG,WR,Meera
+BENCH,DeVante Parker,MIA,WR,Meera
+BENCH,Kenny Golladay,DET,WR,Meera
 QB,Derek Carr,OAK,QB,Daniel
 RB,LeSean McCoy,BUF,RB,Daniel
 RB,Jordan Howard,CHI,RB,Daniel
@@ -44,21 +59,6 @@ BENCH,Jarvis Landry,MIA,WR,Samir
 BENCH,Willie Snead,NOR,WR,Samir
 BENCH,Jamison Crowder,WAS,WR,Samir
 BENCH,Jameis Winston,TAM,QB,Samir
-QB,Matt Ryan,ATL,QB,Meera
-RB,Joe Mixon,CIN,RB,Meera
-RB,Terrance West,BAL,RB,Meera
-WR,Jordy Nelson,GNB,WR,Meera
-WR,Adam Thielen,MIN,WR,Meera
-TE,Travis Kelce,KAN,TE,Meera
-FLEX,Christian McCaffrey,CAR,RB,Meera
-D/ST,Vikings,MIN,DST,Meera
-K,Dan Bailey,DAL,K,Meera
-BENCH,Frank Gore,IND,RB,Meera
-BENCH,Emmanuel Sanders,DEN,WR,Meera
-BENCH,Pierre Garcon,SFO,WR,Meera
-BENCH,Brandon Marshall,NYG,WR,Meera
-BENCH,DeVante Parker,MIA,WR,Meera
-BENCH,Kenny Golladay,DET,WR,Meera
 QB,Drew Brees,NOR,QB,David
 RB,Le'Veon Bell,PIT,RB,David
 RB,DeMarco Murray,TEN,RB,David
@@ -74,21 +74,6 @@ BENCH,Matt Forte,NYJ,RB,David
 BENCH,Jeremy Maclin,BAL,WR,David
 BENCH,DeSean Jackson,TAM,WR,David
 BENCH,Jonathan Stewart,CAR,RB,David
-QB,Marcus Mariota,TEN,QB,Adam
-RB,Devonta Freeman,ATL,RB,Adam
-RB,Melvin Gordon,LAC,RB,Adam
-WR,Antonio Brown,PIT,WR,Adam
-WR,Michael Crabtree,OAK,WR,Adam
-TE,Delanie Walker,TEN,TE,Adam
-FLEX,Tyreek Hill,KAN,WR,Adam
-D/ST,Raiders,OAK,DST,Adam
-K,Giorgio Tavecchio,OAK,K,Adam
-BENCH,Alshon Jeffery,PHI,WR,Adam
-BENCH,Ameer Abdullah,DET,RB,Adam
-BENCH,LeGarrette Blount,PHI,RB,Adam
-BENCH,Steelers,PIT,DST,Adam
-BENCH,Kerwynn Williams,ARI,RB,Adam
-BENCH,Jamaal Charles,DEN,RB,Adam
 QB,Ben Roethlisberger,PIT,QB,Scott
 RB,Ezekiel Elliott,DAL,RB,Scott
 RB,Dalvin Cook,MIN,RB,Scott
@@ -104,6 +89,21 @@ BENCH,Adrian Peterson,ARI,RB,Scott
 BENCH,John Brown,ARI,WR,Scott
 BENCH,Derrick Henry,TEN,RB,Scott
 BENCH,Ravens,BAL,DST,Scott
+QB,Marcus Mariota,TEN,QB,Adam
+RB,Devonta Freeman,ATL,RB,Adam
+RB,Melvin Gordon,LAC,RB,Adam
+WR,Antonio Brown,PIT,WR,Adam
+WR,Michael Crabtree,OAK,WR,Adam
+TE,Delanie Walker,TEN,TE,Adam
+FLEX,Tyreek Hill,KAN,WR,Adam
+D/ST,Raiders,OAK,DST,Adam
+K,Giorgio Tavecchio,OAK,K,Adam
+BENCH,Alshon Jeffery,PHI,WR,Adam
+BENCH,Ameer Abdullah,DET,RB,Adam
+BENCH,LeGarrette Blount,PHI,RB,Adam
+BENCH,Steelers,PIT,DST,Adam
+BENCH,Kerwynn Williams,ARI,RB,Adam
+BENCH,Jamaal Charles,DEN,RB,Adam
 QB,Aaron Rodgers,GNB,QB,Petr
 RB,Todd Gurley II,LAR,RB,Petr
 RB,C.J. Anderson,DEN,RB,Petr

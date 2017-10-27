@@ -13,21 +13,6 @@ BENCH,Russell Wilson,SEA,QB,Matt
 BENCH,Andrew Luck,IND,QB,Matt
 BENCH,Jaguars,JAC,DST,Matt
 BENCH,Golden Tate,DET,WR,Matt
-QB,Derek Carr,OAK,QB,Daniel
-RB,LeSean McCoy,BUF,RB,Daniel
-RB,Carlos Hyde,SFO,RB,Daniel
-WR,Amari Cooper,OAK,WR,Daniel
-WR,DeAndre Hopkins,HOU,WR,Daniel
-TE,Jason Witten,DAL,TE,Daniel
-FLEX,Martavis Bryant,PIT,WR,Daniel
-D/ST,Broncos,DEN,DST,Daniel
-K,Mason Crosby,GNB,K,Daniel
-BENCH,Jordan Howard,CHI,RB,Daniel
-BENCH,Eric Decker,TEN,WR,Daniel
-BENCH,Greg Olsen,CAR,TE,Daniel
-BENCH,Tevin Coleman,ATL,RB,Daniel
-BENCH,Rob Kelley,WAS,RB,Daniel
-BENCH,Tarik Cohen,CHI,RB,Daniel
 QB,Cam Newton,CAR,QB,Samir
 RB,Leonard Fournette,JAC,RB,Samir
 RB,Ty Montgomery,GNB,RB,Samir
@@ -43,6 +28,21 @@ BENCH,Jarvis Landry,MIA,WR,Samir
 BENCH,Willie Snead,NOR,WR,Samir
 BENCH,Jamison Crowder,WAS,WR,Samir
 BENCH,Jameis Winston,TAM,QB,Samir
+QB,Derek Carr,OAK,QB,Daniel
+RB,LeSean McCoy,BUF,RB,Daniel
+RB,Carlos Hyde,SFO,RB,Daniel
+WR,Amari Cooper,OAK,WR,Daniel
+WR,DeAndre Hopkins,HOU,WR,Daniel
+TE,Jason Witten,DAL,TE,Daniel
+FLEX,Martavis Bryant,PIT,WR,Daniel
+D/ST,Broncos,DEN,DST,Daniel
+K,Mason Crosby,GNB,K,Daniel
+BENCH,Jordan Howard,CHI,RB,Daniel
+BENCH,Eric Decker,TEN,WR,Daniel
+BENCH,Greg Olsen,CAR,TE,Daniel
+BENCH,Tevin Coleman,ATL,RB,Daniel
+BENCH,Rob Kelley,WAS,RB,Daniel
+BENCH,Tarik Cohen,CHI,RB,Daniel
 QB,Matt Ryan,ATL,QB,Meera
 RB,Christian McCaffrey,CAR,RB,Meera
 RB,Terrance West,BAL,RB,Meera

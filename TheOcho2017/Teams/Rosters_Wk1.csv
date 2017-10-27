@@ -73,6 +73,21 @@ BENCH,Matt Forte,NYJ,RB,David
 BENCH,Jeremy Maclin,BAL,WR,David
 BENCH,DeSean Jackson,TAM,WR,David
 BENCH,Jonathan Stewart,CAR,RB,David
+QB,Aaron Rodgers,GNB,QB,Petr
+RB,David Johnson,ARI,RB,Petr
+RB,Todd Gurley II,LAR,RB,Petr
+WR,T.Y. Hilton,IND,WR,Petr
+WR,Sammy Watkins,LAR,WR,Petr
+TE,Kyle Rudolph,MIN,TE,Petr
+FLEX,C.J. Anderson,DEN,RB,Petr
+D/ST,Texans,HOU,DST,Petr
+K,Dustin Hopkins,WAS,K,Petr
+BENCH,Doug Martin,TAM,RB,Petr
+BENCH,Donte Moncrief,IND,WR,Petr
+BENCH,Zach Ertz,PHI,TE,Petr
+BENCH,Duke Johnson Jr.,CLE,RB,Petr
+BENCH,Jordan Matthews,BUF,WR,Petr
+BENCH,Jacquizz Rodgers,TAM,RB,Petr
 QB,Marcus Mariota,TEN,QB,Adam
 RB,Devonta Freeman,ATL,RB,Adam
 RB,Melvin Gordon,LAC,RB,Adam
@@ -103,18 +118,3 @@ BENCH,Kirk Cousins,WAS,QB,Scott
 BENCH,Adrian Peterson,ARI,RB,Scott
 BENCH,John Brown,ARI,WR,Scott
 BENCH,Derrick Henry,TEN,RB,Scott
-QB,Aaron Rodgers,GNB,QB,Petr
-RB,David Johnson,ARI,RB,Petr
-RB,Todd Gurley II,LAR,RB,Petr
-WR,T.Y. Hilton,IND,WR,Petr
-WR,Sammy Watkins,LAR,WR,Petr
-TE,Kyle Rudolph,MIN,TE,Petr
-FLEX,C.J. Anderson,DEN,RB,Petr
-D/ST,Texans,HOU,DST,Petr
-K,Dustin Hopkins,WAS,K,Petr
-BENCH,Doug Martin,TAM,RB,Petr
-BENCH,Donte Moncrief,IND,WR,Petr
-BENCH,Zach Ertz,PHI,TE,Petr
-BENCH,Duke Johnson Jr.,CLE,RB,Petr
-BENCH,Jordan Matthews,BUF,WR,Petr
-BENCH,Jacquizz Rodgers,TAM,RB,Petr
