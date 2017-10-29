@@ -1,0 +1,121 @@
+Slot,Player,Team,Pos,Owner,TeamID
+QB,Kirk Cousins,WAS,QB,Scott,1
+RB,Christian McCaffrey,CAR,RB,Scott,1
+RB,Alvin Kamara,NOR,RB,Scott,1
+WR,Will Fuller V,HOU,WR,Scott,1
+WR,Devin Funchess,CAR,WR,Scott,1
+TE,Austin Seferian-Jenkins,NYJ,TE,Scott,1
+FLEX,Terrelle Pryor Sr.,WAS,WR,Scott,1
+D/ST,Falcons,ATL,DST,Scott,1
+K,Robbie Gould,SFO,K,Scott,1
+BENCH,Ezekiel Elliott,DAL,RB,Scott,1
+BENCH,Jimmy Graham,SEA,TE,Scott,1
+BENCH,Rob Kelley,WAS,RB,Scott,1
+BENCH,Marcus Mariota,TEN,QB,Scott,1
+BENCH,A.J. Green,CIN,WR,Scott,1
+BENCH,Jerick McKinnon,MIN,RB,Scott,1
+QB,Matthew Stafford,DET,QB,Petr,7
+RB,Jay Ajayi,MIA,RB,Petr,7
+RB,Mark Ingram,NOR,RB,Petr,7
+WR,Julio Jones,ATL,WR,Petr,7
+WR,T.Y. Hilton,IND,WR,Petr,7
+TE,Travis Kelce,KAN,TE,Petr,7
+FLEX,Kareem Hunt,KAN,RB,Petr,7
+D/ST,Ravens,BAL,DST,Petr,7
+K,Greg Zuerlein,LAR,K,Petr,7
+BENCH,Joe Mixon,CIN,RB,Petr,7
+BENCH,Frank Gore,IND,RB,Petr,7
+BENCH,Doug Martin,TAM,RB,Petr,7
+BENCH,Stefon Diggs,MIN,WR,Petr,7
+BENCH,Andrew Luck,IND,QB,Petr,7
+BENCH,Adrian Peterson,ARI,RB,Petr,7
+QB,Drew Brees,NOR,QB,Chase,2
+RB,Jordan Howard,CHI,RB,Chase,2
+RB,Jonathan Stewart,CAR,RB,Chase,2
+WR,Demaryius Thomas,DEN,WR,Chase,2
+WR,Kelvin Benjamin,CAR,WR,Chase,2
+TE,Jared Cook,OAK,TE,Chase,2
+FLEX,Duke Johnson Jr.,CLE,RB,Chase,2
+D/ST,Chiefs,KAN,DST,Chase,2
+K,Justin Tucker,BAL,K,Chase,2
+BENCH,Sammy Watkins,LAR,WR,Chase,2
+BENCH,Derek Carr,OAK,QB,Chase,2
+BENCH,Jeremy Maclin,BAL,WR,Chase,2
+BENCH,Bengals,CIN,DST,Chase,2
+BENCH,Carson Wentz,PHI,QB,Chase,2
+BENCH,Brandin Cooks,NWE,WR,Chase,2
+QB,Deshaun Watson,HOU,QB,David,6
+RB,DeMarco Murray,TEN,RB,David,6
+RB,Todd Gurley II,LAR,RB,David,6
+WR,Antonio Brown,PIT,WR,David,6
+WR,Keenan Allen,LAC,WR,David,6
+TE,Cameron Brate,TAM,TE,David,6
+FLEX,Javorius Allen,BAL,RB,David,6
+D/ST,Redskins,WAS,DST,David,6
+K,Jake Elliott,PHI,K,David,6
+BENCH,Larry Fitzgerald,ARI,WR,David,6
+BENCH,Golden Tate,DET,WR,David,6
+BENCH,Kyle Rudolph,MIN,TE,David,6
+BENCH,DeVante Parker,MIA,WR,David,6
+BENCH,Coby Fleener,NOR,TE,David,6
+BENCH,Chris Thompson,WAS,RB,David,6
+QB,Jameis Winston,TAM,QB,Adam,3
+RB,Melvin Gordon,LAC,RB,Adam,3
+RB,C.J. Anderson,DEN,RB,Adam,3
+WR,Mike Evans,TAM,WR,Adam,3
+WR,Rishard Matthews,TEN,WR,Adam,3
+TE,Delanie Walker,TEN,TE,Adam,3
+FLEX,Michael Crabtree,OAK,WR,Adam,3
+D/ST,Jaguars,JAC,DST,Adam,3
+K,Wil Lutz,NOR,K,Adam,3
+BENCH,Carlos Hyde,SFO,RB,Adam,3
+BENCH,Bilal Powell,NYJ,RB,Adam,3
+BENCH,Ameer Abdullah,DET,RB,Adam,3
+BENCH,Steelers,PIT,DST,Adam,3
+BENCH,Alfred Morris,DAL,RB,Adam,3
+BENCH,Darren McFadden,DAL,RB,Adam,3
+QB,Cam Newton,CAR,QB,Wyatt,5
+RB,Leonard Fournette,JAC,RB,Wyatt,5
+RB,Lamar Miller,HOU,RB,Wyatt,5
+WR,Tyreek Hill,KAN,WR,Wyatt,5
+WR,Adam Thielen,MIN,WR,Wyatt,5
+TE,Zach Ertz,PHI,TE,Wyatt,5
+FLEX,Jordy Nelson,GNB,WR,Wyatt,5
+D/ST,Panthers,CAR,DST,Wyatt,5
+K,Adam Vinatieri,IND,K,Wyatt,5
+BENCH,Jarvis Landry,MIA,WR,Wyatt,5
+BENCH,Ben Roethlisberger,PIT,QB,Wyatt,5
+BENCH,Donte Moncrief,IND,WR,Wyatt,5
+BENCH,Alex Smith,KAN,QB,Wyatt,5
+BENCH,Vikings,MIN,DST,Wyatt,5
+BENCH,Dez Bryant,DAL,WR,Wyatt,5
+QB,Carson Palmer,ARI,QB,Michael,4
+RB,Devonta Freeman,ATL,RB,Michael,4
+RB,LeGarrette Blount,PHI,RB,Michael,4
+WR,Alshon Jeffery,PHI,WR,Michael,4
+WR,DeSean Jackson,TAM,WR,Michael,4
+TE,Evan Engram,NYG,TE,Michael,4
+FLEX,Isaiah Crowell,CLE,RB,Michael,4
+D/ST,Rams,LAR,DST,Michael,4
+K,Matt Bryant,ATL,K,Michael,4
+BENCH,Doug Baldwin,SEA,WR,Michael,4
+BENCH,Russell Wilson,SEA,QB,Michael,4
+BENCH,Randall Cobb,GNB,WR,Michael,4
+BENCH,Seahawks,SEA,DST,Michael,4
+BENCH,Martellus Bennett,GNB,TE,Michael,4
+BENCH,Bills,BUF,DST,Michael,4
+QB,Aaron Rodgers,GNB,QB,Samir,8
+RB,Le'Veon Bell,PIT,RB,Samir,8
+RB,Marshawn Lynch,OAK,RB,Samir,8
+WR,Michael Thomas,NOR,WR,Samir,8
+WR,DeAndre Hopkins,HOU,WR,Samir,8
+TE,Jack Doyle,IND,TE,Samir,8
+FLEX,Tevin Coleman,ATL,RB,Samir,8
+D/ST,Broncos,DEN,DST,Samir,8
+K,Matt Prater,DET,K,Samir,8
+BENCH,Theo Riddick,DET,RB,Samir,8
+BENCH,Giants,NYG,DST,Samir,8
+BENCH,Marvin Jones Jr.,DET,WR,Samir,8
+BENCH,Dak Prescott,DAL,QB,Samir,8
+BENCH,Jason Witten,DAL,TE,Samir,8
+BENCH,Aaron Jones,GNB,RB,Samir,8
