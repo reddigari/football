@@ -1,121 +1,121 @@
-Slot,Player,Team,Pos,Owner
-QB,Dak Prescott,DAL,QB,Matt
-RB,Mark Ingram,NOR,RB,Matt
-RB,Latavius Murray,MIN,RB,Matt
-WR,Keenan Allen,LAC,WR,Matt
-WR,Rishard Matthews,TEN,WR,Matt
-TE,Rob Gronkowski,NWE,TE,Matt
-FLEX,Doug Baldwin,SEA,WR,Matt
-D/ST,Jaguars,JAC,DST,Matt
-K,Jake Elliott,PHI,K,Matt
-BENCH,Lamar Miller,HOU,RB,Matt
-BENCH,Marshawn Lynch,OAK,RB,Matt
-BENCH,Russell Wilson,SEA,QB,Matt
-BENCH,Golden Tate,DET,WR,Matt
-BENCH,Matt Bryant,ATL,K,Matt
-BENCH,Rams,LAR,DST,Matt
-QB,Drew Brees,NOR,QB,David
-RB,Le'Veon Bell,PIT,RB,David
-RB,DeMarco Murray,TEN,RB,David
-WR,A.J. Green,CIN,WR,David
-WR,Larry Fitzgerald,ARI,WR,David
-TE,Cameron Brate,TAM,TE,David
-FLEX,Stefon Diggs,MIN,WR,David
-D/ST,Titans,TEN,DST,David
-K,Wil Lutz,NOR,K,David
-BENCH,Matt Prater,DET,K,David
-BENCH,Matt Forte,NYJ,RB,David
-BENCH,Jeremy Maclin,BAL,WR,David
-BENCH,DeSean Jackson,TAM,WR,David
-BENCH,Jonathan Stewart,CAR,RB,David
-BENCH,Javorius Allen,BAL,RB,David
-QB,Carson Palmer,ARI,QB,Daniel
-RB,LeSean McCoy,BUF,RB,Daniel
-RB,Jordan Howard,CHI,RB,Daniel
-WR,Amari Cooper,OAK,WR,Daniel
-WR,John Brown,ARI,WR,Daniel
-TE,Austin Seferian-Jenkins,NYJ,TE,Daniel
-FLEX,Carlos Hyde,SFO,RB,Daniel
-D/ST,Broncos,DEN,DST,Daniel
-K,Ryan Succop,TEN,K,Daniel
-BENCH,Martavis Bryant,PIT,WR,Daniel
-BENCH,Tevin Coleman,ATL,RB,Daniel
-BENCH,Derek Carr,OAK,QB,Daniel
-BENCH,Chris Thompson,WAS,RB,Daniel
-BENCH,Deshaun Watson,HOU,QB,Daniel
-BENCH,Jerick McKinnon,MIN,RB,Daniel
-QB,Carson Wentz,PHI,QB,Adam
-RB,Devonta Freeman,ATL,RB,Adam
-RB,Melvin Gordon,LAC,RB,Adam
-WR,Antonio Brown,PIT,WR,Adam
-WR,Tyreek Hill,KAN,WR,Adam
-TE,Delanie Walker,TEN,TE,Adam
-FLEX,Michael Crabtree,OAK,WR,Adam
-D/ST,Steelers,PIT,DST,Adam
-K,Graham Gano,CAR,K,Adam
-BENCH,Alshon Jeffery,PHI,WR,Adam
-BENCH,Marcus Mariota,TEN,QB,Adam
-BENCH,Ameer Abdullah,DET,RB,Adam
-BENCH,Aaron Jones,GNB,RB,Adam
-BENCH,Alfred Morris,DAL,RB,Adam
-BENCH,Lions,DET,DST,Adam
-QB,Cam Newton,CAR,QB,Samir
-RB,Jay Ajayi,MIA,RB,Samir
-RB,Ty Montgomery,GNB,RB,Samir
-WR,Julio Jones,ATL,WR,Samir
-WR,Dez Bryant,DAL,WR,Samir
-TE,Kyle Rudolph,MIN,TE,Samir
-FLEX,Jarvis Landry,MIA,WR,Samir
-D/ST,Chiefs,KAN,DST,Samir
-K,Adam Vinatieri,IND,K,Samir
-BENCH,Isaiah Crowell,CLE,RB,Samir
-BENCH,Jimmy Graham,SEA,TE,Samir
-BENCH,Kelvin Benjamin,CAR,WR,Samir
-BENCH,Bengals,CIN,DST,Samir
-BENCH,Willie Snead,NOR,WR,Samir
-BENCH,Jameis Winston,TAM,QB,Samir
-QB,Alex Smith,KAN,QB,Petr
-RB,Todd Gurley II,LAR,RB,Petr
-RB,C.J. Anderson,DEN,RB,Petr
-WR,Mike Evans,TAM,WR,Petr
-WR,T.Y. Hilton,IND,WR,Petr
-TE,Zach Ertz,PHI,TE,Petr
-FLEX,Adrian Peterson,ARI,RB,Petr
-D/ST,Bills,BUF,DST,Petr
-K,Harrison Butker,KAN,K,Petr
-BENCH,Aaron Rodgers,GNB,QB,Petr
-BENCH,Sammy Watkins,LAR,WR,Petr
-BENCH,Doug Martin,TAM,RB,Petr
-BENCH,Jamaal Charles,DEN,RB,Petr
-BENCH,Devin Funchess,CAR,WR,Petr
-BENCH,Darren McFadden,DAL,RB,Petr
-QB,Matt Ryan,ATL,QB,Meera
-RB,Christian McCaffrey,CAR,RB,Meera
-RB,Frank Gore,IND,RB,Meera
-WR,Pierre Garcon,SFO,WR,Meera
-WR,Adam Thielen,MIN,WR,Meera
-TE,Travis Kelce,KAN,TE,Meera
-FLEX,Orleans Darkwa,NYG,RB,Meera
-D/ST,Saints,NOR,DST,Meera
-K,Dan Bailey,DAL,K,Meera
-BENCH,Matthew Stafford,DET,QB,Meera
-BENCH,Joe Mixon,CIN,RB,Meera
-BENCH,Terrance West,BAL,RB,Meera
-BENCH,Emmanuel Sanders,DEN,WR,Meera
-BENCH,DeVante Parker,MIA,WR,Meera
-BENCH,J.J. Nelson,ARI,WR,Meera
-QB,Kirk Cousins,WAS,QB,Scott
-RB,Ezekiel Elliott,DAL,RB,Scott
-RB,Kareem Hunt,KAN,RB,Scott
-WR,Michael Thomas,NOR,WR,Scott
-WR,Nelson Agholor,PHI,WR,Scott
-TE,Jordan Reed,WAS,TE,Scott
-FLEX,Alvin Kamara,NOR,RB,Scott
-D/ST,Seahawks,SEA,DST,Scott
-K,Greg Zuerlein,LAR,K,Scott
-BENCH,Ravens,BAL,DST,Scott
-BENCH,LeGarrette Blount,PHI,RB,Scott
-BENCH,Will Fuller V,HOU,WR,Scott
-BENCH,Evan Engram,NYG,TE,Scott
-BENCH,Duke Johnson Jr.,CLE,RB,Scott
-BENCH,Rob Kelley,WAS,RB,Scott
+Slot,Player,Team,Pos,Owner,TeamID
+QB,Dak Prescott,DAL,QB,Matt,1
+RB,Mark Ingram,NOR,RB,Matt,1
+RB,Latavius Murray,MIN,RB,Matt,1
+WR,Keenan Allen,LAC,WR,Matt,1
+WR,Rishard Matthews,TEN,WR,Matt,1
+TE,Rob Gronkowski,NWE,TE,Matt,1
+FLEX,Doug Baldwin,SEA,WR,Matt,1
+D/ST,Jaguars,JAC,DST,Matt,1
+K,Jake Elliott,PHI,K,Matt,1
+BENCH,Lamar Miller,HOU,RB,Matt,1
+BENCH,Marshawn Lynch,OAK,RB,Matt,1
+BENCH,Russell Wilson,SEA,QB,Matt,1
+BENCH,Golden Tate,DET,WR,Matt,1
+BENCH,Matt Bryant,ATL,K,Matt,1
+BENCH,Rams,LAR,DST,Matt,1
+QB,Drew Brees,NOR,QB,David,5
+RB,Le'Veon Bell,PIT,RB,David,5
+RB,DeMarco Murray,TEN,RB,David,5
+WR,A.J. Green,CIN,WR,David,5
+WR,Larry Fitzgerald,ARI,WR,David,5
+TE,Cameron Brate,TAM,TE,David,5
+FLEX,Stefon Diggs,MIN,WR,David,5
+D/ST,Titans,TEN,DST,David,5
+K,Wil Lutz,NOR,K,David,5
+BENCH,Matt Prater,DET,K,David,5
+BENCH,Matt Forte,NYJ,RB,David,5
+BENCH,Jeremy Maclin,BAL,WR,David,5
+BENCH,DeSean Jackson,TAM,WR,David,5
+BENCH,Jonathan Stewart,CAR,RB,David,5
+BENCH,Javorius Allen,BAL,RB,David,5
+QB,Carson Palmer,ARI,QB,Daniel,2
+RB,LeSean McCoy,BUF,RB,Daniel,2
+RB,Jordan Howard,CHI,RB,Daniel,2
+WR,Amari Cooper,OAK,WR,Daniel,2
+WR,John Brown,ARI,WR,Daniel,2
+TE,Austin Seferian-Jenkins,NYJ,TE,Daniel,2
+FLEX,Carlos Hyde,SFO,RB,Daniel,2
+D/ST,Broncos,DEN,DST,Daniel,2
+K,Ryan Succop,TEN,K,Daniel,2
+BENCH,Martavis Bryant,PIT,WR,Daniel,2
+BENCH,Tevin Coleman,ATL,RB,Daniel,2
+BENCH,Derek Carr,OAK,QB,Daniel,2
+BENCH,Chris Thompson,WAS,RB,Daniel,2
+BENCH,Deshaun Watson,HOU,QB,Daniel,2
+BENCH,Jerick McKinnon,MIN,RB,Daniel,2
+QB,Carson Wentz,PHI,QB,Adam,6
+RB,Devonta Freeman,ATL,RB,Adam,6
+RB,Melvin Gordon,LAC,RB,Adam,6
+WR,Antonio Brown,PIT,WR,Adam,6
+WR,Tyreek Hill,KAN,WR,Adam,6
+TE,Delanie Walker,TEN,TE,Adam,6
+FLEX,Michael Crabtree,OAK,WR,Adam,6
+D/ST,Steelers,PIT,DST,Adam,6
+K,Graham Gano,CAR,K,Adam,6
+BENCH,Alshon Jeffery,PHI,WR,Adam,6
+BENCH,Marcus Mariota,TEN,QB,Adam,6
+BENCH,Ameer Abdullah,DET,RB,Adam,6
+BENCH,Aaron Jones,GNB,RB,Adam,6
+BENCH,Alfred Morris,DAL,RB,Adam,6
+BENCH,Lions,DET,DST,Adam,6
+QB,Cam Newton,CAR,QB,Samir,3
+RB,Jay Ajayi,MIA,RB,Samir,3
+RB,Ty Montgomery,GNB,RB,Samir,3
+WR,Julio Jones,ATL,WR,Samir,3
+WR,Dez Bryant,DAL,WR,Samir,3
+TE,Kyle Rudolph,MIN,TE,Samir,3
+FLEX,Jarvis Landry,MIA,WR,Samir,3
+D/ST,Chiefs,KAN,DST,Samir,3
+K,Adam Vinatieri,IND,K,Samir,3
+BENCH,Isaiah Crowell,CLE,RB,Samir,3
+BENCH,Jimmy Graham,SEA,TE,Samir,3
+BENCH,Kelvin Benjamin,CAR,WR,Samir,3
+BENCH,Bengals,CIN,DST,Samir,3
+BENCH,Willie Snead,NOR,WR,Samir,3
+BENCH,Jameis Winston,TAM,QB,Samir,3
+QB,Alex Smith,KAN,QB,Petr,8
+RB,Todd Gurley II,LAR,RB,Petr,8
+RB,C.J. Anderson,DEN,RB,Petr,8
+WR,Mike Evans,TAM,WR,Petr,8
+WR,T.Y. Hilton,IND,WR,Petr,8
+TE,Zach Ertz,PHI,TE,Petr,8
+FLEX,Adrian Peterson,ARI,RB,Petr,8
+D/ST,Bills,BUF,DST,Petr,8
+K,Harrison Butker,KAN,K,Petr,8
+BENCH,Aaron Rodgers,GNB,QB,Petr,8
+BENCH,Sammy Watkins,LAR,WR,Petr,8
+BENCH,Doug Martin,TAM,RB,Petr,8
+BENCH,Jamaal Charles,DEN,RB,Petr,8
+BENCH,Devin Funchess,CAR,WR,Petr,8
+BENCH,Darren McFadden,DAL,RB,Petr,8
+QB,Matt Ryan,ATL,QB,Meera,4
+RB,Christian McCaffrey,CAR,RB,Meera,4
+RB,Frank Gore,IND,RB,Meera,4
+WR,Pierre Garcon,SFO,WR,Meera,4
+WR,Adam Thielen,MIN,WR,Meera,4
+TE,Travis Kelce,KAN,TE,Meera,4
+FLEX,Orleans Darkwa,NYG,RB,Meera,4
+D/ST,Saints,NOR,DST,Meera,4
+K,Dan Bailey,DAL,K,Meera,4
+BENCH,Matthew Stafford,DET,QB,Meera,4
+BENCH,Joe Mixon,CIN,RB,Meera,4
+BENCH,Terrance West,BAL,RB,Meera,4
+BENCH,Emmanuel Sanders,DEN,WR,Meera,4
+BENCH,DeVante Parker,MIA,WR,Meera,4
+BENCH,J.J. Nelson,ARI,WR,Meera,4
+QB,Kirk Cousins,WAS,QB,Scott,7
+RB,Ezekiel Elliott,DAL,RB,Scott,7
+RB,Kareem Hunt,KAN,RB,Scott,7
+WR,Michael Thomas,NOR,WR,Scott,7
+WR,Nelson Agholor,PHI,WR,Scott,7
+TE,Jordan Reed,WAS,TE,Scott,7
+FLEX,Alvin Kamara,NOR,RB,Scott,7
+D/ST,Seahawks,SEA,DST,Scott,7
+K,Greg Zuerlein,LAR,K,Scott,7
+BENCH,Ravens,BAL,DST,Scott,7
+BENCH,LeGarrette Blount,PHI,RB,Scott,7
+BENCH,Will Fuller V,HOU,WR,Scott,7
+BENCH,Evan Engram,NYG,TE,Scott,7
+BENCH,Duke Johnson Jr.,CLE,RB,Scott,7
+BENCH,Rob Kelley,WAS,RB,Scott,7

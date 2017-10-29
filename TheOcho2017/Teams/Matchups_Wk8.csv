@@ -1,0 +1,9 @@
+Owner,OwnerID,Score,Opponent,OppID,OppScore,Outcome
+Matt,1,0.0,Daniel,2,4.0,L
+Daniel,2,4.0,Matt,1,0.0,W
+Samir,3,7.4,Meera,4,0.0,W
+Meera,4,0.0,Samir,3,7.4,L
+David,5,0.0,Petr,8,0.0,T
+Petr,8,0.0,David,5,0.0,T
+Adam,6,0.0,Scott,7,39.0,L
+Scott,7,39.0,Adam,6,0.0,W
