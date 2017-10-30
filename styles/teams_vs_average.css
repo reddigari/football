@@ -1,0 +1,24 @@
+    hr {
+      margin: 25px 0px;
+    }
+    text {
+      font-family: Roboto, sans-serif;
+    }
+    div.tooltip {
+      position: absolute;
+      text-align: center;
+      vertical-align: middle;
+      width: auto;
+      height: auto;
+      padding: 8px;
+      font: 12px sans-serif;
+      background: lightsteelblue;
+      border: 0px;
+      border-radius: 8px;
+      pointer-events: none;
+    }
+    #ptsSelect {
+      font-family: Roboto, sans-serif;
+      font-size: 11px;
+      border-radius: 7px;
+    }

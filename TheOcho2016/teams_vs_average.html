@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>The Ocho</title>
+    <link rel="stylesheet" href="../styles/ff_style.css">
+    <link rel="stylesheet" href="../styles/teams_vs_average.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400"> 
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.9.0/d3-legend.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>The Ocho 2017</h1>
+	    <h2>League Averages and Relative Performance</h2>
+        </div>
+        <div id="main">
+            <div id="chart">
+              <fieldset id="ptsSelect" style="display:inline-block">
+                  <!-- <legend>Source</legend> -->
+                  <input type="radio" name="values" value="pct" checked>Percent Vs. Average</input><br>
+                  <input type="radio" name="values" value="pts">Fantasy Points</input>
+              </fieldset>
+            </div>
+	    <script src="../js/teams_vs_average.js"></script>
+        </div>
+    </div>
+
+</html>

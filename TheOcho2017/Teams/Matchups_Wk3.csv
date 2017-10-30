@@ -1,9 +1,0 @@
-Owner,OwnerID,Score,Opponent,OppID,OppScore,Outcome
-Matt,1,89.6,Samir,3,74.1,W
-Samir,3,74.1,Matt,1,89.6,L
-Daniel,2,59.9,Meera,4,58.6,W
-Meera,4,58.6,Daniel,2,59.9,L
-David,5,103.7,Adam,6,99.2,W
-Adam,6,99.2,David,5,103.7,L
-Scott,7,106.3,Petr,8,91.8,W
-Petr,8,91.8,Scott,7,106.3,L
