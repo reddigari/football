@@ -49,7 +49,7 @@ RB,LeSean McCoy,BUF,RB,Michael,4
 RB,Devonta Freeman,ATL,RB,Michael,4
 WR,Doug Baldwin,SEA,WR,Michael,4
 WR,Alshon Jeffery,PHI,WR,Michael,4
-TE,Vernon Davis,WAS,TE,Michael,4
+TE,O.J. Howard,TAM,TE,Michael,4
 FLEX,LeGarrette Blount,PHI,RB,Michael,4
 D/ST,Seahawks,SEA,DST,Michael,4
 K,Matt Bryant,ATL,K,Michael,4
@@ -58,7 +58,7 @@ BENCH,DeSean Jackson,TAM,WR,Michael,4
 BENCH,Bills,BUF,DST,Michael,4
 BENCH,Rams,LAR,DST,Michael,4
 BENCH,Evan Engram,NYG,TE,Michael,4
-BENCH,O.J. Howard,TAM,TE,Michael,4
+BENCH,Vernon Davis,WAS,TE,Michael,4
 QB,Alex Smith,KAN,QB,Wyatt,5
 RB,Lamar Miller,HOU,RB,Wyatt,5
 RB,Tarik Cohen,CHI,RB,Wyatt,5
@@ -76,11 +76,11 @@ BENCH,Ben Roethlisberger,PIT,QB,Wyatt,5
 BENCH,Panthers,CAR,DST,Wyatt,5
 QB,Tyrod Taylor,BUF,QB,Petr,7
 RB,Jay Ajayi,MIA,RB,Petr,7
-RB,Kareem Hunt,KAN,RB,Petr,7
+RB,Mark Ingram,NOR,RB,Petr,7
 WR,Julio Jones,ATL,WR,Petr,7
 WR,Amari Cooper,OAK,WR,Petr,7
 TE,Travis Kelce,KAN,TE,Petr,7
-FLEX,Mark Ingram,NOR,RB,Petr,7
+FLEX,Kareem Hunt,KAN,RB,Petr,7
 D/ST,Ravens,BAL,DST,Petr,7
 K,Harrison Butker,KAN,K,Petr,7
 BENCH,Davante Adams,GNB,WR,Petr,7
