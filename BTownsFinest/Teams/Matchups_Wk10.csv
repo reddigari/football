@@ -1,0 +1,9 @@
+Owner,OwnerID,Score,Opponent,OppID,OppScore,Outcome
+Scott,1,130.1,Chase,2,62.8,W
+Chase,2,62.8,Scott,1,130.1,L
+Adam,3,84.3,Michael,4,90.0,L
+Michael,4,90.0,Adam,3,84.3,W
+Wyatt,5,78.3,Samir,8,60.5,W
+Samir,8,60.5,Wyatt,5,78.3,L
+David,6,74.4,Petr,7,106.9,L
+Petr,7,106.9,David,6,74.4,W
